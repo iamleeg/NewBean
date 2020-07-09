@@ -27,9 +27,6 @@
 
 @interface NSTextView ( Extensions )
 
-//override
-- (void) _drawInsertionPointInRect: (NSRect)rect color: (NSColor *)color; //private :-(
-- (void) drawInsertionPointInRect: (NSRect)rect color: (NSColor *)color turnedOn: (BOOL)flag;
 //publicize
 - (NSRange)characterRangeForRect:(NSRect)aRect;
 - (void)indicateCursorIndex;
