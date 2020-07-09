@@ -1,0 +1,39 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                changeEncodingAction = id;
+                closeEncodingSheet = id;
+                closeEncodingSheetWithCancel = id;
+                encodingPreviewAction = id;
+                showSheet = id;
+            };
+            CLASS = EncodingManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                encodingCancelButton = NSButton;
+                encodingLabel = NSTextField;
+                encodingOKButton = NSButton;
+                encodingPopup = NSPopUpButton;
+                encodingPreviewTextView = NSTextView;
+                encodingSheet = NSPanel;
+                previewLabel = NSTextField;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                changeColor = id;
+            };
+            CLASS = NSButton;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSControl;
+        },
+                {
+            CLASS = NSTextView;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSText;
+        }
+    );
+    IBVersion = 1;
+}

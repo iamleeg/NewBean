@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>menuTitle</key>
+		<string>\t  tab</string>
+		<key>pattern</key>
+		<string>\t</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\n  newline</string>
+		<key>pattern</key>
+		<string>\n</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\f  pagebreak</string>
+		<key>pattern</key>
+		<string>\f</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>image/attachment</string>
+		<key>pattern</key>
+		<string>\ufffc</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>.  any character</string>
+		<key>pattern</key>
+		<string>.</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>^ start of line</string>
+		<key>pattern</key>
+		<string>^</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>$ end of line</string>
+		<key>pattern</key>
+		<string>$</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\b  word boundary</string>
+		<key>pattern</key>
+		<string>\b</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\B  non-word boundary</string>
+		<key>pattern</key>
+		<string>\B</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\w  word character</string>
+		<key>pattern</key>
+		<string>\w</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\W  non-word character</string>
+		<key>pattern</key>
+		<string>\W</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\s  whitespace (incl. \t\n\f\r)</string>
+		<key>pattern</key>
+		<string>\s</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\S  non-whitespace</string>
+		<key>pattern</key>
+		<string>\S</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\d  digit</string>
+		<key>pattern</key>
+		<string>\d</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\D  non-digit</string>
+		<key>pattern</key>
+		<string>\D</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\uhhhh  hex value (hhhh)</string>
+		<key>pattern</key>
+		<string>\u</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>*  match 0 or more times</string>
+		<key>pattern</key>
+		<string>*</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>+  match one or more times</string>
+		<key>pattern</key>
+		<string>+</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>?  match 0 or 1 (prefer 1)</string>
+		<key>pattern</key>
+		<string>?</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[abc]  match any in set</string>
+		<key>pattern</key>
+		<string>[]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[^abc]  match any not in set</string>
+		<key>pattern</key>
+		<string>[^]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[a-b]  match any in range</string>
+		<key>pattern</key>
+		<string>[-]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>(a|b)  either a or b</string>
+		<key>pattern</key>
+		<string>(|)</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>b{2} exactly 2 of b</string>
+		<key>pattern</key>
+		<string>{}</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\  treat *?+[( ){}^$|\./ literally</string>
+		<key>pattern</key>
+		<string>\</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\0 found text (in Replace field only)</string>
+		<key>pattern</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

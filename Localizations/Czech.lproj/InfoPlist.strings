@@ -1,0 +1,22 @@
+/* Copyright for about box */
+NSHumanReadableCopyright = "\U00A9 2007-2009 James Hoover";
+
+/* This is for the localized "short" name in the app menu bar */
+CFBundleName = "Bean";
+
+/* Localizations for the file type names IMPORTANT!!!!! THESE SHOULD MATCH THE IDENTICAL KEYS FOR FILE TYPE NAMES IN Localizable.strings OR ELSE THE FILE TYPE NAMES IN PREFERENCES AND IN THE SAVE DIALOGS WON'T MATCH */
+"Rich Text with Graphics Document (.rtfd)" = "Dokument Rich text s grafikou (.rtfd)";
+"Bean Document (.bean)" = "Bean dokument (.bean)";
+"Web Archive (.webarchive)" = "Web archiv (.webarchive)";
+"Rich Text Format (.rtf)" = "Rich Text formát (.rtf)";
+"Word 97 (.doc)" = "Word 97 (.doc)";
+"Word 2003 XML (.xml)" = "Word 2003 XML (.xml)";
+"Web Page (.html)" = "Webová stránka (.html)";
+"Text Document (.txt)" = "Textový dokument (.txt)";
+"Text (you provide extension)" = "Textový dokument (s výběrem přípony)";
+"Word 2007 (.docx)" = "Word 2007 (.docx)";
+"OpenDocument (.odt)" = "OpenOffice dokument (.odt)";
+
+/* Help book name localization -- this MUST match <meta name="AppleTitle" content="Bean Help"></meta> string in the help file index.html for help to work!  */
+CFBundleHelpBookName = "Bean Help";
+CFBundleHelpBookFolder = "Bean Help cz";

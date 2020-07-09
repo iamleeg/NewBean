@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>addTabStopAction</key>
+				<string>id</string>
+				<key>cancelAddTabStopAction</key>
+				<string>id</string>
+				<key>showTabStopPanelAction</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>TabStopManager</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>cancelButton</key>
+				<string>NSButton</string>
+				<key>okButton</key>
+				<string>NSButton</string>
+				<key>removeTabStopsButton</key>
+				<string>NSButton</string>
+				<key>shouldRemoveTabStopsButton</key>
+				<string>NSButton</string>
+				<key>tabLocationLabel</key>
+				<string>NSTextField</string>
+				<key>tabStopAlignmentButton</key>
+				<string>NSPopUpButton</string>
+				<key>tabStopPanel</key>
+				<string>NSPanel</string>
+				<key>tabStopValueField</key>
+				<string>NSTextField</string>
+				<key>tabStopValueLabel</key>
+				<string>NSTextField</string>
+				<key>tabTypeLabel</key>
+				<string>NSTextField</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

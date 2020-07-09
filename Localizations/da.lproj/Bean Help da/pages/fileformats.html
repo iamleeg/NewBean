@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Bean: File Formats</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="824.41">
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 36.0px; font: 8.0px Lucida Grande; min-height: 10.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 13.0px Lucida Grande; color: #cb0505; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 36.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p8 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -16.8px; font: 13.0px Lucida Grande}
+p.p9 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -10.8px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p10 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; color: #cb0505; min-height: 5.0px}
+p.p11 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Monaco}
+table.t1 {border-collapse: collapse}
+td.td1 {background-color: #c2dff8; border-style: solid; border-width: 2.0px 2.0px 2.0px 2.0px; border-color: #a6a6a2 #a6a6a2 #a6a6a2 #a6a6a2; padding: 0.0px 5.0px 0.0px 5.0px}
+  </style>
+</head>
+<body>
+<a name="FORMATS"></a>
+<p class="p1"><i>Filformater</i></p>
+<p class="p2"><br>
+</p>
+<p class="p4">Nogle gode råd: Brug <span style="font-weight: bold;">RTF</span>
+format (Rich Text Format), når det er muligt til dokumenter, der
+indeholder formatteret tekst. RTF er Bean's interne standard format, og
+næsten alle tekstbehandlingsprogrammer understøtter RTF formatterede
+dokumenter. Brug <span style="font-weight: bold;">RTFD</span>
+formatet,
+når det er nødvendigt at inkludere billeder eller andre vedhæftninger,
+(desværre forstås RTFD kun af Mac). Jeg anbefaler <span
+ style="font-weight: bold; font-style: italic;">ikke</span> at anvende
+.doc formatet (Word 97, Windows) som dit standard arkiveringsformat, da
+det er et konverteret non-native format i Bean. Det er mindre sikkert.
+PDF formatet er det mest brugbare mellem forskellige computere og
+operativsystemer, men generelt kan PDF formatet ikke redigeres, når det
+først én gang er arkiveret.<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p4">Hvis du har brug for at sende en fil som email (med eller
+uden billeder) til en person, der bruger Windows systmer, vælg da Arkiv
+&gt; Eksport &gt; til DOC med grafik. Dette vil konvertere et hvilket
+som helst dokument billede til .jpg format, sæt dem ind i det
+eksporterede RTF dokument og tilføj endelsen .doc til dokumentets
+filnavn, hvilket gør det 'spiseligt' for MS Word til Windows. Med andre
+ord er det et RTF formatteret dokument med dine billeder indlejret, der
+vises hos modtageren som et .doc formatteret dokument. - Igen, PDF er
+det bedste format til dokumenter, der ikke kræver yderligere redigering
+(såsom produktkataloger osv.).<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p3"><b>RTFD format</b></p>
+<p class="p4">Kaldes også "Rich Text med grafik". RTFD tillader dig at
+kombinere formatteret tekst med grafik (eller andre vedhæftninger).
+Dette format kan tilgås fra enhver computer, der bruger Os X (via
+TextEdit), men kan ikke åbnes internt på Windows eller Unix maskiner.
+Hvis du ønsker at dele et RTFD dokument med en person, der bruger
+Windows operativ systemer, vil din bedste mulighed være at bruge 'Arkiv
+&gt; Eksporter &gt; Til DOC med grafik' for at oprette et Word
+kompatibelt dokument, ellers brug PDF.<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p3"><b>BEAN format</b></p>
+<p class="p4">Beans eget format er identisk med RTFD bortset fra
+filendelsen. Et dokument, der slutter med '.bean' vil automatisk åbne i
+Bean. Skift enelsen til '.rtfd', hvis du vil dele dokumentet med andre
+Apple brugere, der måske ikke har Bean.<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p3"><b>RTF format</b></p>
+<p class="p4">Rich Text Format i Bean tillader brug af formatteret
+tekst, men kan ikke gennem grafik eller andre vedhæftninger (brug RTFD
+formatet, hvis grafik er nødvendig). RTF filer kan åbnes af de fleste
+tekstbehandlingsprogrammer. RTF er Bean's (og Coca's) interne format
+til oprettelse af rich text dokumenter.<br>
+</p>
+<p class="p5"><b></b><br>
+</p>
+<p class="p3"><b>Word format (.doc)</b></p>
+<p class="p4">Bean bruger Apple's filkonverteringssystem til at åbne og
+arkivere Microsoft Word .doc filer (teknisk set er det Word 97
+formatet). Med dette format i Bean <span style="font-weight: bold;">hverken
+indlæses eller arkiveres dokumentformattering (sidestørrelse, margen)
+og grafik</span>. Bean vil advare dig herom før overskrivning af en
+fil, der oprindelig er oprettet i Word, så information ikke går tabt.
+Husk på, at mens Bean læser og arkiverer formatteret tekst i Word .doc
+formatet, er dets kompatibilitet med hensyn til andre aspekter i
+formatet enten mindre-end-perfekt (f.eks. tabeller) eller
+ikke-eksisterende (f.eks. fodnoter).<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p4"><span style="font-weight: bold;">Advanceret</span> <span
+ style="font-weight: bold;">tip</span>: For at tvinge Bean til at
+arkivere alle .doc filer til RTF med endelsen '.doc'. Afslut Bean, åbn
+en Terminal vindue og indsæt nedenstående linie og tryk på 'Linieskift'
+(skift JA til NEJ for at sætte ændringe tilbage igen). <span
+ style="font-weight: bold;">Vigtig</span> <span
+ style="font-weight: bold;">note</span>:&nbsp; Quicklook (hurtig
+visning) vil ikke virke på RTF filer med endelsen .doc!<br>
+</p>
+<p class="p2"><br>
+</p>
+<p class="p11">defaults write com.SevenYearsDreaming.Bean prefDocIsRTF
+-bool YES</p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>Word 2003 XML format (.xml)</b></p>
+<p class="p4">Microsoft Word 2003 XML format (WordML) arter sig stort
+set lig med Word formatet, bortset fra at formattering på
+dokumentnujveau <span style="font-weight: bold;">er</span> indlæst og
+arkiveret (dog er grafik ikke). Brugere af tidligere versioner en Word
+2003 kan formentlig ikke åbne dette format<br>
+</p>
+<p class="p4"><br>
+<span style="font-weight: bold;">Oversætters</span> <span
+ style="font-weight: bold;">note</span>: Dette gælder også for MS Word
+X og Word 2004 til Mac OS X. Til at omgå dette problem kan
+anvendes&nbsp; "<a
+ href="http://www.microsoft.com/mac/downloads.mspx?pid=Mactopia_AddTools&amp;fid=4DD4BC05-1217-497E-8F65-4347F2544ED6#viewer">Microsoft
+Open XML Converter</a>". Pålideligheden heraf er dog diskutabel.<br>
+</p>
+<p class="p5"><b></b><br>
+</p>
+<p class="p3"><b>WebArchive/Webarkiv</b></p>
+<p class="p4">Et arkivformat til arkivering af websider (f.eks. HTML
+filer), der også indeholder grafik. F.eks. kan Safari gemme websider i
+dette format.<br>
+</p>
+<p class="p5"><b></b><br>
+</p>
+<p class="p3"><b>Web format (.html)</b></p>
+<p class="p4">Bean læser og gemmer i HTML format som 'resourcekode'
+(source code). Bean kan også eksportere andre formater til HTML (via
+Arkiv &gt; Eksporter til HTML).<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p3"><b>Text Format (.txt)</b></p>
+<p class="p4">Bean indlæser og arkiverer let de fleste Unicode
+tekstfiler. Hvis Bean ikke kan identificere den korrekte kodning i en
+tekstfil, vil du blive bedt om at specificere den kodningstype (Text
+Encoding), du vil bruge. Bean vil da forsøge at indlæse selv ukendte
+filformater som UTF-8 (Unicode) tekstformat. <span
+ style="font-weight: bold;">Bemærk at ændringer i skrift attributter
+(skriftfamilie, farve, fed, jursiv osv.) ikke tildeles til hele
+dokumentet ved redigering af ren tekst filer, og bliver heller ikke
+arkiveret</span>. Bemærk også, at side, margen og afsnitsformattering
+ikke bliver arkiveret i ren tekst filer, men kan udskrives, før et
+dokument lukkes. Hvis du ønsker at ændre kodningstypen i et tekst
+dokuyment fra en kendt kodning til en mere moderne kodning, men stadig
+bevare det som ren tekst, vælg da 'Vis info' &gt; Konverter kodning...
+&gt; Unicode (UTF-8).<br>
+</p>
+<p class="p4">.</p>
+<p class="p1"><i>Filformater (kun i Leopard)</i></p>
+<p class="p2"><br>
+</p>
+<p class="p4">Disse to filformater virker kun i Bean, hvis OS X 10.5
+Leopard er installeret. I OS X 10.4 Tiger vil de ikke blive vist i
+arkiveringsdialogens popup menuj med filformater, og et forsøg på at
+åbne et af formaterne vil medføre, at en advarsel vises<br>
+<br>
+</p>
+<p class="p3"><b>OpenDocument format (.odt)</b></p>
+<p class="p4">Bean gør brug af Apple's filkonverteringssystem til at
+åbne og arkivere i <span style="font-style: italic;">OpenDocument
+Format</span> (ODF/ODT). Bemærk, at pga. begrænsningerne i
+konverteringssystemet, vil billeder og sidelayout formattering
+(sidestørrelse og margen) gå tabt ved åbning og arkivering i
+OpenDocument formatet. Brugeren vil - for at undgå datatab - blive
+advaret herom før overskrivning af en OpenDocument fil, der ikke er
+oprettet af Bean<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p3"><b>Word 2007 format (.docx)</b></p>
+<p class="p4">Et format meget lig <b>Open XML</b>. Bean bruger Apple's
+filkonverteringssystem til at åbne og arkivere Word 2007 filer. Bemærk,
+at pga. begrænsningerne i konverteringssystemet, vil billeder gå tabt
+ved åbning et ægte Word 2007 dokument i Bean, og ved arkivering af et
+rich text dokument i Word 2007 formatet i Bean. Ligeledes vil
+tekstmarkering, tabeller, tekst lister og avanceret afsnitsformattering
+gå tabt. Beklager, men det er den måde, Apple har implementeret det på.
+Brugeren vil - for at undgå datatab - blive advaret herom før
+overskrivning af et Word 2007 dokument<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p1"><i>Eksport formater</i></p>
+<p class="p2"><br>
+</p>
+<p class="p3"><b>Eksport til HTML</b></p>
+<p class="p4">Arkiverede dokumenter kan eksporteres som HTML (webside).
+Billeder vil ikke blive eksporteret, skønt referencer til billeder vil
+være at finde i HTML koden. Se <a href="tipstricks.html">'Tips &amp;
+Tricks'</a> om, hvordan billedreferencer virker.<br>
+</p>
+<p class="p2"><br>
+</p>
+<p class="p3"><b>Eksporter til PDF</b></p>
+<p class="p4">Dette virker på samme måde som 'Print til PDF' funktionen
+i printerdialogen. Brug dette eksportformat, hvis du vil være absolut
+sikker på troværdigheden i visningen af det originale Bean dokument.</p>
+<p class="p2"><br>
+</p>
+<p class="p3"><b>Eksport til RTF (med billeder)</b></p>
+<p class="p4">Dokumentet arkiveres som RTF med billeder indlejret og
+indkodet i filen. RTF filen kan derefter åbnes af MS Word med alle
+billeder intakte. (Bean's eget RTF format understøtter ikke billeder.
+Med andre ord, hvis du genåbner et dokument i Bean, der er eksporteret
+til dette format, vil billeder ikke blive vist).</p>
+<p class="p2"><br>
+</p>
+<p class="p3"><b>Eksport til DOC (med billeder)</b></p>
+<p class="p4">Dokumentet arkiveres i et format, der kan læses af MS
+Word med billeder indlejrede og indkodet i filen. Filen kan herefter
+åbnes af MS Word med intakte billeder. (Bean's normale understøttelse
+af DOC formatet understøtter ikke arkivering eller åbning af billeder.
+Med andre ord, hvis du genåbner et dokument i Bean, der er eksporteret
+til dette format, vil billeder ikke blive inkluderet).</p>
+</body>
+</html>

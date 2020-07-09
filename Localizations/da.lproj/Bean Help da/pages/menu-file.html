@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Bean Help - Menu - File</title>
+  <meta name="Author" content="">
+  <meta name="Company" content="">
+  <meta name="Copyright" content="">
+  <meta name="Subject" content="">
+  <meta name="Description" content="">
+  <meta name="Keywords" content="cursorLocation=490">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.27">
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p5 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+span.s1 {color: #cb0505}
+span.s2 {font: 14.0px Monaco}
+  </style>
+</head>
+<body>
+<p class="p1"><b>Menuen Arkiv<br>
+</b></p>
+<p class="p2"><span class="s1">Ny: Opretter et nyt dokument uden navn</span>.</p>
+<p class="p3">Speciel ny &gt;<span class="Apple-converted-space">&nbsp;</span></p>
+<p class="p5"><span class="s1">Ren tekst:</span> Opretter et nyt tomt
+ren tekst dokument.</p>
+<p class="p5"><span class="s1">Rich Text fra skuffe:</span> Opretter et
+nyt rich text dokument og indsætter indholdet fra skuffen (tidligere
+kopieret tekst).</p>
+<p class="p5"><span class="s1">Ren tekst fra skuffe:</span> Opretter et
+nyt ren tekst dokument og indsætter indholdet fra skuffen (tidligere
+kopieret tekst).</p>
+<p class="p5"><span class="s1">Med nuværende valg:</span> Indsætter
+nuværnde valgt tekst fra det forrest liggende dokument i Bean til et
+nyt rich text dokument.</p>
+<p class="p2"><span class="s1">Åbn…: </span>Viser en dialog, der
+tillader brugeren at vælge og åbne et tidligere arkiveret dokument.</p>
+<p class="p4"><b><i>Note: Dette er måden at associere filtyper med
+Bean, så dokument altid åbnes i Bean, når du dobbeltklikker på et
+dokumentikon: Vælg i Finder en fil af den type, du er interesseret i.
+Gå derefter til Finders menulinie Find &gt; Vis info &gt; Åbn i - vælg
+Bean. Klik dernæst på knappen 'Ret alle', og klik på OK, når dialogen
+spørger dig, om du vil ændre alle....</i></b></p>
+<p class="p2"><span class="s1">Åbn seneste:</span> Vælg fra listen for
+hurtigt at genåbne et dokument. Virker ikke ved fuld skærm pga. en fejl
+(rdar://5748616).</p>
+<p class="p2"><span class="s1">Arkiver Som…:</span> Bean vil advare
+dig,&nbsp; når en rich text dokument med vedhæftninger arkiveres
+(f.eks. billeder) til et andet format, der ikke kan arkivere
+vedhæftninger (i hvilket tilfælde de vil blive kasseret).</p>
+<p class="p2"><span class="s1">Vend tilbage til arkiveret: </span>Genindlæser
+den tidligere version af dokumentet og kasserer den nuværende version.
+Brugeren advares af en dialog om, at ikke-arkiverede ændringer går tabt.</p>
+<p class="p3">Eksporter &gt;<span class="Apple-converted-space">&nbsp;</span></p>
+<p class="p5"><span class="s1">til formatteret HTML:</span> Indhold
+eksportees en fil som HTML kildekode med indlejret CSS formattering,
+hvilket bliver arkiveret i en mappe med dokumentets originale navn.
+Mappen åbnes i Finder efter eksport. Du kan ikke eksportere et
+ikke-arkiveret dokument.</p>
+<p class="p5"><span class="s1">til HTML uden formattering:</span> Det
+nuværende dokument eksporteres som en fil med HTML kildekode uden CSS
+formattering, (kun ren HTML), der arkiveres i en mappe med dokumentets
+originanavn.</p>
+<p class="p6"><i>For at få billedreferencer til at virke i HTML kode,
+følg disse trin:</i></p>
+<p class="p6"><i>1. Åbn den eksporterede HTML fil i Bean (drop det
+synlige ikon på Beans programikon).</i></p>
+<p class="p6"><i>2. Erstat billedreference i HTML koden (de er
+præ-kedede med </i><span class="s2">img src=</span><i>) med navnene på
+de billedfiler, du vil placere i den samme mappe som HTML filen (f.eks.
+sådan: </i><span class="s2">graphics/logo.jpg</span><i>, hvis det er
+en 'grafik' mappe til at indeholde billederne dér).</i></p>
+<p class="p6"><i>3. Arkiver det, dobbeltklik derefter på HTML filen for
+at åbne den i Safari og check, hvordan det ser ud.</i></p>
+<p class="p5"><span class="s1">til PDF:</span> Arkiverer dokumentet som
+en .pdf fil i samme mappe som originalen. PDF giver den største
+troværdighed i henhold til originaldokumentet, når du sender dokumentet
+til andre, men er generelt ikke redigerbar af andre.</p>
+<p class="p5"><span class="s1">til RTF med billeder:</span> Billeder i
+et dokument indsættes i det eksporterede dokument i RTF format. Da
+Windows og Linux brugere ikke kan åbne .rtfd eller .bean formaterne,
+kan de formodentlig åbne filer i RTF formatet.</p>
+<p class="p5"><span class="s1">til DOC med billeder:</span> Er det
+samme som 'Eksporter &gt; til RTF med billeder', men filendelsen er
+ændret til .doc, hvilket gør, at de fleste Windows brugere "...i deres
+komfortable zone" kan bruge det. MS Word kan åbne RTF filer uden
+problemer, hvor endelsen er ændret til .doc.</p>
+<p class="p2"><span class="s1">Send til Mail:</span> Åbner et nyt
+mailvindue i Maul.app med indholdet fra det aktive dokument vedhæftet
+som en fil. .rtfd filer bliver komprimeret automatisk, (da de jo
+egentlig er 'mapper' og ikke 'diskrete' filer). Filnavnet på det
+vedhæftningen vises som tekst ved siden af vedhæfntningen som en
+forsikring på, at du sender den korrekte fil. Note. Du kan ikke sende
+dokumenter, der endnu ikke er arkiverede.</p>
+<p class="p2"><span class="s1">Backup:</span> Opretter en dato-stemplet
+og fortløbende nummereret backup kopi af det arkiverede dokument, du
+arbejder på, i samme mappe som originalen. Værdifuld til kontrol af
+versioner, dokumentation og opbevaring.</p>
+<p class="p2"><span class="s1">Opret std. dokument:</span> Gør det åbne
+dokument til en skabelon ved at låse dokumentet. Bean kan så genåbne
+skabelonen som et dokument uden navn. Du kan låse den låste fil op ved
+at vælge den i Finder og bruge Vis info og fjerne hakket ved 'Låst'.</p>
+<p class="p2"><span class="s1">Vis i Finder:</span> Åbner et Finder
+vindue til den mappe, der indeholder det nuværende (arkiverede)
+dokument. Bemærk at Finder i kolonneindstilling vil vise filens
+oprettelses- og ændringsdato i forhåndsvisnings kolonnen. Note: Det er
+bedre at lukke dokumentet i Bean før brug af Finder til at flytte eller
+omdøbe dokumentet.</p>
+<p class="p2"><span class="s1">Sideopsætning:</span> Viser kontrol til
+dokumentets sidestørrelse og udskriftretning.</p>
+<p class="p2"><span class="s1">Udskriv…:</span> Åbner OS Xs standard
+udskriftsdialog. Herfra kan du vælge printer, finjustere udskrift
+(f.eks. str.), Print til PDF til åbning i Billedfremviser osv.</p>
+<p class="p2"><span class="s1">Udskriv det valgte:</span> Udskriver kun
+den tekst, der er valgt (markeret i et dokument). Virker med multi-valg
+og adskilles af separatorlinier mellem hvert valg, hvis brugeren i Bean
+&gt; Indstillinger... &gt; Avanceret &gt;Dokument &gt; Udskriv det
+valgte... adskiller multi-valg.<br>
+</p>
+</body>
+</html>

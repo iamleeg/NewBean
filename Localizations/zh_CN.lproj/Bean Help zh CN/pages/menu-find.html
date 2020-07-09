@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean 帮助 - 菜单 - 查找</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=537">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p4 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.8px; text-indent: 0.2px; font: 11.0px Courier; color: #333333}
+span.s1 {color: #cb0505}
+</style>
+</head>
+<body>
+<a name="FIND"></a>
+<p class="p1"><b>查找菜单</b></p>
+<p class="p3"><span class="s1">查找/替换...：</span>显示查找/替换面板，用于查找最前端文稿中您感兴趣的内容。</p>
+<p class="p5"><i>注意：当使用 Bean 的查找面板时，搜索始终会 '循环' (在搜索到达文稿底部时会继续从文稿开头开始搜索)。'替换' 在所选文本与查找字段的文本相符时才会进行替换。您不能在替换字段区使用正则表达式 (也就是说，您不能交换捕获分组，等等)。当模式匹配激活时，不使用特殊功能的符号会在前面显示 '\' 以表示其原始的字符含义。您唯一可以在替换字段处使用的正则表达式字符是 \0，它插入了找到的匹配项到替换文本。您只需记住，这个是零而不是字母 O。</b></p>
+<p class="p4"><b>查找\替换快捷键</b></p>
+<p class="p4">option-tab：插入制表符到搜索字段区</p>
+<p class="p4">option-return：插入回车符到搜索字段区</p>
+<p class="p4"><b>匹配模式 (正则表达式)</b></p>
+<p class="p4">Bean 中的查找/替换... 面板可以使用模式匹配 ('正则表达式') 来查找感兴趣的文本。在正则表达式 (简写为 'regex') 中，特定的字母作为模式的符号，用于查找面板的文本查找，类似有名的 ‘通配符’ 但功能更强。模式匹配允许您在搜索中简单的包括制表符，分段符，分页符，单词边界，数字通配符，备选拼写等等。<b>模式...</b> 下拉菜单可以方便的使用这个功能而不需要学习什么特殊字符的用法。</p>
+<p class="p4">选择<b>匹配模式 (正则表达式)</b> 按钮以启用查找面板中对正则表达式的支持。注意查找字段区会改变颜色以指示模式匹配是否已激活。在模式匹配中一些常见符号如 . ? * \ 等等都有着特殊的含义。在您不需要这一功能的时候可以关闭它。(注意，类似 . ? * 等符号在正则表达式中没有特殊含义时在前面要加上 \ 字符)。</p>
+<p class="p4">正则表达式的使用是个相当复杂的主题，在模式... 菜单中有很多的选项。例如，在搜索字段区使用这个正则表达式和全选将选择 HTML 文稿中的所有标签：</p>
+<p class="p6">(\<(/?[^\>]+)\>)</p>
+<p class="p4">您可以创建一个语法非常复杂的正则表达式。如果语法不正确，将会显示警告。</p>
+<p class="p3"><span class="s1">查找下一个：</span>查找文本中下一处与查找面板的查找字段相符的地方。</p>
+<p class="p3"><span class="s1">查找上一个：</span>查找文本中下一处与查找面板的查找字段相符的地方。</p>
+<p class="p3"><span class="s1">查找所选部分：</span>将所选文本放进查找面板的查找字段区进行搜索。</p>
+<p class="p3"><span class="s1">跳到所选部分：</span>在文稿窗口居中任何所选文本。</p>
+<p class="p3"><span class="s1">上次编辑的位置：</span>在您前往文稿的另一部分，然后需要立即返回上次编辑位置时，这个功能非常有用 (不需要四处找)。</p>
+<p class="p3"><span class="s1">补全单词：</span>产生可能的完成单词列表以补全插入点处的不完整单词。也可通过 Escape 键启用。</p>
+<p class="p3"><span class="s1">定义单词：</span>显示插入点处的单词定义，或在发现单词无效时显示拼写建议。</p>
+</body>
+</html>

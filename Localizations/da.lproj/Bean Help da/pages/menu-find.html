@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Bean Help - Menu - Find</title>
+  <meta name="Author" content="">
+  <meta name="Company" content="">
+  <meta name="Copyright" content="">
+  <meta name="Subject" content="">
+  <meta name="Description" content="">
+  <meta name="Keywords" content="cursorLocation=537">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.27">
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p4 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.8px; text-indent: 0.2px; font: 11.0px Courier; color: #333333}
+span.s1 {color: #cb0505}
+span.s2 {font: 14.0px Monaco}
+  </style>
+</head>
+<body>
+<a name="FIND"></a>
+<p class="p1"><b>Menuen Søg<br>
+</b></p>
+<p class="p3"><span class="s1">Søg/Erstat...:</span> Viser Søg/Erstat
+dialogen, der bruges til at finde tekst af interesse i det forrest
+liggende dokument.</p>
+<p class="p5"><i>NOTEr: Når Beans Søgepanel bruges, vil den altid
+'ombryde' (kontinuerlig søgning i usøgte begyndelser i dokument efter
+at have nået slutningen - altså starte forfra igen). 'Erstat' vil ikke
+erstatte tekstvalg, medmindre det matcher søgefeltets tekst. Den eneste
+'Regular Expression' symbol, du kan bruge i erstatningsfeltet er <span
+ class="s2">\0 (Note: lig med tallet nul '0' ikke det store bogstav O),
+hvilket står for vilkårlig fundne matches. Når søgemønstre søgning er
+aktiv, anvendes matchende mønstres tegn og symboler</span></i><i> (
+*?+[(){}^$|\./ ) skal de være adskilt med et '\' for at blive håndteret
+bogstaveligt.</i><i></i></p>
+<p class="p4"><i><b>Søg/Erstat genveje</b></i></p>
+<p class="p4"><i>ALT+TAB: Indsætter tabulator tegn i søgefeltet.</i></p>
+<p class="p4"><i>ALT+LINIESKIFT: Indsætter tegn for linieskift i
+føgefeltet.</i></p>
+<p class="p4"><i><b>Match mønstre (Regex)</b></i></p>
+<p class="p4"><i>Søg/Erstat... dialogen i Bean kan bruge matchende
+mønstre (Regular Expressions - normalt forkortet til "RegEx") til at
+finde ønsket tekst. I en RegEx søgning bruges visse bogstaver som
+symboler for mønstre, der bruges af søgepanelet til at finde en given
+tekst såsom det velkendte 'wildcard tegn', men mere kraftfuld.
+Matchende mønstre tillader, at du let kan inkludere tabulatorer,
+afsnitsskift, sideskift, ord-omkransning, wildcard tal, alternative
+stavemåder osv. i dine søgninger. Popupmenuen <span
+ style="font-weight: bold;">Mønstre...</span> giver dig denne kraft
+uden at du skal til at lære en masse specielle symboler at kende.</i></p>
+<p class="p4"><i>Vælg knappen <b>Match mønstre (regex)</b> til at
+aktivere RegEx i søgepanelet. Bemærk at søgefeltet ændrer farve for at
+indikere, at matchende mønstre nu er aktiv. Da almindelige symboler som
+. ? * \ osv. har specielle betydninger i matchende mønstre, bør denne
+funktion være slået fra, indtil du får brug for det. (Note: Symbolerne
+*?+[(){}^$|\./ håndteres bogstaveligt i en
+regular expression ved adskillelse med \ (backslash) tegnet.</i></p>
+<p class="p4"><i>Det eneste regular expression symbol du kanj bruge i
+erstatningsfeltet er <span class="s2">\0</span>, hvilket indsætter den
+fundne
+match i den tekst, der vil erstatte det. For at gøre det helt klart, -
+det er tallet nui i søgemønstret - ikke bogstavet O.</i></p>
+<p class="p4"><i>Brug af regular expressions er et kompliceret emne, og
+der er langt flere funktioner end dem i menuen Mønstre.... F.eks.
+bruges regex også i søgefeltet med 'Vælg alle', da regex også vælger
+alle tags i et HTML dokument:</i></p>
+<p class="p6"><i>(\&lt;(/?[^\&gt;]+)\&gt;)</i></p>
+<p class="p4"><i>Du kan selv oprette en regex med meget kompleks
+syntaks. Hvis syntaksen ikke er korrekt, vil en advarsel blive vist.</i></p>
+<p class="p3"><span class="s1"><i>Find næste:</i></span><i> finder den
+næste forekomst af den specificerede tekst i søgepanelets søgefelt.</i></p>
+<p class="p3"><span class="s1"><i>Find forrige:</i></span><i> finder
+den forrige forekomst af den specificerede tekst i søgepanelets
+søgefelt.</i></p>
+<p class="p3"><span class="s1"><i>Brug udvælgelse:</i></span><i>
+Placerer den valgte tekst i søgepanelets søgefelt.</i></p>
+<p class="p3"><span class="s1"><i>Gå til det valgte:</i></span><i>
+Centrerer en hvilken som helst valgt tekst i dokument vinduet.</i></p>
+<p class="p3"><span class="s1"><i>Placering af sidste redigering:</i></span><i>
+Meget brugbar når du går til en anden del i et dokument og har behov
+for straks at vende tilbage til placeringen af din seneste redigering
+(uden at skulle lede efter det).</i></p>
+<p class="p3"><span class="s1"><i>Fuldfør ord:</i></span><i> Giver en
+liste med mulige ord afslutninger på et ukomplet ord ved
+indsætningsmærket. Også tilgængelig ved brug af ESC tasten.</i></p>
+<p class="p3"><span class="s1"><i>Definer ord:</i></span><i> Åbner en
+definitionsliste til ordet nærmest ved indsætningsmærket, eller
+foreslår en stavekontrol, hvis ordet ikke findes at være brugbart.</i></p>
+</body>
+</html>

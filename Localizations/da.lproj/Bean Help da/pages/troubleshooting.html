@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Troubleshooting</title>
+  <meta name="Author" content="">
+  <meta name="Company" content="">
+  <meta name="Copyright" content="">
+  <meta name="Subject" content="">
+  <meta name="Description" content="">
+  <meta name="Keywords" content="cursorLocation=3265, fitsPagesWidth=1">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.27">
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Hoefler Text; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 18.0px; font: 7.0px Monaco; min-height: 10.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Monaco}
+p.p8 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f; min-height: 16.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><i>Fejlfinding...</i></p>
+<p class="p2"><br>
+</p>
+<p class="p3"><b>Når jeg laver en ændring i Indstillinger, ændres mine
+åbne dokumenter ikke.</b></p>
+<p class="p4">Generelt set er indstillingerne beregnet på nye
+dokumenter. For at ændre i allerede åbne dokumenter, brug da emnerne i
+menulinien.</p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>Bean går ned ved opstart af program.</b></p>
+<p class="p4">Prøv at trække følgende fil til papirkurven (filen
+indeholder Beans indstillinger) og genstart derefter Bean:</p>
+<p class="p6"><br>
+</p>
+<p class="p7">/Users/&lt;YOU&gt;/Library/Preferences/com.SevenYearsDreaming.Bean.plist</p>
+<p class="p5"><br>
+</p>
+<p class="p4">Gentagne nedbrud under opstart kan være forårsaget af, at
+Bean prøver på at åbne et auto-arkiveret dokument, der kan være defekt.
+Prøv at fjerne alle auto-arkiverede dokumenter fra mappen.<br>
+</p>
+<p class="p6"><br>
+</p>
+<p class="p7">Users/&lt;YOU&gt;/Library/Autosave Information/<br>
+<br>
+<span style="font-weight: bold;">Oversætters note</span>: Du kan f.eks.
+lægge dem i papirkurven uden at tømme denne og så lægge dokumenterne
+tilbage igen én ad gangen, starte Bean og se, hvilket af dokumenterne,
+der giver problemet. Hvis dokumentet indeholder meget vigtige data, kan
+du forsøge at åbne det ved at trække dokumentets ikon til TextEdits
+ikon i docken og gå til menuen Rediger &gt; Vælg alt (COM+A) &gt;
+Kopier (COM+C). Afslut TextEdit og åbn Bean igen og brug 'Indsæt'
+(COM+V) til at indsætte den kopierede tekst i et nyt Bean dokument.
+Arkiver det nye dokument og tøm papirkurven med det defekte dokument.<br>
+</p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>Listemærker dukker op ud af det blå.</b></p>
+<p class="p4">Sletning af det første mærke er ikke nok for at slippe ud
+af en liste. Du skal fjerne de underliggende liste attributter. Du kan
+gøre det ved at bruge Format &gt; Liste &gt; Mærker... &gt; Ingen - på
+valgt afsnit med listemærker eller hele dokumentet - eller fjerne dem
+fra valgt afsnit/dokument via Rediger &gt; Fjern &gt; Valgte listemærker.</p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>Dele af dokumentet forsvinder i Layout visning.</b></p>
+<p class="p4">Formentlig bliver sidenummerering smidt væk af skjulte
+teksttabeller, der er kopieret og indsat fra en webside, (det er en
+kendt fejl). Prøv at vælge Rediger &gt; Fjern &gt; Alle teksttabeller.
+For at gøre usynlige tabeller synlige, vælg Vis &gt; Vis usynlige</p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>Ikonet ‘Install-Bean’ vil ikke forsvinde.</b></p>
+<p class="p4">Færst lidt baggrundsstof. Måske er den mest brugte metode
+til distribuering af Mac software at bruge et diskbillede. Et
+diskbillede er en slags 'virtuel' disk, der er indkapslet i en fil med
+endelsen <span style="font-weight: bold;">.dmg</span>. Du skal
+dobbeltklikke på en .dmg fil for at åbne en 'mappe' med indholdet af
+den 'virtuelle' disk, (normalt et program eller en installationspakke,
+samt ofte også dokumentation). Andre gange kan du køre et program 'på
+stedet' - altså inde fra diskbilledet for at se, om du kan lide det.
+Til daglig brug bør programmet trækkes ud af diskbilledet og ind i din
+programmappe, hvor der så oprettes en kopi.</p>
+<p class="p5"><br>
+</p>
+<p class="p4">Og så lidt praktiske råd. Først og fremmest, hvis du vil
+beholde en kopi af Bean til daglig brug, vær sikker på, at du har
+kopieret Bean til mappen 'Programmer' - <span
+ style="font-weight: bold;">ikke</span> Bean-Install diskbilledet, men
+derimod Bean.app, der ligger i mappen, når du har åbnet
+'Bean-Install.dmg' med dobbeltklik. Når du har kopieret Bean.app til
+programmappen, trækker du mappen med navnet 'Bean-Install' i
+papirkurven. Dette vil skubbe den virtuelle disk ud akkurat, som du
+skubber en USB pen, CD eller DVD ud. (Eller markerer det med enkeltklik
+og vælger COM+E for 'Skub ud'). Herefter kan du også slette selve
+'Bean-Install.dmg', (den ligger formentlig på dit skrivebord eller i
+din downloadmappe). Men husk på, at Bean er gratis, så du må gerne give
+kopier af diskbilledet væk til andre, hvis du vil det.</p>
+<p class="p8"><b></b><br>
+</p>
+<p class="p3"><b>Bean vil ikke åbne et dokument.</b></p>
+<p class="p4">Bean vil normalt afgøre dokumentformatet udfra
+dokumentnavnets endelse (f.eks. .doc, .rtf, .txt osv.). Hvis dokumentet
+ingen endelse har, prøv så at tilføje den.<br>
+<span style="font-weight: bold;">Oversætters</span> <span
+ style="font-weight: bold;">note</span>: Hvis dokumentet er oprettet i
+f.eks. TextEdit eller AppleWorks 6 som en .rtf fil, kan det være, at
+der i disse programmers indstillinger er valgt 'Skjul
+endelse'.Filendelsen vil normalt ikke blive vist selv ved kopiering af
+dokumentet til en anden computer, hvor ingen af de to programmer er
+installeret. Så prøv først med endelsen '.rtf', derefter med '.doc'.
+Hvis du vælger endelsen '.txt' er det meget muligt, at al
+dokumentformattering vil gå tabt ved åbning af dokumentet i Bean eller
+andet program, der kan åbne .txt filer.<br>
+</p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>.doc dokumenter er ødelagte.</b></p>
+<p class="p4">Jeg vil anbefale brug af 'Rich Text format' (.rtf) som
+standard arkiveringsformat især til meget store dokumenter, da det er
+Beans interne format. Words .doc format kan altid importeres og
+eksporteres, hvilket er det ekstra trin, hvor problemer kan opstå. Hvis
+du pludselig sidder med et ødelagt dokument eller et dokument i et
+ukendt format, prøv da at bruge menuen Tjenester &gt; Bean &gt; Gendan
+tekst fra valgt fil.<br>
+<span style="font-weight: bold;">Oversætters</span> <span
+ style="font-weight: bold;">note</span>: Nogle gange kan et .doc
+dokument være så ødelagt, at selv ovenstående ikke kan åbne eller redde
+det - især, hvis dokumentet har været åbnet og videreredigeret på både
+en Mac og en Windows baseret maskine. - Sker det, kan du hente
+programmet <a href="http://www.barebones.com/products/textwrangler/"><span
+ style="font-weight: bold;">Textwrangler</span></a> fra <span
+ style="font-weight: bold;">BareBones</span>. Textwrangler har
+funktioner, der kan redde næsten al læsbar tekst ud af et ødelagt
+dokument. Textwrangler er gratis.<br>
+<span class="Apple-converted-space"></span></p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>Hvordan du indsætter fodnoter, afsnitsskift og
+automatisk indholdsfortegnelse (indeks)?</b></p>
+<p class="p4">Du finder et andet tekstbehandlingsprogram. ;-) - Et godt
+og gratis program (som i 'uden beregning') er <a
+ href="http://homepage.mac.com/lightway/iText/iTextExpress/TryiTxtExp.html"><span
+ class="s2"><b>iText Express</b></span></a>. Der er også <a
+ href="http://porting.openoffice.org/mac/download/aqua.html"><b>OpenOffice
+Aqua</b></a> og <a style="font-weight: bold;"
+ href="http://www.neooffice.org/neojava/en/index.php">NeoOffice</a>
+(begge er ligeledes gratis).<br>
+<span style="font-weight: bold;"><br>
+Oversætters note</span>: <span style="font-weight: bold;">1</span>. <span
+ style="font-weight: bold;">iText Express</span> findes nu også på
+dansk. Er universel og kan bruges på både PowerPC og Intel Macs.
+Systemkrav: Minimum OS X 10.3.9. <span style="font-weight: bold;">2</span>.
+<span style="font-weight: bold;">OpenOffice</span> <span
+ style="font-weight: bold;">Aqua</span> (OpenOffice 3) er nu native OS
+X og kræver ikke længere brug af X11. Systemkrav: Intel-baseret Mac og
+minimum OS X 10.4.11. <span style="font-weight: bold;">3</span>. <span
+ style="font-weight: bold;">NeoOffice</span> kan bruges på både PowerPC
+og Intel Macs. Systemkrav: Minimum OS X 10.4.x (10.4.11+ anbefales).<br>
+</p>
+<p class="p5"><br>
+</p>
+<p class="p3"><b>Kan jeg skrive mine specialer / afgangsprøver med Bean?</b></p>
+<p class="p4">Til nogle ting har du brug for et fuldt udbygget
+tekstbehandlingsprogram eller måske <a
+ href="http://en.wikipedia.org/wiki/TeX">TeX</a>. til sådanne opgaver
+som speciale eller afgangsprøve.<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p4"><br>
+<br>
+</p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css"><title>Bean Help - Menu - Find</title>
+
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=537">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p4 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.8px; text-indent: 0.2px; font: 11.0px Courier; color: #333333}
+span.s1 {color: #cb0505}
+span.s2 {font: 14.0px Monaco}
+</style></head><body>
+<a name="FIND"></a>
+<p class="p1"><b>Menu Rechercher</b></p>
+<p class="p3"><span class="s1">Rechercher/Remplacer...:</span> affiche le panneau Rechercher/Remplacer, qui s'utilise pour rechercher du texte dans le document actuel.</p>
+<p class="p5"><i>NOTEZ: Si vous utilisez le panneau Rechercher, la
+recherche est toujours continue (elle reprend au début après avoir
+atteint la fin du document). «Remplacer» ne remplace le texte
+sélectionné que s'il correspond au texte dans le
+champ de recherche. Le seul symbole d'expression régulière que vous
+pouvez utiliser dans le champ de remplacement est <span class="s2">\0</span>
+(notez: il s'agit du numéro zéro, pas de la lettre O), qui équivaut à
+toute occurrence trouvée. Si l'alignement d'un modèle est active, les
+lettres qui servent de symboles de modèle ( *?+[(){}^$|\./ ) doivent
+être précédées d'un '\' afin d'être traitées littéralement.</i></p>
+<p class="p4"><i><b>Raccourcis Rechercher/Remplacer</b></i></p>
+<p class="p4"><i>option-tabulateur: insère un tabulateur dans le champ de recherche</i></p>
+<p class="p4"><i>option-entrée: insère un retour chariot dans le champ de recherche</i></p>
+<p class="p4"><i><b>Correspondance de modèle (Regex)</b></i></p>
+<p class="p4"><i>Le panneau Rechercher/Remplacer de Bean peut utiliser
+des modèles («expressions régulières») afin de chercher du texte. Dans
+une expression rationnelle ou régulière (souvent «regex»), certaines
+lettres deviennent des symboles pour des modèles que le panneau
+Rechercher utilise pour trouver du texte, comme p. ex. le «wildcard»
+(métacaractère) bien connu, mais les possibilités sont plus puissantes.
+Vous pouvez facilement inclure dans vos recherches des tabulateurs, des
+retours chariot, des sauts de page, des limites de mots, des
+métacaractères pour un chiffre, des orthographes alternatives, etc. Le menu déroulant <span style="font-weight: bold;">Modèles…</span></i><span style="font-style: italic;">vous donne cette puissance sans avoir à apprendre des symboles spéciaux.</span><span style="font-weight: bold;"></span><i><span style="font-weight: bold;"></span><br>
+</i></p>
+<p class="p4"><i>Sélectionnez le bouton <span style="font-weight: bold;">Correspondance de modèle (regex)</span>
+afin de rendre possible l'utilisation d'expressions régulières dans le
+panneau de recherche. Notez que le champ de recherche change de couleur
+pour indiquer que les expressions régulières sont actives. Puisque des
+symboles communs comme . ? * \ etc. ont une signification particulière
+quand on les utilise pour accorder des modèles, n'utilisez pas cette
+fonction avant que vous n'en ayez besoin. (Notez que les symboles
+*?+[(){}^$|\./ sont traités littéralement dans les expressions
+régulières quand ils sont précédés de \).</i></p>
+
+
+<p class="p4"><i>Le seul symbole d'expressions régulières que vous pouvez utiliser dans le champ de remplacement est <span class="s2">\0</span>,
+qui insère ce qui a été trouvé dans le texte qui le remplacera. Pour être clair: il s'agit d'un zéro et non pas de la lettre O.<br>
+</i></p>
+<p class="p4"><i>L'utilisation des expressions régulières est un
+domaine complexe et il y a bien d'autres options que celles dans le
+menu Modèles... . Par exemple. cette expression régulière dans le champ
+Tout rechercher sélectionnera tous les tags dans un document HTML:<br>
+</i></p>
+
+<p class="p6"><i>(\&lt;(/?[^\&gt;]+)\&gt;)</i></p>
+<p class="p4"><i>Vous pouvez créer une expression régulière avec une
+syntaxe très complexe. Si la syntaxe n'est pas correcte, vous en serez
+averti-e.</i></p>
+<p class="p3"><span class="s1"><i>Trouver le suivant:</i></span><i> </i><i>trouve l'occurrence suivante du texte spécifié dans le champ de recherche du panneau Rechercher</i><i>.</i></p>
+<p class="p3"><span class="s1"><i>Trouver le précédent:</i></span><i> trouve l'occurrence précédente du texte spécifié dans le champ de recherche du panneau Rechercher.</i></p>
+<p class="p3"><span class="s1"><i>Utiliser la sélection:</i></span><i> place le texte sélectionné dans le champ de recherche du panneau Rechercher.</i></p>
+<p class="p3"><span class="s1"><i>Aller à la sélection:</i></span><i> centre le texte sélectionné dans la fenêtre du document.</i></p>
+<p class="p3"><span class="s1"><i>Emplacement de la dernière sélection:</i></span><i>
+utile si vous vous trouvez ailleurs dans le document lorsque vous
+voulez retourner immédiatement à l'emplacement de la dernière
+modification (sans devoir le chercher).</i></p>
+<p class="p3"><span class="s1"><i>Compléter le mot:</i></span><i>
+produit une liste de mots possibles (anglais) complétant ce qui se
+situe à l'endroit du curseur. Est également accessible via la touche
+Échapper (Esc).</i></p>
+<p class="p3"><span class="s1"><i>Définir le mot:</i></span><i> affiche
+une définition (anglaise) du mot le plus proche du curseur ou suggère
+une vérification de l'orthographe si le mot ne correspond à aucun mot
+disponible.</i></p>
+
+</body></html>

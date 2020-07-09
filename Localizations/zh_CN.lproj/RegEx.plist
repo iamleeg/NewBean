@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>menuTitle</key>
+		<string>\t  制表位</string>
+		<key>pattern</key>
+		<string>\t</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\n  换行</string>
+		<key>pattern</key>
+		<string>\n</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\f  分页</string>
+		<key>pattern</key>
+		<string>\f</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>图像/附件</string>
+		<key>pattern</key>
+		<string>\ufffc</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>.  任何字符</string>
+		<key>pattern</key>
+		<string>.</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>^ 行首</string>
+		<key>pattern</key>
+		<string>^</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>$ 行尾</string>
+		<key>pattern</key>
+		<string>$</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\b  单词边界</string>
+		<key>pattern</key>
+		<string>\b</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\B  非单词边界</string>
+		<key>pattern</key>
+		<string>\B</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\w  单词类字符</string>
+		<key>pattern</key>
+		<string>\w</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\W  非单词类字符</string>
+		<key>pattern</key>
+		<string>\W</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\s  空白 (包括 \t\n\f\r)</string>
+		<key>pattern</key>
+		<string>\s</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\S  非空白</string>
+		<key>pattern</key>
+		<string>\S</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\d  数字</string>
+		<key>pattern</key>
+		<string>\d</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\D  非数字</string>
+		<key>pattern</key>
+		<string>\D</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\uhhhh  十六进制值 (hhhh)</string>
+		<key>pattern</key>
+		<string>\u</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>*  匹配 0 次以上</string>
+		<key>pattern</key>
+		<string>*</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>+  匹配一次以上</string>
+		<key>pattern</key>
+		<string>+</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>?  匹配 0 或 1 (首选 1)</string>
+		<key>pattern</key>
+		<string>?</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[abc]  匹配任何设置内</string>
+		<key>pattern</key>
+		<string>[]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[^abc]  匹配任何非设置内</string>
+		<key>pattern</key>
+		<string>[^]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[a-b]  匹配任何范围内</string>
+		<key>pattern</key>
+		<string>[-]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>(a|b)  为 a 或 b</string>
+		<key>pattern</key>
+		<string>(|)</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>b{2} 精确为匹配 b 二次</string>
+		<key>pattern</key>
+		<string>{}</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\  将 *?+[(){}^$|\./ 视为实际字符而非控制字</string>
+		<key>pattern</key>
+		<string>\</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\0 找到文本 (仅在替换字段中)</string>
+		<key>pattern</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

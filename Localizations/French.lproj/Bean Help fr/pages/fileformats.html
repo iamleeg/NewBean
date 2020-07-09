@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css"><title>Bean: File Formats</title>
+
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="824.41">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 36.0px; font: 8.0px Lucida Grande; min-height: 10.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 13.0px Lucida Grande; color: #cb0505; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 36.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p8 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -16.8px; font: 13.0px Lucida Grande}
+p.p9 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -10.8px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p10 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; color: #cb0505; min-height: 5.0px}
+p.p11 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Monaco}
+table.t1 {border-collapse: collapse}
+td.td1 {background-color: #c2dff8; border-style: solid; border-width: 2.0px 2.0px 2.0px 2.0px; border-color: #a6a6a2 #a6a6a2 #a6a6a2 #a6a6a2; padding: 0.0px 5.0px 0.0px 5.0px}
+</style></head><body>
+<a name="FORMATS"></a>
+<p class="p1"><i>Formats de fichier<br>
+</i></p>
+<p class="p2"><br></p>
+<p class="p4">Un conseil: utilisez si possible le format <span style="font-weight: bold;">RTF</span>
+pour les documents contenant du texte mis en forme. RTF est le format
+natif de Bean; il est géré par presque tous les traitements de texte.
+Utilisez le format <span style="font-weight: bold;">RTFD</span> si
+vous devez inclure des images ou d'autres fichiers attachés
+(malheureusement, RTFD n'est géré que par les Macs). Je ne recommande
+pas d'utiliser le format .doc (format Word 97) par défaut, car c'est un
+format non natif, converti et partant moins sûr. Les fichiers PDF sont
+ceux qui s'échangent le plus facilement entre différents ordinateurs et
+systèmes d'exploitation, mais en général, il est impossible de les
+éditer une fois qu'ils sont enregistrés.<br>
+<br>
+Si vous devez envoyer un fichier par messagerie électronique (avec ou
+sans images) à une personne qui travaille sous Windows, la meilleure
+option est d'utiliser Fichier &gt; Exporter &gt; en format DOC (avec
+images). Cela convertira tout document image en format .jpg et
+l'insèrera dans le document RTF exporté, puis donnera une extension
+.doc au fichier, ce qui permet à MS Word de le gérer. En d'autres
+termes, c'est un fichier RTF contenant vos images qui aura l'air d'un
+fichier .doc. Le format PDF sera préférable pour tous les documents qui
+ne doivent plus être édités (comme des catalogues, etc.).<br>
+</p>
+<p class="p4"><br>
+</p>
+<p class="p3"><b>RTFD<br>
+</b></p>
+<p class="p4">Le format Rich Text With Graphics (Texte riche avec
+graphiques) permet de combiner du texte formaté avec des graphiques (ou
+d'autres informations attachées). Ce format est accessible à tout
+ordinateur tournant sout OS X (par Text Edit), mais il ne peut être
+ouvert, en principe, sur des machines Windows ou Unix. Si vous désirez
+partager un document RTFD avec une personne sous Windows, la meilleure
+option est d'utiliser&nbsp;Fichier &gt; Exporter &gt; en format DOC
+(avec images) afin de créer un document compatible avec Word, ou alors
+le format PDF.<br>
+</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>BEAN</b></p>
+<p class="p4">Le format Bean est identique à RTFD, à l'exception de son
+suffixe. Un fichier se terminant par '.bean' sera automatiquement
+ouvert par Bean. Modifiez l'extension en '.rtfd' si vous voulez
+partager votre fichier avec d'autres utilisateurs de la plateforme Mac.<br>
+</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>RTF<br>
+</b></p>
+<p class="p4">Rich Text format permet de formater du texte, mais ne
+peut pas sauvegarder des graphiques ou d'autres informations attachées
+(utilisez RTFD si vous avez besoin d'images). Les documents RTF
+s'ouvrent avec la plupart des traitements de texte. RTF est le format
+natif pour le texte mis en forme pour Bean (et Cocoa).<br>
+</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Word Format (.doc)</b><br>
+</p>
+<p class="p4">Bean se sert des services de conversion d'Apple pour
+ouvrir et sauvegarder des fichiers en format Microsoft Word
+(techniquement: format 'Word 97'). Avec ce format, <span style="font-weight: bold;">le formatage au niveau du document (format de page, marges) et les images ne sont ni lus ni enregistrés par Bean</span>.
+Bean vous en avertira avant d'écraser un fichier créé dans Word afin
+que l'information ne se perde pas. Veuillez garder en mémoire que si
+Bean manie très bien le format Word .doc pour la lecture et
+l'enregistrement de fichiers, sa compatibilité avec d'autres aspects du
+format est soit imparfaite (p. ex. les tableaux) ou inexistante (p. ex.
+notes de bas de page)<br>
+<br>
+Une astuce avancée: Afin de forcer Bean à enregistrer tous les formats
+.doc en format&nbsp;RTF avec une extension en '.doc', fermez Bean,
+ouvrez une fenêtre de&nbsp;Terminal.app, collez la ligne ci-après et
+pressez sur Entrée (remplacez YES par NO si vous voulez inverser le
+réglage). Note importante: Coup d'oeil (Quicklook) ne fonctionnera pas
+avec des fichiers RTF qui ont une extension .doc!<br>
+</p>
+
+<p class="p2"><br></p>
+<p class="p11">defaults write com.SevenYearsDreaming.Bean prefDocIsRTF -bool YES</p> 
+<p class="p5"><br></p>
+<p class="p3"><b>Word 2003 XML (.xml)</b></p>
+<p class="p4">Le format Microsoft Word 2003 XML Format (WordML) se
+comporte à peu près comme le format Word, sauf que le formatage au
+niveau du document est reconnu et sauvegardé (quoique ce ne soit pas le
+cas avec les images). Les utilisatrices et utilisateurs de Microsoft
+Word antérieur à Word 2003 ne pourront peut-être pas ouvrir ce format.<br>
+</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>WebArchive</b></p>
+<p class="p4">Un format d'archivage pour des pages web (en général, des
+fichiers HTML) qui sauvegarde les images. Safari peut enregistrer des
+pages web dans ce format.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Web Format (.html)</b></p>
+<p class="p4">Bean ouvre et enregistre le format&nbsp;HTML en tant que
+'code source'. Bean peut également exporter d'autres formats en
+format&nbsp;HTML&nbsp;(sous Fichier &gt; Exporter en tant
+que&nbsp;HTML).<br>
+</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Text Format (.txt)</b></p>
+<p class="p4">Bean lit et sauvegarde la plupart des fichiers texte
+Unicode sans problèmes. Pour certains encodages obsolètes, vous devrez
+spécifier le&nbsp;codage. Bean essaiera de lire des formats de fichier
+inconnus comme des textes UTF-8 (Unicode). <span style="font-weight: bold;">Notez
+que les changements par rapport aux attributs des polices (famille de
+police, couleur, gras, etc.) seront appliqués à l'ensemble du texte si
+vous éditez des fichiers en texte brut et ne seront pas enregistrés. </span>Notez
+également que le formatage de la page et des marges n'est pas
+sauvegardé dans les fichiers TXT, mais il peut être imprimé avant la
+fermeture du document. Si vous voulez changer le codage d'un document
+texte en format obsolète vers un codage moderne, tout en gardant le
+format texte brut, choisissez Afficher &gt; Afficher les
+informations... &gt; Convertir le&nbsp;codage... &gt; Unicode (UTF-8).<br>
+</p>
+<p class="p2"><br></p>
+<p class="p1"><i>Formats de fichier (seulement dans Leopard)</i></p>
+<p class="p2"><br></p>
+<p class="p4">Ces deux formats de fichiers ne fonctionnent
+qu'avec&nbsp;OS X 10.5 Leopard. Avec OS X 10.4 Tiger, ils
+n'apparaitront pas dans le dialogue d'enregistrement et il ne sera pas
+possible d'ouvrir des fichiers avec des formats (il y aura une alerte).<br>
+</p>
+<p class="p5"><br></p>
+<p class="p3"><b>OpenDocument (.odt)</b></p>
+<p class="p4">Bean utilise le service de conversion d'Apple pour ouvrir
+et enregistrer des fichiers en format OpenDocument. Notez que suite aux
+limitations du convertisseur, les images et le formatage de la mise en
+page (taille de la feuille et marges) seront perdus si vous ouvrez et
+enregistrez un document OpenDocument. Vous serez averti-e si vous
+écrasez un fichier OpenDocument qui n'a pas été créé par Bean, afin de
+prévenir toute perte d'information.<br>
+</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Word 2007 (.docx)</b></p>
+<p class="p4">Un format proche d'<span style="font-weight: bold;">Open XML</span>.
+Bean utilise le service de conversion d'Apple pour ouvrir et pour
+enregistrer des fichiers en format Word 2007. Notez que suite aux
+limitations du converteur, les images seront perdues si vous ouvrez un
+fichier Word 2007 natif dans Bean et si vous enregistrez un fichier RTF
+comme fichier Word 2007 dans Bean. D'autres pertes concernent le
+surlignage, les tableaux, les listes de texte et le formatage de
+paragraphes avancé. Désolé, c'est ainsi qu'Apple l'a implémenté. Vous
+serez averti-e si vous écrasez un fichier Word 2007 qui n'a pas été
+créé par Bean, afin de prévenir toute perte d'information.<br>
+<br>
+</p><p class="p1"><i>Formats d'exportation<br>
+</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Exporter en format HTML</b></p>
+<p class="p4">Un document enregistré peut être exporté en format HTML (pages web). Les images <span style="font-weight: bold;">ne</span> seront&nbsp;<span style="font-weight: bold;">pas</span> exportées, bien que les références aux images figureront dans le code HTML. Consultez les <a href="tipstricks.html">«astuces»</a> pour savoir comment faire fonctionner les références aux images.<br>
+<br>
+</p>
+<p class="p3"><b>Exporter en format PDF</b></p>
+<p class="p4">Cela marche comme la fonction PDF &gt; Enregistrer en format&nbsp;PDF dans
+le dialogue d'impression. Utilisez ce format d'exportation si vous
+voulez atteindre une fidélité absolue par rapport à l'aspect visuel du
+document dans Bean.<br>
+
+</p><br>
+<p class="p3"><b>Exporter en format RTF (avec images)</b></p>
+<p class="p4">Le document est enregistré en format RTF contenant les images dans le
+fichier. Le fichier RTF pourra être ouvert par MS Word en gardant
+les images. (Le format natif de Bean, RTF,&nbsp;ne gère pas les images. En
+d'autres termes, si vous rouvrez un document avec Bean qui a été
+exporté dans ce format, les images ne seront pas inclues).<br>
+</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Exporter en format DOC (avec images)</b></p>
+<p class="p4">Le document est enregistré dans un fichier qui est lisible par MS Word
+en qui maintient les images. Le fichier pourra être ouvert par MS Word en gardant
+les images. (La gestion habituelle de Bean pour le
+format .DOC ne prend pas en charge l'enregistrement ou l'ouverture
+d'images. En d'autres termes, si vous&nbsp;rouvrez un document avec Bean qui
+a été exporté dans ce format, les images ne seront pas inclues).</p></body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Pomocník pre Bean - ponuka „Hľadanie“</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=537">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p4 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.8px; text-indent: 0.2px; font: 11.0px Courier; color: #333333}
+span.s1 {color: #cb0505}
+span.s2 {font: 14.0px Monaco}
+</style>
+</head>
+<body>
+<a name="FIND"></a>
+<p class="p1"><b>Ponuka „Hľadanie“</b></p>
+<p class="p3"><span class="s1">Hľadať/nahradiť…:</span> zobrazí panel pre hľadanie a nahradenie textu v&nbsp;platnom dokumente.</p>
+<p class="p5"><i>Poznámka: pri použití panelu pre hľadanie a&nbsp;nahradenie v&nbsp;aplikácii Bean, hľadanie vždy „rotuje“ (pokračuje hľadaním v&nbsp;neprehľadanom začiatku dokumentu po dosiahnutí jeho konca). Príkaz „Nahradiť“ nenahradí vybraný text, pokiaľ sa tento nezhoduje s&nbsp;textom zadaným v&nbsp;poli pre hľadanie. Jediný regulárny výraz, ktorý možno použiť v&nbsp;poli „Nahradiť&nbsp;s“ je <span class="s2">\0</span> (pozor: číslica nula, nie písmeno O). Ak je použitie predlôh aktívne, znakom zhodným s&nbsp;rozlišovacími symbolmi predlôh (  *?+[(){}^$|\./  ) je potrebné predradiť znak „\“, aby mohli byť spracované doslovne.</b></p>
+<p class="p4"><b>Klávesové skratky pre hľadanie a&nbsp;nahradenie</b></p>
+<p class="p4">option-tab: vloženie znaku tabulátora do poľa pre hľadanie</p>
+<p class="p4">option-return: vloženie znaku return do poľa pre hľadanie</p>
+<p class="p4"><b>Použitie predlôh (regulárnych výrazov)</b></p>
+<p class="p4">Panel pre hľadanie a&nbsp;nahradenie textu v&nbsp;aplikácii Bean môže využívať predlohy (regulárne výrazy) pre nájdenie požadovaného textu. V&nbsp;regulárnych výrazoch (skrátene „regex“) niektoré znaky predstavujú predlohy, ktoré panel používa pre hľadanie požadovaného textu. Podobne ako známe „wildcard“ (náhradné) znaky, ale výrazne výkonnejšie. Použitie predlôh umožňuje do hľadania jednoduchým spôsobom zahrnúť tabulátory, zalomenia odstavcov, zalomenia strán, ohraničenia slov, náhradné číslice, alternatívne výrazy a&nbsp;podobne. Vyskakovacia ponuka <b>Predlohy…</b> sprístupňuje tento mocný nástroj bez nutnosti učenia sa špeciálnych znakov.</p>
+<p class="p4">Pre aktivovanie regulárnych výrazov označte v&nbsp;paneli pre hľadanie a&nbsp;nahradenie textu voľbu <b>Použiť predlohy (regex).</b> Pole pre hľadanie následne zmení farbu – ako indikátor akívneho použitia predlôh. Nakoľko bežné znaky ako . ? * \ atď. majú v&nbsp;prípade použitia predlôh špeciálny význam, neaktivujte predlohy ak ich potrebujete. (Poznámka: znaky *?+[(){}^$|\./ sú v&nbsp;rámci regulárneho výrazu spracované doslovne, ak im predchádza znak \).</p>
+<p class="p4">Používanie regulárnych výrazov je rozsiahla téma, existuje výrazne viac možností ako je uvedené v&nbsp;predlohách… Napríklad, použitie nasledovného regulárneho výrazu v&nbsp;poli pre hľadanie spolu s&nbsp;príkazom „Vybrať všetko“ vyberie všetky tagy v&nbsp;dokumente HTML:</p>
+<p class="p6">(\<(/?[^\>]+)\>)</p>
+<p class="p4">Je možné vytvárať reguálárne výrazy s&nbsp;veľmi komplexnou štruktúrou. V&nbsp;prípade chybnej syntaxe dôjde k&nbsp;zobrazeniu výstrahy.</p>
+<p class="p3"><span class="s1">Hľadať nasledujúci:</span> vyhľadá nasledujúci výskyt textu špecifikovaného v&nbsp;poli pre hľadanie panelu „Hľadanie“.</p>
+<p class="p3"><span class="s1">Hľadať predchádzajúci:</span> vyhľadá predchádzajúci výskyt textu špecifikovaného v&nbsp;poli pre hľadanie panelu „Hľadanie“.</p>
+<p class="p3"><span class="s1">Použiť výber pre hľadanie:</span> umiestni vybraný text do poľa pre hľadanie panelu „Hľadanie“.</p>
+<p class="p3"><span class="s1">Skočiť na výber:</span> vycentruje vybraný text v dokumentovom okne.</p>
+<p class="p3"><span class="s1">Miesto poslednej úpravy:</span> funkcia užitočná pri prehľadávaní inej časti dokumentu a&nbsp;potrebe vrátiť sa na miesto poslednej úpravy (bez jeho zdĺhavého hľadania).</p>
+<p class="p3"><span class="s1">Dokončiť slovo:</span> zobrazí zoznam možných dokončení nedokončeného slova v&nbsp;mieste textového kurzoru. Funkcia je dostupná aj sltačením klávesu Escape.</p>
+<p class="p3"><span class="s1">Vysvetliť slovo:</span> zobrazí definíciu (vysvetlenie) slova najbližšieho k&nbsp;textovému kurzoru. Alebo ponúkne skontrolovať jeho pravopis, ak nie je dostupná definícia.</p>
+</body>
+</html>

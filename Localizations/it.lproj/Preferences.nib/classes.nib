@@ -1,0 +1,317 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {displayHelp = id; revealFileInFinder = id; showPreferences = id; }; 
+            CLASS = ApplicationDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {sharedUserDefaultsController = NSUserDefaultsController; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                setSmartQuotesStyleInAllDocuments = id; 
+                toggleCocoaAutosave = id; 
+                toggleRespectAntialiasingThreshold = id; 
+                updateDisplayOfHeadersAndFooters = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addPage = id; 
+                adjustFullScreenHorizontalPadding = id; 
+                allowHyphenationAction = id; 
+                applyDefaultStyleAction = id; 
+                backupDocumentAction = id; 
+                beginNote = id; 
+                beginNoteWithString = id; 
+                convertQuotesAction = id; 
+                copyAndPasteFontOrRulerAction = id; 
+                displayHelp = id; 
+                doPageLayout = id; 
+                insertBreakAction = id; 
+                insertDateTimeStamp = id; 
+                insertSignatureLineAction = id; 
+                listItemIndent = id; 
+                liveWordCount = id; 
+                makeTemplateAction = id; 
+                matchToSelectionAction = id; 
+                removeAllStylesAction = id; 
+                removeAttachmentsAction = id; 
+                removePage = id; 
+                removeTextListsAction = id; 
+                removeTextTablesAction = id; 
+                reviseAlternateFontDictionary = id; 
+                segmentedStyleControlAction = id; 
+                setSmartQuotesStyleAction = id; 
+                showBeanSheet = id; 
+                showMarginsSheet = id; 
+                simplifyStylesAction = id; 
+                strikethroughAction = id; 
+                subscriptAction = id; 
+                superscriptAction = id; 
+                switchTextColors = id; 
+                textColors = id; 
+                textControlAction = id; 
+                toggleAlternateFont = id; 
+                toggleFullScreen = id; 
+                toggleInvisiblesAction = id; 
+                toggleLayoutView = id; 
+                toggleToolbarShownAction = id; 
+                toggleWritingDirection = id; 
+                unscriptAction = id; 
+                updateSegmentedStyleControl = id; 
+                updateZoomAmount = id; 
+                useSmartQuotesAction = id; 
+                zoomAction = id; 
+            }; 
+            CLASS = JHDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                backgroundButton = NSButton; 
+                condensedTextView = NSTextView; 
+                docWindow = JHWindow; 
+                floatButton = NSButton; 
+                floatImage = NSImageView; 
+                liveWordCountField = NSTextField; 
+                messageSheet = NSPanel; 
+                segmentedStyleControl = NSSegmentedControl; 
+                segmentedStyleControlView = NSView; 
+                sharedUserDefaultsController = NSUserDefaultsController; 
+                theScrollView = JHScrollView; 
+                zoomAmt = NSTextField; 
+                zoomSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                changeInsertionPointColor = id; 
+                changeInsertionPointShape = id; 
+                newDocumentFromPasteboard = id; 
+                newDocumentFromSelection = id; 
+                newPlainTextDocument = id; 
+                performTextFinderAction = id; 
+                printSelection = id; 
+                setSmartQuotesStyleInAllDocuments = id; 
+                showAdvancedFindPanel = id; 
+                updateDisplayOfHeadersAndFooters = id; 
+            }; 
+            CLASS = JHDocumentController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {tfPrefAutosaveInterval = NSTextField; }; 
+            SUPERCLASS = NSDocumentController; 
+        }, 
+        {
+            CLASS = JHScrollView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {pageDownButton = NSButton; pageUpButton = NSButton; placard = NSView; }; 
+            SUPERCLASS = NSScrollView; 
+        }, 
+        {CLASS = JHWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {
+            ACTIONS = {changeColor = id; }; 
+            CLASS = NSButton; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSControl; 
+        }, 
+        {
+            ACTIONS = {insertSpecial = id; }; 
+            CLASS = NSTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSText; 
+        }, 
+        {
+            ACTIONS = {
+                applyChangesAction = id; 
+                changeCocoaAutosaveInterval = id; 
+                changeColorExampleAction = id; 
+                changeFont = id; 
+                changeFontAction = id; 
+                chooseDocumentTemplateAction = id; 
+                defaultCursorColorAction = id; 
+                enableChangeButtonAction = id; 
+                matchWindowSizeToActiveDocumentWindowAction = id; 
+                selectDefaultSaveFormatAction = id; 
+                setAllowsDocumentBackgroundColorChangeInAllDocuments = id; 
+                setAlternateFontAction = id; 
+                showPrintTabView = id; 
+                showTemplateInFinderAction = id; 
+                useAltColorsAction = id; 
+                useMetricAction = id; 
+            }; 
+            CLASS = PrefWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                advancedTabView = NSTabView; 
+                allowBackgroundColorChangeAdvancedDocButton = NSButton; 
+                altBackgroundColorWell = id; 
+                altFontExampleLabel = NSTextField; 
+                altFontFontButton = NSButton; 
+                altFontHighlightColorButton = NSButton; 
+                altFontInsertNoteWithLabel = NSTextField; 
+                altFontInstructionsLabel = NSTextField; 
+                altFontMatchSelectedText = NSButton; 
+                altFontTextColorButton = NSButton; 
+                altFontTextView = NSTextView; 
+                altFontUseLabel = NSTextField; 
+                altFontUsesBracketsButton = NSButton; 
+                altFontUsesNewParagraphButton = NSButton; 
+                altTextColorWell = id; 
+                alternateColorsFontPaneButton = NSButton; 
+                alternateColorsFullScreenButton = NSButton; 
+                alternateColorsViewButton = NSButton; 
+                appliesImmediatelyAdvancedDocLabel = NSTextField; 
+                appliesImmediatelyAdvancedFindReplaceLabel = NSTextField; 
+                appliesImmediatelyAdvancedInterfaceLabel = NSTextField; 
+                appliesImmediatelyAdvancedNotesModeLabel = NSTextField; 
+                appliesImmediatelyFullScreenLabel = NSTextField; 
+                appliesImmediatelyPrintingPaneLabel = NSTextField; 
+                appliesUponRestartAdvancedDocLabel = NSTextField; 
+                applyChangesButton = id; 
+                applyStyleToTxtFilesButton = NSButton; 
+                autosaveDocumentsButton = NSButton; 
+                autosaveDocumentsMinutesLabel = NSTextField; 
+                backgroundColorWellLabel = NSTextField; 
+                backgroundPaginationButton = NSButton; 
+                beginOnPageLabel = NSTextField; 
+                bottomMarginLabel = NSTextField; 
+                centerCursorButton = NSButton; 
+                centerInitialWindowButton = NSButton; 
+                chooseTemplateButton = NSButton; 
+                defaultBottomMarginTextField = id; 
+                defaultFirstLineIndentStepper = id; 
+                defaultFirstLineIndentTextField = id; 
+                defaultGutterAdvancedDocLabel = NSTextField; 
+                defaultIsMetric = id; 
+                defaultLeftMarginTextField = id; 
+                defaultLineSpacingPopupButton = id; 
+                defaultRightMarginTextField = id; 
+                defaultSaveFormatLabel = NSTextField; 
+                defaultSaveFormatPopupButton = id; 
+                defaultTopMarginTextField = id; 
+                defaultUnitsTextField = id; 
+                dontShowSpacesButton = NSButton; 
+                exceptForPlainTextButton = NSButton; 
+                fileFormatOverridesDefaultSaveFormatLabel = NSTextField; 
+                firstLineIndentLabel = NSTextField; 
+                frontmostDocumentsHeaderIsLockedLabel = NSTextField; 
+                fullScreenMarginLabel = NSTextField; 
+                hideRulerFullScreenButton = NSButton; 
+                hideToolbarFullScreenButton = NSButton; 
+                horizontalScrollbarButton = NSButton; 
+                invisCharsColorLabel = NSTextField; 
+                invisibleCharsButton = NSButton; 
+                layoutViewButton = NSButton; 
+                layoutViewFullScreenButton = NSButton; 
+                leftMarginLabel = NSTextField; 
+                leopardOnlyAdvancedInterfaceLabel = NSTextField; 
+                lineSpacingLabel = NSTextField; 
+                liveWordCountButton = NSButton; 
+                marginGuidesButton = NSButton; 
+                marginsBox = NSBox; 
+                matchActiveDocumentButton = NSButton; 
+                matchPatternsLabel = NSTextField; 
+                measurementUnitsAdvancedInterfaceLabel = NSTextField; 
+                newDocumentSourceMatrix = NSMatrix; 
+                newDocumentTemplateFileName = NSTextField; 
+                newDocumentTemplateLabel = NSTextField; 
+                pageShadowButton = NSButton; 
+                plainTextColorTextField = id; 
+                plainTextFontChangeButton = NSButton; 
+                plainTextFontLabel = NSTextField; 
+                plainTextFontNameField = id; 
+                prefBtnSmartCopyPaste = id; 
+                prefCursorAppliesImmediatelyLabel = NSTextField; 
+                prefCursorColorDefaultButton = NSButton; 
+                prefCursorColorLabel = NSTextField; 
+                prefCursorColorWell = NSColorWell; 
+                prefCursorShapeLabel = NSTextField; 
+                prefCursorShapeMatrix = NSMatrix; 
+                prefDotMatchesNewline = NSButton; 
+                prefGeneralAppliesImmediatelyLabel = NSTextField; 
+                prefGeneralTabView = NSTabView; 
+                prefHeaderFooterStylesPopUp = NSPopUpButton; 
+                prefInstructionsLabel = NSTextField; 
+                prefLineTerminatorsMatchNewline = NSButton; 
+                prefMainTabView = NSTabView; 
+                prefShowVerticalRulerButton = NSButton; 
+                prefSmartQuotesSuppliedByMatrix = NSMatrix; 
+                prefSuggestFilenameButton = NSButton; 
+                prefUseSimpleFindPanel = NSButton; 
+                prefWindow = id; 
+                printHeaderFooterButton = NSButton; 
+                printSelectionSeparatesSelectionsAdvancedDocButton = NSButton; 
+                recommendedForIntelMacsOnlyLabel = NSTextField; 
+                replaceBehaviorLabel = NSTextField; 
+                replaceBehaviorMatrix = NSMatrix; 
+                respectAntialiasingAdvancedDocButton = NSButton; 
+                restoreCursorLocationAdvancedInterfaceButton = NSButton; 
+                richTextColorTextField = id; 
+                richTextFontChangeButton = NSButton; 
+                richTextFontLabel = NSTextField; 
+                richTextFontNameField = id; 
+                rightMarginLabel = NSTextField; 
+                rulerAccessoriesButton = NSButton; 
+                rulerButton = NSButton; 
+                serviceAddsSeparatorAdvancedDocButton = NSButton; 
+                sharedUserDefaultsController = NSUserDefaultsController; 
+                showInFinderButton = NSButton; 
+                showLabel = NSTextField; 
+                showPageNumbersInLayoutViewAdvancedInterfaceButton = NSButton; 
+                showPageNumbersInStatusBarAdvancedInterfaceButton = NSButton; 
+                showToolbarButton = NSButton; 
+                smartCopyPasteButton = NSButton; 
+                smartQuotesStyleLabel = NSTextField; 
+                smartQuotesSuppliedByLabel = NSTextField; 
+                spellcheckButton = NSButton; 
+                stylePrintingPaneLabel = NSTextField; 
+                textColorWellLabel = NSTextField; 
+                tfPrefAutosaveInterval = id; 
+                topMarginLabel = NSTextField; 
+                unitsAdvancedInterfaceMatrix = NSMatrix; 
+                useSmartQuotesButton = NSButton; 
+                viewScaleLabel = NSTextField; 
+                viewScaleMatrix = NSMatrix; 
+                wideCursorButton = NSButton; 
+                windowSizeLabel = NSTextField; 
+                windowSizeMatrix = NSMatrix; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                displayHelp = id; 
+                findAll = id; 
+                findNext = id; 
+                findNextAndOrderFindPanelOut = id; 
+                findPrevious = id; 
+                jumpToSelection = id; 
+                orderFrontFindPanel = id; 
+                regExButtonAction = id; 
+                replace = id; 
+                replaceAll = id; 
+                replaceAndFind = id; 
+                replaceAndFindPrevious = id; 
+                takeFindStringFromSelection = id; 
+            }; 
+            CLASS = TextFinder; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                findNextButton = id; 
+                findPanel = id; 
+                findTextField = id; 
+                ignoreCaseButton = id; 
+                patternPopupButton = id; 
+                rangePopupButton = id; 
+                replaceTextField = id; 
+                statusField = id; 
+                useRegExButton = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

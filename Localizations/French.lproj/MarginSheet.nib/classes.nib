@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>applyMargins</key>
+				<string>id</string>
+				<key>applyMarginsAction</key>
+				<string>id</string>
+				<key>showMarginsSheet</key>
+				<string>id</string>
+				<key>showSheet</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>MarginsManager</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>applyButton</key>
+				<string>NSButton</string>
+				<key>bottomLabel</key>
+				<string>NSTextField</string>
+				<key>cancelButton</key>
+				<string>NSButton</string>
+				<key>leftLabel</key>
+				<string>NSTextField</string>
+				<key>marginsSheet</key>
+				<string>NSPanel</string>
+				<key>measurementUnitTextField</key>
+				<string>NSTextField</string>
+				<key>messageSheet</key>
+				<string>NSWindow</string>
+				<key>rangeLabel</key>
+				<string>id</string>
+				<key>rightLabel</key>
+				<string>NSTextField</string>
+				<key>tfBottomMargin</key>
+				<string>NSTextField</string>
+				<key>tfLeftMargin</key>
+				<string>NSTextField</string>
+				<key>tfRightMargin</key>
+				<string>NSTextField</string>
+				<key>tfTopMargin</key>
+				<string>NSTextField</string>
+				<key>topLabel</key>
+				<string>NSTextField</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

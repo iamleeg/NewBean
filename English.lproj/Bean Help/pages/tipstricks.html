@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean: Tips and Tricks</title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="824.41">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 6.0px Lucida Grande; min-height: 7.0px}
+p.p4 {margin: 0.0px 0.0px 0.0px 50.4px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p5 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p6 {margin: 0.0px 0.0px 0.0px 36.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 13.0px Lucida Grande}
+p.p8 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 36.0px; font: 13.0px Lucida Grande}
+p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 36.0px; font: 7.0px Lucida Grande; min-height: 8.0px}
+p.p11 {margin: 0.0px 0.0px 0.0px 18.0px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p12 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p13 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Lucida Grande}
+p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 36.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p15 {margin: 0.0px 0.0px 0.0px 50.4px; text-indent: -32.4px; font: 13.0px Lucida Grande}
+p.p16 {margin: 0.0px 0.0px 0.0px 28.8px; font: 11.0px Courier; color: #333333}
+table.t1 {border-collapse: collapse}
+td.td1 {background-color: #c2dff8; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a8a8a8 #a8a8a8 #a8a8a8 #a8a8a8; padding: 0.0px 5.0px 0.0px 5.0px}
+</style>
+</head>
+<body>
+<p class="p1"><i>Tips and Tricks:</i></p>
+<p class="p6"><br></p>
+
+<p class="p8"><b>How do I change the 'new document' template?</b></p>
+<p class="p5">Select Bean Preferences > Documents > New document template: Custom. Then select the Choose Template button to locate and choose the desired file. Important: Only <b>locked files</b> are selectable as templates. To create a locked file (for use as a template), open a document in Bean, then select File &gt; Make Template (which locks the file). You can unlock a locked file by selecting the file in the Finder, then de-select Finder &gt; Get Info &gt; Locked.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>How do I create a reusable 'template' document?</b></p>
+<p class="p5">To create a template, open the document in Bean, then select File &gt; Make Template (which locks the file).  The document will reopen in Bean as an untitled copy of the original. Note: files that have not yet been saved cannot be locked.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>How do I associate a file type with Bean so that it always opens in Bean when I click on a document's icon?</b></p>
+<p class="p5">In the Finder, select a file of the type you're interested in. Next, in the Finder's menu bar, select Find &gt; Get Info, then Open with: Bean. Then, click the 'Change All...' button and OK the change.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>I use Make Plain Text / Make Rich Text in Text Edit to 'clean' web text of formatting. Anything like that in Bean?</b></p>
+<p class="p5">Yes, Style &gt; Remove All Styles does something very similar. Also see Edit > Remove > List Markers / Text Tables / Attachments.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>Selections copied from web pages sometimes display weirdly in View > Show Layout mode. Why?</b></p>
+<p class="p5">Tables can sometimes trigger inappropriate pagination and text display. The tables are not always apparent; sometimes they do not display a grid and are only used for positioning text. Select View &gt; Show Invisibles to see hidden tables. Select Edit &gt; Remove &gt; Text Tables to remove the offending tables from a selection.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>How do I 'auto-indent' the first line of each paragraph (instead of pressing Tab each time)?</b></p>
+<p class="p5">Under the Defaults tab of Preferences, you can set the default First Line Indent amount for new documents. To adjust this setting for a specific document, select the text to change, open the Inspector (Format &gt; Inspector...), then increase Indent - First Line to the desired amount.</p>
+<p class="p10"><br></p>
+
+<p class="p8"><b>I'm tired of removing extraneous line breaks from text files. How can I do this easily?</b></p>
+<p class="p5">Google for the free download WordService 2.7 from DEVONtechnologies, which adds a 'Format &gt; Reformat' command to the OS X Services menu (the Services menu is found under the 'Bean' menu item). WordService is quite useful for reformating text.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>What are "Smart Quotes"?</b></p>
+<p class="p5">With Smart Quotes enabled in Preferences, Bean will automatically insert an open  (“) or close (”) curvy quotation mark while you type (as opposed to the straight ["] quotation mark). You can choose different styles of quotation marks to suit your language in Preferences.
+</p>
+<p class="p14"><br></p>
+<p class="p5">To convert the style of quotation marks in selected text or the whole document, select Edit &gt; Convert &gt; to Smart Quotes / to Straight Quotes. Type over one selected quotation mark with another to cause the style of the quotation mark to alternate.</p>
+<p class="p14"><br></p>
+<p class="p5">If your language requires the 'quotation mark' key to perform as a 'dead key,' that is, as a combining key to produce special characters, uncheck Preferences > General > Use Smart Quotes. Under Leopard, you can use Cocoa's native smart quotes instead. Right-click or ctrl-click on a document's text, then in the context menu that appears, check the Substitutions > Smart Quotes option to activate native Cocoa smart quotes.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>Why do I sometimes see Smart Quotes even when the option is disabled?</b></p>
+<p class="p5">Some fonts are smart enough to put curvy quotation marks on the screen and printed page, even when the ones in the text are all straight.
+</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>Why doesn't italics work with (for example) Lucida Grande?</b></p>
+<p class="p5">OS X actually uses different fonts for Bold, Italic, etc. for higher quality text output (older computers 'faked' these by adding slant or weight). But not every option is represented for every font. Sometimes, you get a lot more options. Check out Helvetica Neue as an example. Note that you can change the font style of selected text easily through the drop-down menu in Bean's Inspector.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>Anything I should know about working with images in a document?</b></p>
+<p class="p5">Not only can you use Edit &gt; Insert &gt; Picture to insert an image, you can also drag and drop an image file from the Finder or copy and paste an image from an image editing applicaton. To resize an image, <b>double-click on the image to be resized to reveal a resizing control</b>. Alternatively, select some text so that the first image in the selection is the image to be resized. Then select Edit &gt; Change &gt; Picture Size to show the resizing control.</p>
+
+<p class="p10"><br></p>
+<p class="p8"><b>How do I make image references work in my exported .html code file?</b></p>
+<p class="p10"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+<tbody>
+<tr>
+<td valign="middle" class="td1">
+<p class="p7"><br></p>
+<p class="p2"><b>Follow these steps:</b></p>
+<p class="p11"><b></b><br></p>
+<p class="p2">1. Open the exported HTML file in Bean (drop the revealed icon onto Bean's application icon).</p>
+<p class="p2">2. Replace the image references in the HTML code (they are preceded by <b>img src=</b>) with the names of the image files you will place in the same folder as the HTML file (or like this: "graphics/logo.jpg" if there is a 'graphics' folder there to hold the image files).</p>
+<p class="p2">3. Save it, then double-click the HTML file to open it in Safari to check what it looks like.</p>
+<p class="p10"><b></b><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p class="p14"><br></p>
+<p class="p8"><b>How do I make a box around text?</b></p>
+<p class="p5">Officially, you can't. But it's easy to use the 'table' function to simulate this, as I did in the box just below.</p>
+<p class="p10"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+<tbody>
+<tr>
+<td valign="middle" class="td1"><br>
+<p class="p2"><b>Follow these steps:</b></p>
+<p class="p11"><br></p>
+<p class="p2">1. Select the text you want in a box</p>
+<p class="p2">2. In the menu: Format &gt; Table</p>
+<p class="p2">3. Make the 'table' 1 row by 1 column</p>
+<p class="p2">4. Adjust the Cell Border and Cell Background colors</p>
+<p class="p12"><br></p>
+<p class="p13">IMPORTANT NOTE: The text table function is <b>flaky</b>. You can force a mis-behaving table to redraw correctly by selecting a line above the beginning of the table, press 'return,' then 'delete.' Unfortunately, this is how the Cococa Frameworks text object works, so I can't fix it.</p>
+<p class="p4"><br></p>
+<p class="p10"><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="p14"><br></p>
+<p class="p8"><b>How do I select 'linked' text? It keeps opening a browser window!</b></p>
+<p class="p5">Position the cursor just beside the 'linked' text and use [Shift] + arrow keys to select.</p>
+
+<p class="p14"><br></p>
+<p class="p15"><b>How does autosave differ from backup?</b></p>
+<p class="p5">• To activate <b>autosave</b> for all documents, select Bean Preferences > Documents > Autosave documents. This causes documents to autosave using the native Cocoa autosave function at the interval you specify. If Bean quits unexpectedly, Bean will open the last autosaved version of the document so you do not lose your changes. Available for all document formats. Effects only documents opened <i>after</i> autosave is activated.</p>
+<p class="p6"><br></p>
+<p class="p5">• To activate a <b>timed backup</b> for an individual document, select View &gt; Get Info..., then select the 'Backup every...minutes' checkbox and adjust the interval of minutes. With timed backup active, a copy of the current version of the document is saved at the interval you specify. Backup will create a file in the same folder as the original document, but with the word '(Backup)' appended to the document's name. Backup never overwrites the original and never automatically reverts to the backup version after a crash (as autosave can do). A timed backup occurs if the document has changed since its last timed backup (whether the document has been saved or not). As opposed to autosave documents, the timed backup copy is not erased upon closing the document or after a save. Timed backup is only available for rich-text formats.</p>
+<p class="p6"><br></p>
+<p class="p5">• <b>'Backup at close'</b> automatically makes a copy of your saved document whenever you close the document. To turn on 'Backup at close,' select View &gt; Get Info..., then click 'Backup at close.' Backup at close will make a copy of your file in the same folder as the original, but with the current date appended to the file's name (as well as a sequential version number if the file is backed up more than one time per day). Backup at close is only available for rich-text formats and is activated on a per-document basis. Backup at close is intended for version control, documentation of changes, and archival purposes.</p>
+<p class="p6"><br></p>
+<p class="p5">A date-stamped backup can be created at any time by selecting File &gt; Backup from the menu. </p>
+<p class="p14"><br></p>
+
+<p class="p8"><b>How can I speed up access to the big Dictionary?</b></p>
+<p class="p5">After you select Find > Define Word, choose Hide (cmd-H) to hide the Dictionary application rather than quitting it.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>How do I print to PDF?</b></p>
+<p class="p5">Select File &gt; Print, click the 'PDF' button, then choose 'Save to PDF...' from the popup menu. Alternatively, select the menu item File > Export > to PDF.</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>How do I uninstall Bean?</b></p>
+<p class="p5">1. Drag the Bean application icon from the folder where it is located (probably Applications) onto the Dock's trash icon. You may need to authenticate this action. (If you can't locate Bean.app, search for it using Spotlight. If you still can't find it, it might be inside the CopyPaste Pro .app bundle if you use CopyPaste Pro.)<br /> 
+2. You can also trash the following file (which tracks user settings for Bean):<br />
+/Users/[You]/Library/Preferences/com.SevenYearsDreaming.Bean.plist</p>
+
+<p class="p14"><br></p>
+<p class="p8"><b>Can Bean do automatic text substitutions?</b></p>
+<p class="p5">On OS X 10.6 (Snow Leopard) or greater, Bean by default does automatic text substitution (for example, substituting 'the' for 'teh' or changing (c) to ©). Text substitutions are controlled at System Preferences &gt; Language &amp; Text &gt; Text &gt; Symbol and Text Substitution (OS X 10.6+ only). Text substitution can be turned off during an editing session by unchecking Substitutions &gt; Text Replacement in the context menu of the document. There is a hidden preference setting which disables text substitutions for all documents: first, quit Bean, then in a Terminal.app window, paste the following line and press Return (change NO to YES to enable text substitutions):</p>
+<p class="p14"><br></p>
+<p class="p16">defaults write com.SevenYearsDreaming.Bean prefTextReplacement -bool NO</p>
+<p class="p14"><br></p>
+<p class="p5">Typographic dash substitution (off by default) can be enabled using this terminal command:</p>
+<p class="p14"><br></p>
+<p class="p16">defaults write com.SevenYearsDreaming.Bean prefDashSubstitution -bool YES</p>
+<p class="p14"><br></p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Troubleshooting</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=3265, fitsPagesWidth=1">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Hoefler Text; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 18.0px; font: 7.0px Monaco; min-height: 10.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Monaco}
+p.p8 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f; min-height: 16.0px}
+</style>
+</head>
+<body>
+<p class="p1"><i>Troubleshooting...</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>When I make a change in Preferences, my open documents don’t change.</b></p>
+<p class="p4">Preferences are generally for new documents. To change open documents, use menu bar items.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Bean crashes at startup.</b></p>
+<p class="p4">Try dragging the following file to the trash (the file contains Bean’s preference settings) and then restart Bean:</p>
+<p class="p6"><br></p>
+<p class="p7">/Users/&lt;YOU&gt;/Library/Preferences/com.SevenYearsDreaming.Bean.plist</p>
+<p class="p5"><br></p>
+<p class="p4">Repeated crashes on startup may be caused by Bean trying to open an autosaved document that contains a problem. Try removing any autosaved documents from the folder:</p>
+<p class="p6"><br></p>
+<p class="p7">Users/&lt;YOU&gt;/Library/Autosave Information/</p>
+<p class="p5"><br></p>
+<p class="p3"><b>List Bullets appear out of nowhere.</b></p>
+<p class="p4">Erasing the initial bullet isn’t enough to get rid of a list; you have to remove the underlying list attribute. You can do this by applying Format &gt; List &gt; Marker... &gt; None to a text selection, or by applying Edit &gt; Remove &gt; Selected List Markers to a selection.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Parts of the document disappear in Layout mode.</b></p>
+<p class="p4">Probably pagination is being thrown off by invisible text tables copied and pasted from a webpage (a known bug). Try selecting Edit &gt; Remove &gt; All Text Tables. To reveal hidden text tables, select View &gt; Show Invisibles.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>The ‘Install-Bean’ icon won’t go away.</b></p>
+<p class="p4">First, some background: Perhaps the most common way to distribute Mac software is by using a disk image. A disk image is a ‘virtual’ disk contained in a file with a <b>.dmg</b> filename extension. Double-click a .dmg file to open a folder with the contents of the virtual disk (usually an application or installer, and sometimes documentation). Oftentimes you can run the application in place, from the disk image, to see if you like it. For everyday use, drag the app icon from the disk image into your Applications folder to make a copy there.</p>
+<p class="p5"><br></p>
+<p class="p4">Now, some specific advice: First, if you want to keep a copy of Bean for everyday use, make sure that you have copied Bean to your Applications folder. <b>Not</b> the Bean-Install disk image, mind you, but the Bean.app file you see when you open Bean-Install.dmg by double-clicking it. Next, drag the open disk image named Bean-Install to the trash icon in the dock; this will ‘eject’ the disk image (just as you would eject a USB thumbdrive or a DVD when finished with it). You may then delete the file named Bean-Install.dmg (the file is probably on your desktop or in your downloads folder). Remember, though, that Bean is free, so you can give away copies of the disk image file to others if you wish.</p>
+<p class="p8"><b></b><br></p>
+<p class="p3"><b>A document file won’t open in Bean.</b></p>
+<p class="p4">Bean usually determines a document file's format by looking at the filename's extension (.doc, .rtf, .txt, and so on). If the filename extension is missing from the filename, try adding it.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>A .doc document became corrupted.</b></p>
+<p class="p4">I recommend using Rich Text Format (.rtf) as your default save format, especially for long documents, as it is Bean’s native format. Word .doc format files are always imported and exported, which is an extra step where problems can occur. If you find yourself with a corrupted document, or a document in an orphaned format, try using the menu service Services &gt; Bean &gt; Recover Text from Selected File. <span class="Apple-converted-space">     </span></p>
+<p class="p5"><br></p>
+<p class="p3"><b>How do you make Footnotes, Section Breaks, and automatic Table of Contents?</b></p>
+<p class="p4">You get another word processor. ;-) A good free one (as in no charge) is <a href="http://homepage.mac.com/lightway/iText/iTextExpress/TryiTxtExp.html"><span class="s2"><b>iText Express</b></span></a>. There is also <a href="http://porting.openoffice.org/mac/download/aqua.html"><b>OpenOffice Aqua</b></a> (no charge as well).</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Can I write my graduate thesis with Bean?</b></p>
+<p class="p4">For some things you just need a full-featured word processor or else <a href="http://en.wikipedia.org/wiki/TeX">TeX</a>. Things like a graduate thesis.</p>
+</body>
+</html>

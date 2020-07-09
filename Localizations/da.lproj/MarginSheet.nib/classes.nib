@@ -1,0 +1,32 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                applyMargins = id;
+                applyMarginsAction = id;
+                showMarginsSheet = id;
+                showSheet = id;
+            };
+            CLASS = MarginsManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                applyButton = NSButton;
+                bottomLabel = NSTextField;
+                cancelButton = NSButton;
+                leftLabel = NSTextField;
+                marginsSheet = NSPanel;
+                measurementUnitTextField = NSTextField;
+                messageSheet = NSWindow;
+                rangeLabel = id;
+                rightLabel = NSTextField;
+                tfBottomMargin = NSTextField;
+                tfLeftMargin = NSTextField;
+                tfRightMargin = NSTextField;
+                tfTopMargin = NSTextField;
+                topLabel = NSTextField;
+            };
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

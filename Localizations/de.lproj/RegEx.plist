@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>menuTitle</key>
+		<string>\t  Tabulator</string>
+		<key>pattern</key>
+		<string>\t</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\n  Neue Zeile</string>
+		<key>pattern</key>
+		<string>\n</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\f  Seitenumbruch</string>
+		<key>pattern</key>
+		<string>\f</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>image/attachment</string>
+		<key>pattern</key>
+		<string>\ufffc</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>.  Beliebiges Zeichen</string>
+		<key>pattern</key>
+		<string>.</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>^ Zeilenanfang</string>
+		<key>pattern</key>
+		<string>^</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>$ Zeilenende</string>
+		<key>pattern</key>
+		<string>$</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\b  Wortgrenze</string>
+		<key>pattern</key>
+		<string>\b</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\B  Nicht-Wortgrenze</string>
+		<key>pattern</key>
+		<string>\B</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\w  Alphanumerisches Zeichen</string>
+		<key>pattern</key>
+		<string>\w</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\W  Nicht-alphanumerisches Zeichen</string>
+		<key>pattern</key>
+		<string>\W</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\s  Leerzeichen (inkl. \t\n\f\r)</string>
+		<key>pattern</key>
+		<string>\s</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\S  Nicht-Leerzeichen</string>
+		<key>pattern</key>
+		<string>\S</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\d  Ziffer</string>
+		<key>pattern</key>
+		<string>\d</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\D  Nicht-Ziffer</string>
+		<key>pattern</key>
+		<string>\D</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\uhhhh  Hexadezimalwert (hhhh)</string>
+		<key>pattern</key>
+		<string>\u</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>*  trifft mindestens 0 Mal zu</string>
+		<key>pattern</key>
+		<string>*</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>+  trifft mindestens 1 Mal zu</string>
+		<key>pattern</key>
+		<string>+</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>?  trifft 0 oder 1 Mal zu (1 Mal bevorzugt)</string>
+		<key>pattern</key>
+		<string>?</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[abc]  Trifft auf alle aufgezählten zu</string>
+		<key>pattern</key>
+		<string>[]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[^abc]  Trifft auf alle nicht aufgezählten zu</string>
+		<key>pattern</key>
+		<string>[^]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[a-b]  Trifft auf alle im Bereich zu</string>
+		<key>pattern</key>
+		<string>[-]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>(a|b)  Entweder a oder b</string>
+		<key>pattern</key>
+		<string>(|)</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>b{2} Genau 2 Mal b</string>
+		<key>pattern</key>
+		<string>{}</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\  Behandle *?+[(){}^$|\./ genau (wörtlich)</string>
+		<key>pattern</key>
+		<string>\</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\0 Text gefunden (nur im Ersetzen-Feld)</string>
+		<key>pattern</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

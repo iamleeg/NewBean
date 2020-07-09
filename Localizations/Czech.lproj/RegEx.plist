@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>menuTitle</key>
+		<string>\t  tabulátor</string>
+		<key>pattern</key>
+		<string>\t</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\n  nový řádek</string>
+		<key>pattern</key>
+		<string>\n</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\f  zalomení stránky</string>
+		<key>pattern</key>
+		<string>\f</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>image/attachment</string>
+		<key>pattern</key>
+		<string>\ufffc</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>.  libovolný znak</string>
+		<key>pattern</key>
+		<string>.</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>^ začátek řádky</string>
+		<key>pattern</key>
+		<string>^</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>$ konec řádky</string>
+		<key>pattern</key>
+		<string>$</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\b  word boundary</string>
+		<key>pattern</key>
+		<string>\b</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\B  non-word boundary</string>
+		<key>pattern</key>
+		<string>\B</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\w  word character</string>
+		<key>pattern</key>
+		<string>\w</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\W  non-word character</string>
+		<key>pattern</key>
+		<string>\W</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\s  whitespace (incl. \t\n\f\r)</string>
+		<key>pattern</key>
+		<string>\s</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\S  non-whitespace</string>
+		<key>pattern</key>
+		<string>\S</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\d  číslo</string>
+		<key>pattern</key>
+		<string>\d</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\D  ne-číslo</string>
+		<key>pattern</key>
+		<string>\D</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\uhhhh  hexadecimální hodnota (hhhh)</string>
+		<key>pattern</key>
+		<string>\u</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>*  najde 0 či vícekrát</string>
+		<key>pattern</key>
+		<string>*</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>+  najde jednou či vícekrát</string>
+		<key>pattern</key>
+		<string>+</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>?  najde 0 nebo jedenkrát (upřednostněno 1)</string>
+		<key>pattern</key>
+		<string>?</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[abc]  najde jeden ze skupiny znaků</string>
+		<key>pattern</key>
+		<string>[]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[^abc]  najde libovolný mimo skupinu znaků</string>
+		<key>pattern</key>
+		<string>[^]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[a-b]  najde libovolný v rozmezí</string>
+		<key>pattern</key>
+		<string>[-]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>(a|b)  buď a nebo b</string>
+		<key>pattern</key>
+		<string>(|)</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>b{2} přesně 2 výskyty b</string>
+		<key>pattern</key>
+		<string>{}</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\  interpretovat *?+[( ){}^$|\./ doslova</string>
+		<key>pattern</key>
+		<string>\</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\0 nalezen text (pouze v poli Nahradit)</string>
+		<key>pattern</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

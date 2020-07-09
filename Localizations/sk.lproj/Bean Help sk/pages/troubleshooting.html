@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Riešenie problémov</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=3265, fitsPagesWidth=1">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 18.0px; font: 34.0px Times; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Hoefler Text; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 18.0px; font: 7.0px Monaco; min-height: 10.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Monaco}
+p.p8 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f; min-height: 16.0px}
+</style>
+</head>
+<body>
+<p class="p1"><i>Riešenie problémov</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Po vykonaní zmeny v&nbsp;predvoľbách sa tieto neuplatia v&nbsp;otvorených dokumentoch.</b></p>
+<p class="p4">Predvoľby slúžia vo všeobecnoti pre nové dokumenty. Pre zmenu otovrených dokumentov použite príkazy v&nbsp;ponuke.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Bean spadne hneď pri spustení.</b></p>
+<p class="p4">Skúste presunúť nasledovný súbor do koša (súbor obsahuje predvoľby aplikácie Bean) a&nbsp;reštartujte Bean:</p>
+<p class="p6"><br></p>
+<p class="p7">/Users/&lt;YOU&gt;/Library/Preferences/com.SevenYearsDreaming.Bean.plist</p>
+<p class="p5"><br></p>
+<p class="p4">Opakované pády pri štarte môžu byť spôsobené pokusmi o&nbsp;otvorenie automaticky uloženého dokumentu obsahujúceho nejaký problém. Skúste odstrániť niektoré automaticky uložené dokumenty z&nbsp;priečinka:</p>
+<p class="p6"><br></p>
+<p class="p7">Users/&lt;YOU&gt;/Library/Autosave Information/</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Samovoľné zobrazovanie značiek zoznamu.</b></p>
+<p class="p4">Odstránenie úvodnej značky nepostačuje pre zrušenie zoznamu – treba odstrániť skrytú definíciu zoznamu. Aplikujte príkaz <i>Formát &gt; Zoznam &gt; Značka… &gt; Žiadna</i> na výber textu, alebo aplikujte príkaz <i>Úpravy &gt; Odstrániť &gt; Vybrané značky zoznamu</i> vo výbere.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Časti dokumentu sa nezobrazujú v&nbsp;režime vzhľadu tlače.</b></p>
+<p class="p4">Pravdepodobnou príčinou je rozhodené stránkovanie spôsobené neviditeľnými textovými tabuľkami kopírovanými a&nbsp;vloženými z webstránky (známa chyba). Skúste použiť príkaz <i>Úpravy &gt; Odstrániť &gt; Všetky textové tabuľky.</i></p>
+<p class="p5"><br></p>
+<p class="p4">Okrem toho, riadkovanie odstavca obsahujúceho veľké obrázky môže v&nbsp;režime vzhľadu tlače vytesniť obrázok mimo stránku, čo spôsobí „zmiznutie“ zvyšného textu. Skúste preto veľké obrázky umiestňovať medzi dva prázdne odstavce (dve stlačenia klávesu Return – dve zalomenia odstavca). Toto vynúti minimálne možné riadkovanie a&nbsp;umožní opätovné zobrazenie obrázku.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Ikona „Install-Bean“ nechce zmiznúť.</b></p>
+<p class="p4">Najskôr malý úvod: najpoužívanejší spôsob inštalácie aplikácií pre Mac využíva obraz disku. Obraz disku je „virtuálny“ disk obsiahnutý v&nbsp;súbore s&nbsp;príponou <b>.dmg</b>. Dvojklikom na súbor .dmg dôjde k&nbsp;otvoreniu priečinka s&nbsp;obsahom virtuálneho disku (zvyčajne inštalátor aplikácie, prípadne aj dokumentácia). Zvyčajne je možné spustiť aplikáciu priamo z&nbsp;obrazu disku (a&nbsp;takto ju rýchlo vyskúšať). Avšak pre každodenné použitie metódou „ťahaj a&nbsp;pusti“ skopírujte ikonu aplikácie z&nbsp;obrazu disku do priečinka „Aplikácie“.</p>
+<p class="p5"><br></p>
+<p class="p4">Teraz konkrétnejšie: ak chcete zachovať kópiu aplikácie Bean pre každodenné použitie, uistite sa, čo ste skopírovali do pričinka „Aplikácie“. <b>Nie</b> obraz disku Bean-Install, ale súbor Bean.app viditeľný po otvorení obrazu disku Bean-Install.dmg dvojklikom naň. Ďalej, presuňte otvorený obraz disku s&nbsp;názvom Bean-Install na ikonu koša – toto spôsobí „vysunutie“ obrazu disku (rovnako ako sa vysúvajú USB kľúče a&nbsp;DVD). Potom už bude možné odstrániť súbor s&nbsp;názvom Bean-Install.dmg (nachádzajúci sa zvyčajne na ploche alebo v&nbsp;priečinku „Downloads“). Nezabudnite že Bean je slobodná aplikácia, takže kópie obrazu disku možno posielať ďalej, ak chcete.</p>
+<p class="p8"><b></b><br></p>
+<p class="p3"><b>Dokumentový súbor sa nechce otvoriť v&nbsp;aplikácii Bean.</b></p>
+<p class="p4">Bean zvyčajne rozoznáva typ formátu dokumentu podľa jeho prípony (.doc, .rtf, .txt atď). Ak dokumentu chýba prípona, skúste ju pridať.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Došlo k&nbsp;poškodeniu dokumentu .doc.</b></p>
+<p class="p4">Odporúčam používať Rich Text Format (.rtf) ako predvolený formát pre ukladanie, obzvlášť pre dlhšie dokumenty, pretože je to natívny formát aplikácie Bean. Formát programu Word (.doc) je vyždy importovaný, resp. exportovaný, čo je krok navyše (pri ktorom sa môžu vyskytnúť problémy). Ak sa stretnete s&nbsp;poškodeným dokumentom (alebo dokumentom v&nbsp;zastaralom formáte), skúste použiť službu <i>Services &gt; Bean &gt; Obnoviť text z&nbsp;vybraného súboru.</i></p>
+<p class="p5"><br></p>
+<p class="p3"><b>Ako urobiť poznámky pod čiarou, sekcie a&nbsp;automatický obsah?</b></p>
+<p class="p4">Iným textovým procesorom. Dobrý a&nbsp;bezplatný je napríklad <a href="http://homepage.mac.com/lightway/iText/iTextExpress/TryiTxtExp.html"><span class="s2"><b>iText Express</b></span></a>. Alebo skúste <a href="http://download.openoffice.org/index.html"><b>OpenOffice Aqua</b></a> (tiež zadarmo).</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Možno v&nbsp;aplikácii Bean napísať napríklad diplomovú prácu?</b></p>
+<p class="p4">Pre niektoré účely potrebujete plnohodnotný textový procesor, resp. <a href="http://en.wikipedia.org/wiki/TeX">TeX</a>. Napríklad pre napísanie diplomovej práce.</p>
+</body>
+</html>

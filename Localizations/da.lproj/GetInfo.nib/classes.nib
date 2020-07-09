@@ -1,0 +1,72 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                displayHelp = id;
+                showPreferences = id;
+            };
+            CLASS = ApplicationDelegate;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                sharedUserDefaultsController = NSUserDefaultsController;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                backupAutomaticallyAction = id;
+                changeEncodingAction = id;
+                closeInfoSheet = id;
+                docMethodDisplayHelpAction = id;
+                getInfoSheet = id;
+                lockedFileButtonAction = id;
+                readOnlyButtonAction = id;
+                revealFileInFinder = id;
+                setAutosaveInterval = id;
+                startAndStopAutosaveAction = id;
+            };
+            CLASS = GetInfoManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                CRLabel = NSTextField;
+                backupAutomaticallyButton = NSButton;
+                backupAutomaticallyLabel = NSTextField;
+                charCountField = NSTextField;
+                charCountMinusSpacesField = NSTextField;
+                charLabel = NSTextField;
+                charNoSpaceLabel = NSTextField;
+                closeButton = NSButton;
+                doAutosaveButton = NSButton;
+                doAutosaveLabel = NSTextField;
+                doAutosaveStepper = NSStepper;
+                doAutosaveTextField = NSTextField;
+                fileInfoLabel = NSTextField;
+                infoSheet = NSPanel;
+                infoSheetEncoding = NSTextField;
+                infoSheetEncodingBox = NSBox;
+                infoSheetEncodingButton = NSButton;
+                lineCountField = NSTextField;
+                lineFragCountField = NSTextField;
+                lineLabel = NSTextField;
+                lockedFileButton = NSButton;
+                lockedFileLabel = NSTextField;
+                pageCountField = NSTextField;
+                pageLabel = NSTextField;
+                paragraphCountField = NSTextField;
+                paragraphLabel = NSTextField;
+                readOnlyButton = NSButton;
+                readOnlyFileLabel = NSTextField;
+                revealFileInFinderButton = NSButton;
+                selCharCountField = NSTextField;
+                selCharLabel = NSTextField;
+                selWordCountField = NSTextField;
+                selWordLabel = NSTextField;
+                statisticsLabel = NSTextField;
+                wordCountField = NSTextField;
+                wordLabel = NSTextField;
+            };
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

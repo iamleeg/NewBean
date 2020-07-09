@@ -1,0 +1,24 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                insertImageAction = id;
+                resizeImageSheetCloseAction = id;
+                resizeImageSliderAction = id;
+                showResizeImageSheetAction = id;
+                showSheet = id;
+            };
+            CLASS = ImageManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                cancelButton = NSButton;
+                imageSheet = NSPanel;
+                imageSlider = NSSlider;
+                imageSliderTextField = NSTextField;
+                resizeImageButton = NSButton;
+            };
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

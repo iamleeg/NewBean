@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>menuTitle</key>
+		<string>\t  tabulateur</string>
+		<key>pattern</key>
+		<string>\t</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\n  nouvelle ligne</string>
+		<key>pattern</key>
+		<string>\n</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\f  saut de page</string>
+		<key>pattern</key>
+		<string>\f</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>image/attachée</string>
+		<key>pattern</key>
+		<string>\ufffc</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>.  n'importe quelle lettre</string>
+		<key>pattern</key>
+		<string>.</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>^ début de ligne</string>
+		<key>pattern</key>
+		<string>^</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>$ fin de ligne</string>
+		<key>pattern</key>
+		<string>$</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\b  frontière de mot</string>
+		<key>pattern</key>
+		<string>\b</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\B  frontière de non-mot</string>
+		<key>pattern</key>
+		<string>\B</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\w  caractère de mot</string>
+		<key>pattern</key>
+		<string>\w</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\W  caractère de non-mot</string>
+		<key>pattern</key>
+		<string>\W</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\s  blancs (y compris \t\n\f\r)</string>
+		<key>pattern</key>
+		<string>\s</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\S  non-blancs</string>
+		<key>pattern</key>
+		<string>\S</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\d  chiffre</string>
+		<key>pattern</key>
+		<string>\d</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\D  non-chiffre</string>
+		<key>pattern</key>
+		<string>\D</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\uhhhh  valeur hex (hhhh)</string>
+		<key>pattern</key>
+		<string>\u</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>*  accorder 0 fois ou plus</string>
+		<key>pattern</key>
+		<string>*</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>+  accorder une fois ou plus</string>
+		<key>pattern</key>
+		<string>+</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>?  accorder 0 ou 1 (préférer 1)</string>
+		<key>pattern</key>
+		<string>?</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[abc]  accorder à tout ce qui figure dans le set</string>
+		<key>pattern</key>
+		<string>[]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[^abc]  accorder à tout ce qui ne figure pas dans le set</string>
+		<key>pattern</key>
+		<string>[^]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>[a-b]  accorder à n'importe quoi entre les deux</string>
+		<key>pattern</key>
+		<string>[-]</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>(a|b)  soit a soit b</string>
+		<key>pattern</key>
+		<string>(|)</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>b{2} exactement 2 de b</string>
+		<key>pattern</key>
+		<string>{}</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\  traiter *?+[( ){}^$|\./ littéralement</string>
+		<key>pattern</key>
+		<string>\</string>
+	</dict>
+	<dict>
+		<key>menuTitle</key>
+		<string>\0 texte trouvé (seulement dans champ de remplacement)</string>
+		<key>pattern</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

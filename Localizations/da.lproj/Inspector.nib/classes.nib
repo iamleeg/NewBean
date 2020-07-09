@@ -1,0 +1,122 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                inspectorBoldAction = id;
+                orderFrontSpacingPanel = id;
+                orderFrontStylesPanelAction = id;
+                removeTraitsAction = id;
+                showAddTabStopPanelAction = id;
+            };
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                changeColor = id;
+                colorPanelHighlightAction = id;
+                fontNameAction = id;
+                fontSizeAction = id;
+                fontStyleAction = id;
+                refreshFontNameMenu = id;
+                showColorPanelForHighlight = id;
+                showSpacingControls = id;
+                textControlAction = id;
+            };
+            CLASS = InspectorController;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                afterParaSpacingLabel = NSTextField;
+                afterParagraphSpacingSlider = NSSlider;
+                afterParagraphSpacingStepper = NSStepper;
+                afterParagraphSpacingTextField = NSTextField;
+                alignmentCenterButton = NSButton;
+                alignmentJustifyButton = NSButton;
+                alignmentLabel = NSTextField;
+                alignmentLeftButton = NSButton;
+                alignmentRightButton = NSButton;
+                beforeParaSpacingLabel = NSTextField;
+                beforeParagraphSpacingSlider = NSSlider;
+                beforeParagraphSpacingStepper = NSStepper;
+                beforeParagraphSpacingTextField = NSTextField;
+                bottomBox = NSBox;
+                charSpacingDefaultButton = NSButton;
+                charSpacingLabel = NSTextField;
+                characterSpacingDefaultButton = NSButton;
+                characterSpacingSlider = NSSlider;
+                characterSpacingStepper = NSStepper;
+                characterSpacingTextField = NSTextField;
+                colorPanelHighlightButton = NSButton;
+                firstLineIndentStepper = NSStepper;
+                firstLineIndentTextField = NSTextField;
+                fontLabel = NSTextField;
+                fontNameMenu = NSPopUpButton;
+                fontSizeSlider = NSSlider;
+                fontSizeStepper = NSStepper;
+                fontSizeTextField = NSTextField;
+                fontStylesMenu = NSPopUpButton;
+                forceLineHeightDefaultButton = NSButton;
+                forceLineSpacingAtLeastLabel = NSTextField;
+                forceLineSpacingAtMostLabel = NSTextField;
+                forceLineSpacingDefaultButton = NSButton;
+                forceLineSpacingLabel = NSTextField;
+                headIndentStepper = NSStepper;
+                headIndentTextField = NSTextField;
+                highlightBlueButton = NSButton;
+                highlightGreenButton = NSButton;
+                highlightLabel = NSTextField;
+                highlightOrangeButton = NSButton;
+                highlightPinkButton = NSButton;
+                highlightRemoveButton = NSButton;
+                highlightYellowButton = NSButton;
+                indentFirstLineLabel = NSTextField;
+                indentLabel = NSTextField;
+                indentLabelTextField = NSTextField;
+                indentLeftLabel = NSTextField;
+                indentRightLabel = NSTextField;
+                inspectorPanel = NSPanel;
+                interLineSpacingLabel = NSTextField;
+                interlineSpacingSlider = NSSlider;
+                interlineSpacingStepper = NSStepper;
+                interlineSpacingTextField = NSTextField;
+                lineSpacingDefaultButton = NSButton;
+                lineSpacingLabel = NSTextField;
+                maxLineHeightStepper = NSStepper;
+                maxLineHeightTextField = NSTextField;
+                minLineHeightStepper = NSStepper;
+                minLineHeightTextField = NSTextField;
+                multipleSpacingDefaultButton = NSButton;
+                multipleSpacingSlider = NSSlider;
+                multipleSpacingStepper = NSStepper;
+                multipleSpacingTextField = NSTextField;
+                previewFontsButton = NSButton;
+                showSpacingControlsButton = NSButton;
+                sizeLabel = NSTextField;
+                spacingDisclosureLabel = NSTextField;
+                styleLabel = NSTextField;
+                tailIndentStepper = NSStepper;
+                tailIndentTextField = NSTextField;
+                topBox = NSBox;
+            };
+            SUPERCLASS = NSWindowController;
+        },
+                {
+            ACTIONS =             {
+                orderFrontColorPanelSwizzle = id;
+            };
+            CLASS = NSApplication;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSResponder;
+        },
+                {
+            ACTIONS =             {
+                changeColor = id;
+            };
+            CLASS = NSButton;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSControl;
+        }
+    );
+    IBVersion = 1;
+}

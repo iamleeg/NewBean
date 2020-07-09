@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                addTabStopAction = id; 
+                cancelAddTabStopAction = id; 
+                showSheet = id; 
+                showTabStopPanelAction = id; 
+            }; 
+            CLASS = TabStopManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cancelButton = NSButton; 
+                okButton = NSButton; 
+                removeTabStopsButton = NSButton; 
+                shouldRemoveTabStopsButton = NSButton; 
+                tabLocationLabel = NSTextField; 
+                tabStopAlignmentButton = NSPopUpButton; 
+                tabStopPanel = NSPanel; 
+                tabStopValueField = NSTextField; 
+                tabStopValueLabel = NSTextField; 
+                tabTypeLabel = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

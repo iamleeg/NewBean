@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>insertImageAction</key>
+				<string>id</string>
+				<key>resizeImageSheetCloseAction</key>
+				<string>id</string>
+				<key>resizeImageSliderAction</key>
+				<string>id</string>
+				<key>showResizeImageSheetAction</key>
+				<string>id</string>
+				<key>showSheet</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>ImageManager</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>cancelButton</key>
+				<string>NSButton</string>
+				<key>imageSheet</key>
+				<string>NSPanel</string>
+				<key>imageSlider</key>
+				<string>NSSlider</string>
+				<key>imageSliderTextField</key>
+				<string>NSTextField</string>
+				<key>resizeImageButton</key>
+				<string>NSButton</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

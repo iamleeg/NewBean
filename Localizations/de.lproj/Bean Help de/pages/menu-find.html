@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean Help - Menu - Find</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=537">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p4 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.8px; text-indent: 0.2px; font: 11.0px Courier; color: #333333}
+span.s1 {color: #cb0505}
+span.s2 {font: 14.0px Monaco}
+</style>
+</head>
+<body>
+<a name="FIND"></a>
+<p class="p1"><b>Find Menu</b></p>
+<p class="p3"><span class="s1">Find/Replace...:</span> shows the Find/Replace panel, which is used to find text of interest in the front-most document.</p>
+<p class="p5"><i>NOTES: When using Bean's Find panel, searches always 'wrap' (continue to search unsearched beginning of document after reaching end). 'Replace' will not replace the text selection unless the selected text matches the Find field text. The only regular expression symbol you can use in the replace field is <span class="s2">\0</span> (note: that's the digit zero, not the letter O), which stands for any found matches. When pattern matching is active, characters that are pattern matching symbols (  *?+[(){}^$|\./  ) have to be preceded with a '\' to be treated literally.</b></p>
+<p class="p4"><b>Find/Replace Shortcuts</b></p>
+<p class="p4">option-tab: inserts tab character into search field</p>
+<p class="p4">option-return: inserts return character into search field</p>
+<p class="p4"><b>Match Patterns (Regex)</b></p>
+<p class="p4">The Find/Replace... panel in Bean can use pattern matching ('regular expressions') to find text of interest. In a regular expression (often just 'regex'), certain letters become symbols for patterns that the Find panel uses to find text of interest, like the well-known ‘wildcard character’ but more powerful. Pattern matching allows you to easily include tabs, paragraph breaks, page breaks, word boundaries, digit wildcards, alternate spellings, etc. in your searches. The <b>Patterns...</b> drop down menu gives you this power without having to learn any special symbols.</p>
+<p class="p4">Select the <b>Match patterns (regex)</b> button to enable the use of regular expressions in the Find panel. Notice that the find field changes color to indicate that pattern matching is active. Since common symbols like . ? * \ and so on have special meaning when pattern matching, leave this feature turned off until you need it. (Note: the symbols *?+[(){}^$|\./ are treated literally in a regular expression when preceded by a \ character).</p>
+<p class="p4">The only regular expression symbol you can use in the replace field is <span class="s2">\0</span>, which inserts the found match into the text that will replace it. Just to be clear, that's a zero in the pattern, not the letter O.</p>
+<p class="p4">The use of regular expressions is a complex topic, and there are many more options than those in the Patterns... menu. For example, using this regex in the search field with Select All will select all tags in an HTML document:</p>
+<p class="p6">(\<(/?[^\>]+)\>)</p>
+<p class="p4">You can create a regex with very complex syntax. If the syntax is not correct, an alert will show.</p>
+<p class="p3"><span class="s1">Find Next:</span> finds the next occurence of the text specified in the Find panel's find field.</p>
+<p class="p3"><span class="s1">Find Previous:</span> finds the previous occurence of the text specified in the Find panel's find field.</p>
+<p class="p3"><span class="s1">Use Selection:</span> places the selected text in the Find panel's find field.</p>
+<p class="p3"><span class="s1">Jump to Selection:</span> centers any selected text in the document's window.</p>
+<p class="p3"><span class="s1">Location of Last Edit:</span> useful for when you go to another part of a document, then need to return instantly to the location of your last edit (without having to hunt for it).</p>
+<p class="p3"><span class="s1">Complete Word:</span> produces a list of possible word completions for the incomplete word at the insertion point. Also available via the Escape key.</p>
+<p class="p3"><span class="s1">Define Word:</span> reveals a definition for the word nearest the insertion point, or suggests a spellcheck if the word is not found to be valid.</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>closePropertiesSheet</key>
+				<string>id</string>
+				<key>loadDocumentProperties</key>
+				<string>id</string>
+				<key>showPropertiesSheet</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>GetPropertiesManager</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>applyButton</key>
+				<string>NSButton</string>
+				<key>authorLabel</key>
+				<string>NSTextField</string>
+				<key>cancelButton</key>
+				<string>NSButton</string>
+				<key>commentLabel</key>
+				<string>NSTextField</string>
+				<key>companyLabel</key>
+				<string>NSTextField</string>
+				<key>copyrightLabel</key>
+				<string>NSTextField</string>
+				<key>keywordsLabel</key>
+				<string>NSTextField</string>
+				<key>propertiesSheet</key>
+				<string>NSPanel</string>
+				<key>propsAuthor</key>
+				<string>NSTextField</string>
+				<key>propsComment</key>
+				<string>NSTextField</string>
+				<key>propsCompany</key>
+				<string>NSTextField</string>
+				<key>propsCopyright</key>
+				<string>NSTextField</string>
+				<key>propsEditor</key>
+				<string>NSTextField</string>
+				<key>propsKeywords</key>
+				<string>id</string>
+				<key>propsSubject</key>
+				<string>NSTextField</string>
+				<key>propsTitle</key>
+				<string>NSTextField</string>
+				<key>subjectLabel</key>
+				<string>NSTextField</string>
+				<key>titleLabel</key>
+				<string>NSTextField</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

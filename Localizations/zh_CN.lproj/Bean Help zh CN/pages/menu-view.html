@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean 帮助 - 菜单 - 显示</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=3960">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+span.s1 {color: #cb0505}
+</style>
+</head>
+<body>
+<p class="p1"><b>显示菜单</b></p>
+<p class="p2"><span class="s1">显示版面:</span> 文稿显示为打印页面效果. 注意大型文稿在 OS X 10.5 Leopard 下分页很慢 (bug rdar://5620204), 所以大型文稿 (数百页) 切换到版面视图下会有一段延时. 在 Tiger 下分页可以快十倍.</p>
+<p class="p2"><span class="s1">显示标尺</span> 标尺显示段落设置信息, 也可通过标尺的箭头指示来调整段落位置</p>
+<p class="p2"><span class="s1">显示边框:</span> 显示方框以指示页面可编辑区域, 方框内部可编辑 (仅版面).</p>
+<p class="p2"><span class="s1">显示不可见元素:</span> 显示其它不可见字符 (空格符, 制表位, 换行, 段落标记和分页符) 便于你控制文稿的版面. 启用后还可以拷贝这些字符用于查找/替换.</p>
+<p class="p2"><span class="s1">替换颜色:</span> 文稿用替换颜色显示. 例如蓝底白字, 可以保护视力. 启用后全部文本将用替换颜色显示 (除了页眉和页脚).</p>
+<p class="p2"><span class="s1">适合页宽:</span> 缩放文稿以适合页面宽度. 当用户调整了窗口大小, 文稿会随之放大或缩小.</p>
+<p class="p2"><span class="s1">适合页面:</span> 缩放文稿以适合页面窗口大小. 当用户调整了窗口大小, 文稿会随之放大或缩小.</p>
+<p class="p2"><span class="s1">放大:</span> 增加视图比例 (禁用适合页宽模式).</p>
+<p class="p2"><span class="s1">缩小:</span> 减小视图比例 (禁用适合页宽模式).</p>
+<p class="p2"><span class="s1">全屏幕:</span> 将文稿充满主显示器全屏幕. 预置可能设置为禁用版面视图以隐藏工具栏和标尺, 但可启用替换颜色. Leopard 可以隐藏标题栏; Tiger, 因为一些原因, 不可以.</p>
+<p class="p3">显示工具栏</p>
+<p class="p3">自定工具栏</p>
+<p class="p2"><span class="s1">即时字数统计:</span> 在窗口底部状态栏显示实时更新的字数和字符统计 (版面视图下还可统计页数). 也可显示选定文本的字数和字符统计 (这时会以蓝色字显示).</p>
+<p class="p3"><b>显示简介...</b></p>
+<p class="p4"><span class="s1">统计:</span> 显示当前文稿的各项统计信息.</p>
+<p class="p4"><span class="s1">在 Finder 中显示文件:</span> 打开 Finder 窗口显示包含当前 (存储的) 文稿的文件夹.</p>
+<p class="p4"><span class="s1">锁定的文件 / 模板:</span> 防止当前文件被覆盖. 勾选这里并用 Bean 重新打开文稿可创建原文件的未命名副本. <b>这可以在 Bean 中创建 ‘模板’ 文件</b>.</p>
+<p class="p4"><span class="s1">关闭时备份:</span> 在关闭文稿时自动创建日期戳记和按序号排序的备份副本. 用于版本控制, 文档, 以及归档.</p>
+<p class="p4"><span class="s1">只读文件:</span> 防止文件被修改; 制作文档时有用 (自述文件等).</p>
+<p class="p4"><span class="s1">自动存储副本:</span> 会在你指定的时间间隔自动存储你当前版本文稿的副本到硬盘. 要开启自动存储, 选择显示 &gt; 显示简介..., 调整分钟间隔, 然后勾选 '自动存储副本'. 自动存储会在原文稿同一文件夹创建文稿的副本, 副本的名称后会附加 '(自动存储)' 字样. 自动存储只会在文稿上次存储后又进行了更改时才会写到硬盘 (不管当前的更改是否已存储). 自动存储仅可用于多信息文本格式 (包括 doc) 并在单篇文稿上激活. 它预设是<b>不</b>启用的! 这个功能是为了预防你的工作成果意外丢失 (如断电或程序崩溃). Bean <b>不会</b>自动恢复文稿到自动存储的版本. 但是激活 '自动存储副本' 后, 自动存储的文件将以独立文件的方式供你使用.</p>
+<p class="p5">文稿的文件格式</p>
+<p class="p4"><span class="s1">转换编码…:</span> 将纯文本文件从一个编码方案转为另一种. 注意 UTF-8 是最通用的编码方案, 因此作为预设使用.</p>
+<p class="p2"><span class="s1">显示属性...:</span> 显示下拉单便于用户输入文稿信息. 信息会存储到文稿中 (仅多信息文本). 标题和作者字段的内容可用于页眉和页脚.</p>
+</body>
+</html>

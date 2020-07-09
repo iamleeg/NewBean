@@ -1,0 +1,35 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                closePropertiesSheet = id;
+                loadDocumentProperties = id;
+                showPropertiesSheet = id;
+            };
+            CLASS = GetPropertiesManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                applyButton = NSButton;
+                authorLabel = NSTextField;
+                cancelButton = NSButton;
+                commentLabel = NSTextField;
+                companyLabel = NSTextField;
+                copyrightLabel = NSTextField;
+                keywordsLabel = NSTextField;
+                propertiesSheet = NSPanel;
+                propsAuthor = NSTextField;
+                propsComment = NSTextField;
+                propsCompany = NSTextField;
+                propsCopyright = NSTextField;
+                propsEditor = NSTextField;
+                propsKeywords = id;
+                propsSubject = NSTextField;
+                propsTitle = NSTextField;
+                subjectLabel = NSTextField;
+                titleLabel = NSTextField;
+            };
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

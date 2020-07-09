@@ -1,0 +1,31 @@
+{
+    IBClasses =     (
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                applyLink = id;
+                cancelLink = id;
+                selectLinkType = id;
+                showLinkSheet = id;
+                showSheet = id;
+            };
+            CLASS = LinkManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                applyLink = NSButton;
+                cancelLink = NSButton;
+                linkInstructionsTextField = NSTextField;
+                linkPrefixTextField = NSTextField;
+                linkSelectMatrix = NSMatrix;
+                linkSheet = NSWindow;
+                linkTextField = NSTextField;
+            };
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

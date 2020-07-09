@@ -1,0 +1,31 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                closeHeaderFooterSheet = id;
+                headerFooterAction = id;
+                showHeaderFooterControls = id;
+                showHeaderFooterSheet = id;
+                showSheet = id;
+            };
+            CLASS = HeaderFooterManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                closeButton = NSButton;
+                headerFooterSheet = NSWindow;
+                lockSettingsButton = NSButton;
+                showSettingsButton = NSButton;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                changeColor = id;
+            };
+            CLASS = NSButton;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSControl;
+        }
+    );
+    IBVersion = 1;
+}

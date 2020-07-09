@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean: File Formats</title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="824.41">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 36.0px; font: 8.0px Lucida Grande; min-height: 10.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 13.0px Lucida Grande; color: #cb0505; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 36.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p8 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -16.8px; font: 13.0px Lucida Grande}
+p.p9 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -10.8px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p10 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; color: #cb0505; min-height: 5.0px}
+p.p11 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Monaco}
+table.t1 {border-collapse: collapse}
+td.td1 {background-color: #c2dff8; border-style: solid; border-width: 2.0px 2.0px 2.0px 2.0px; border-color: #a6a6a2 #a6a6a2 #a6a6a2 #a6a6a2; padding: 0.0px 5.0px 0.0px 5.0px}
+</style>
+</head>
+<body>
+<a name="FORMATS"></a>
+<p class="p1"><i>File Formats</i></p>
+<p class="p2"><br></p>
+<p class="p4">Some advice: Use <b>RTF</b> format (Rich Text Format) when possible for documents containing styled text. RTF is Bean's native format, and almost all word processors understand RTF format documents. Use <b>RTFD</b> format when you need to include images or other attachments (unfortunately, RTFD is only understood by Macs). I do <b>not</b> recommend making .doc format (Word 97 format) your default save format since, being a converted non-native format in Bean, it is less safe. PDF files are the most portable between different computers and operating systems, but in general they cannot be edited once saved.</p>
+<p class="p2"><br></p>
+<p class="p4">If you need to email a file (with or without images) to a person using the Windows operating system, use File > Export > to DOC with pictures. This will convert any document images into .jpg format, insert them into the exported RTF document, then give the document a .doc filename extension, which makes it completely palatable to MS Word. In other words, it's an RTF format file with your images included that appears to the recipent as a .doc format file. Again, PDF is the preferred format for documents which do not require further editing (like product catalogs, etc.).</p>
+<p class="p5"><br></p>
+<p class="p3"><b>RTFD Format</b></p>
+<p class="p4">Also called 'Rich Text With Graphics' format. RTFD allows you to combine formatted text with graphics (or other attachments). This format is accessible to any computer running OS X (through Text Edit), but cannot be opened natively on Windows or Unix machines. If you wish to share an RTFD document with a person using the Windows operating system, your best option is to use 'File > Export > to DOC with pictures' to create a Word compatible file, or else PDF.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>BEAN Format</b></p>
+<p class="p4">Bean format is identical to RTFD, except for the extension. A file ending in '.bean' will open up in Bean automatically. Change the extension to '.rtfd' if you wish to share your file with another user of Apple computers.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>RTF Format</b></p>
+<p class="p4">Rich Text Format in Bean allows formatted text, but cannot save graphics or attachments (use RTFD format if graphics are necessary). RTF files can be opened by most word processors. RTF is Bean's (and Cocoa's) native format for creating rich text documents.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Word Format (.doc)</b></p>
+<p class="p4">Bean uses Apple's file conversion services to open and save Microsoft Word .doc format files (technically, Word 97 format). With this format in Bean, <b>document-level formatting (page size, margins) and graphics are neither read-in nor saved.</b> Bean will warn you about this before overwriting a file originally created in Word, so that information is not lost. Please bear in mind that while Bean reads and saves formatted text in the Word .doc format well, its compatibility with other aspects of the format is either less-than-perfect (example: tables) or non-existent (example: footnotes).
+<p class="p5"><b></b><br></p>
+<p class="p4">Advanced tip: To force Bean to save all .doc format files in RTF with a '.doc' filename extension, quit Bean, open a Terminal.app window, paste in the line below and press Return (change YES to NO to reverse the setting). Important note: Quicklook will not work on RTF files with a .doc extension!</p>
+<p class="p2"><br></p>
+<p class="p11">defaults write com.SevenYearsDreaming.Bean prefDocIsRTF -bool YES</p> 
+<p class="p5"><br></p>
+<p class="p3"><b>Word 2003 XML Format (.xml)</b></p>
+<p class="p4">Microsoft Word 2003 XML Format (WordML) behaves similarly to Word format, except that document-level formatting <b>is</b> read-in and saved (although graphics are not). Users of versions of Microsoft Word previous to Word 2003 may not be able to open this format.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>WebArchive</b></p>
+<p class="p4">An archive format for web pages (generally, HTML files) that saves graphics. Safari can save web pages to this format.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Web Format (.html)</b></p>
+<p class="p4">Bean reads and saves HTML format as 'source code.' Bean can also export other formats to HTML format (under File &gt; Export to HTML).</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Text Format (.txt)</b></p>
+<p class="p4">Bean reads in and saves most Unicode text files easily. If Bean cannot identify the legacy encoding of a text file, you will be asked to specify the encoding. Bean will attempt to read in unknown file formats as UTF-8 (Unicode) text. <b>Note that changes to font attributes (font family, color, bold, etc.) are applied to the whole document when editing plain text files and are not saved.</b> Also note: page, margin, and paragraph formatting are not saved with plain text files, but can be printed before closing a document. If you wish to change the encoding of a text document from a legacy encoding to a modern encoding, but still keep it plain text, select Get Info... > Convert Encoding... > Unicode (UTF-8).</p>
+<p class="p2"><br></p>
+<p class="p1"><i>file formats (Leopard only)</i></p>
+<p class="p2"><br></p>
+<p class="p4">These two file formats are only functional in Bean under OS X 10.5 Leopard. Under OS X 10.4 Tiger, they will not appear in the Save panel's file format popup list, and attempting to open a file of these types will produce a user alert.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>OpenDocument Format (.odt)</b></p>
+<p class="p4">Bean uses Apple's file conversion services to open and save OpenDocument format files. Please note that due to the limitations of the file format converter, images and page layout formatting (page size and margins) are lost when opening and saving an OpenDocument format file. The user will be warned of this when overwriting an OpenDocument file not created by Bean, to prevent loss of information.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Word 2007 Format (.docx)</b></p>
+<p class="p4">A format similar to <b>Open XML</b>. Bean uses Apple's file conversion services to open and save Word 2007 format files. Please note that due to the limitations of the file format converter, images are lost when opening a native Word 2007 format file in Bean and when saving a rich text document as a Word 2007 format file in Bean. Also lost are highlighting, tables, text lists and advanced paragraph formatting. Sorry, this is how Apple implemented it. The user will be warned of this when overwriting a  Word 2007 format file not created by Bean, to prevent loss of information.</p>
+<p class="p2"><br></p>
+<p class="p1"><i>export formats</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export to HTML</b></p>
+<p class="p4">Saved documents can be exported to HTML format (web pages). Images will <b>not</b> be exported, although references to the images will exist in the HTML code. See <a href="tipstricks.html">'Tips and Tricks'</a> on how to make image references work.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export to PDF</b></p>
+<p class="p4">This works the same as the PDF > Save to PDF function in the Print dialog. Use this export format if you want absolute fidelity to the appearance of the original document in Bean.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export to RTF (with Pictures)</b></p>
+<p class="p4">The document is saved to RTF with contained pictures encoded in the file. The RTF file can then be opened in MS Word with images intact. (Bean's native RTF format does not support images. In other words, if you reopen a document in Bean that has been exported to this format, the pictures will not be included.)</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export to DOC (with Pictures)</b></p>
+<p class="p4">The document is saved to a file that is readable by MS Word with contained pictures encoded in the file. The file can then be opened in MS Word with images intact. (Bean's usual support for the .DOC format does not support saving or opening images. In other words, if you reopen a document in Bean that has been exported to this format, the pictures will not be included.)</p>
+</body>
+</html>

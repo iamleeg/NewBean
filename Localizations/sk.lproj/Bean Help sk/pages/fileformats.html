@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean: formáty súborov</title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="824.41">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 34.0px Times; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 36.0px; font: 8.0px Lucida Grande; min-height: 10.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 13.0px Lucida Grande; color: #cb0505; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 36.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p8 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -16.8px; font: 13.0px Lucida Grande}
+p.p9 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -10.8px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p10 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; color: #cb0505; min-height: 5.0px}
+p.p11 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Monaco}
+table.t1 {border-collapse: collapse}
+td.td1 {background-color: #c2dff8; border-style: solid; border-width: 2.0px 2.0px 2.0px 2.0px; border-color: #a6a6a2 #a6a6a2 #a6a6a2 #a6a6a2; padding: 0.0px 5.0px 0.0px 5.0px}
+</style>
+</head>
+<body>
+<a name="FORMATS"></a>
+<p class="p1"><i>Formáty súborov</i></p>
+<p class="p2"><br></p>
+<p class="p4">Zopár rád: ak je to možné, používajte formát <b>RTF</b> pre dokumenty obsahujúce formátovaný text. RTF je natívny formát aplikácie Bean, a&nbsp;takmer všetky textové procestory mu rozumejú. Ak do dokumentu potrebujete zahrnúť obrázky a&nbsp;iné prílohy, použite formát <b>RTFD</b> (žiaľ, je čitateľný len pod OS&nbsp;X). <b>Neodporúčam</b> používať formát Word (.doc) ako predvolený pre ukladanie, nakoľko tento nie natívny formát je kvôli nutnej konverzii menej bezpečný.</p>
+<p class="p2"><br></p>
+<p class="p4">Ak potrebujete poslať súbor (s alebo bez obrázkov) osobe používajúcej Windows, najlepšou voľbou je použiť príkaz <i>Súbor > Exportovať > do&nbsp;DOC s&nbsp;obrázkami.</i> Dôjde ku konverzii všetkých vložených obrázkov do formátu .jpg a&nbsp;ich vloženiu do exportovaného dokumentu RTF. Dokumentu bude následne zmenená prípona na .doc (čo zabezpečí bezproblémové načítanie do Wordu). Inak povedané, bude to dokument formátu RTF so zahrnutými obrázkami, tváriaci sa pre prijímateľa ako dokument formátu .doc.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>RTFD</b></p>
+<p class="p4">Formát „Rich Text s&nbsp;grafikou“ umožňuje kombinovať formátovaný text s&nbsp;grafickými objektami (alebo inými prílohami). Dokumenty v tomto formáte sú čitateľné každým počítačom so systémom OS&nbsp;X (prostredníctvom aplikácie TextEdit), avšak nemožno ich natívne otvárať v&nbsp;systémoch Windows ani Unix. Ak chcete zdieľať RTFD dokument s&nbsp;osobou používajúcou Windows, najlepšou voľbou je použiť príkaz <i>Súbor > Exportovať > do&nbsp;DOC s&nbsp;obrázkami</i> pre vytvorenie súboru kompatibilného s programom Word.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>BEAN</b></p>
+<p class="p4">Formát Bean je identický s&nbsp;formátom RTFD, okrem prípony. Prípona „.bean“ zabezpečí automatické otvorenie dokumentu v&nbsp;aplikácii Bean. Príponu je možné prepísať na „.rtfd“ pre lepšie zdieľanie dokumentu s&nbsp;ostatnými používateľmi počítačov Mac.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>RTF</b></p>
+<p class="p4">Formát „Rich Text“ umožňuje formátovať text, avšak nedokáže ukladať grafické objekty ani iné prílohy (ak potrebujete aj grafiku, použite formát RTFD). Súbory RTF sú čitateľné väčšinou textových procesorov. Je to natívny formát aplikácie Bean (a&nbsp;Cocoa) pre formátovaný text.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Word 97 (.doc)</b></p>
+<p class="p4">Bean pre otváranie a ukladanie súborov vo formáte Microsoft Word 97 (presnejšie „Word&nbsp;97“) využíva konverzné služby OS&nbsp;X. <b>Formátovanie na úrovni dokumentu (veľkosť strany, okraje) a&nbsp;grafické objekty</b> tohto formátu v&nbsp;aplikácii Bean <b>nie sú vôbec čítané ani ukladané.</b> Bean na tieto skutočnosti upozorní pred pokusom o&nbsp;prepísanie súboru originálne vytvoreného v aplikácii Word, takže informácie nemusíte stratiť. Vezmite na vedomie, že Bean síce číta a&nbsp;ukladá formátovaný text formátu Word&nbsp;97, avšak jeho kompatibilita s&nbsp;inými aspektami tohto formátu nie je dokonalá (napríklad tabuľky), resp. nie je žiadna (napríklad poznámky pod čiarou).
+<p class="p5"><b></b><br></p>
+<p class="p4">Pokročilý tip: ak chcete v&nbsp;aplikácii Bean ukladať všetky súbory RTF s&nbsp;príponou „.doc“, ukončite Bean, otvorte Terminal.app, vložte nasledujúci riadok a&nbsp;stlačte Return (použite YES a&nbsp;NO pre prepínanie nastavenia). Dôležitá poznámka: Quick Look nepracuje so súbormi RTF majúcimi príponu „.doc“!</p>
+<p class="p2"><br></p>
+<p class="p11">defaults write com.SevenYearsDreaming.Bean prefDocIsRTF -bool YES</p> 
+<p class="p5"><br></p>
+<p class="p3"><b>Word 2003 XML (.xml)</b></p>
+<p class="p4">Formát „Microsoft Word 2003 XML“ (WordML) sa správa rovnako ako formát Word, okrem formátovania na úrovni dokumentu, ktoré <b>je</b> čítané aj ukladané (aj keď bez grafických objektov). Použivatelia aplikácie Microsoft Word starších ako Word&nbsp;2003 však nedokážu otvoriť dokumenty v&nbsp;tomto formáte.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Webový archív (.webarchive)</b></p>
+<p class="p4">Archívny formát webstránok (vo všeobecnosti HTML súborov) ukladajúci grafické objekty. Do tohto formátu dokáže ukladať webstránky prehliadač Safari.</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Web (.html)</b></p>
+<p class="p4">Bean číta a ukladá formát HTML ako „zdrojový kód“. Tiež dokáže vyexportovať iné formáty do HTML (cez ponuku Súbor&nbsp;&gt;&nbsp;Exportovať do HTML).</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Jednoduchý text (.txt)</b></p>
+<p class="p4">Bean bez problémov číta a ukladá väčšinu unicodových textov. V&nbsp;prípade starších znakových sád si vypýta špecifikáciu kódovania. Bean sa pokúsi neznáme súborové formáty čítať ako UTF-8 (unicode) texty. <b>Pozor, zmeny vlastností písma (rodiny, farby, rezu…) sa pri úpravách jednoduchého textového dokumentu použijú na celý text a&nbsp;nebudú uložené.</b> Ďalej, formátovania strán, okrajov a&nbsp;odstavcov sa neukladajú do TXT súborov, avšak aplikujú sa pri tlači dokumentu pred jeho uložením. Ak chcete zmeniť znakovú sadu textového dokumentu zo zastaralej na modernú, avšak so zachovaním jednoduchého textu, vyberte príkaz Informácie… > Zmeniť znakovú sadu… > Unicode (UTF-8).</p>
+<p class="p2"><br></p>
+<p class="p1"><i>Formáty súborov (len v Leopardovi)</i></p>
+<p class="p2"><br></p>
+<p class="p4">Nasledujúce dva súborové formáty fungujú v&nbsp;aplikácii Bean len pod OS&nbsp;X 10.5 Leopard. Pod OS&nbsp;X 10.4 Tiger sa nezobrazia v&nbsp;ponuke ukladacieho dialógového okna a&nbsp;pokus o&nbsp;otvorenie takýchto súborov spôsobí zobrazenie varovania.</p>
+<p class="p5"><br></p>
+<p class="p3"><b>OpenDocument (.odt)</b></p>
+<p class="p4">Bean využíva na otváranie a&nbsp;ukladanie súborov vo formáte OpenDocument systémové konverzné služby. Pozor, v&nbsp;dôsledku obmedzení konvertora budú pri otváraní a&nbsp;ukladaní súborov tohto formátu vypustené obrázky a&nbsp;formátovanie strany (veľkosť a&nbsp;okraje). Kvôli zabráneniu straty informácií sa pri pokuse o&nbsp;prepísanie dokumentu formátu OpenDocument vytvoreného mimo aplikáciu Bean zobrazí varovanie.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Word 2007 (.docx)</b></p>
+<p class="p4">Formát podobný <b>Open XML</b>. Bean využíva na otváranie a ukladanie súborov vo formáte Word 2007 systémové konverzné služby. Pozor, v&nbsp;dôsledku obmedzení konvertora budú pri otváraní a&nbsp;ukladaní súborov tohto formátu vypustené obrázky. Stratia sa aj zvýraznenia, tabuľky, textové zoznamy a&nbsp;pokročilé formátovanie textu. Toto je spôsobené implementáciou formátu Word 2007 spoločnosťou Apple. Kvôli zabráneniu straty informácií sa pri pokuse o&nbsp;prepísanie dokumentu formátu Word 2007 vytvoreného mimo aplikáciu Bean zobrazí varovanie.</p>
+<p class="p2"><br></p>
+<p class="p1"><i>Formáty pre export</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export do HTML</b></p>
+<p class="p4">Uložené dokumenty je možné exportovať do formátu HTML (webstránky). Obrázky <b>nebudú</b> exportované, avšak budú na ne odkazy v&nbsp;HTML kóde. Podrobnejšie informácie o&nbsp;sfunkčnení odkazov na obrázky nájdete v&nbsp;sekcii <a href="tipstricks.html">„Tipy&nbsp;a&nbsp;triky“</a>.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export do PDF</b></p>
+<p class="p4">Toto funguje rovnako ako funkcia PDF&nbsp;>&nbsp;Save&nbsp;to&nbsp;PDF v&nbsp;tlačovom dialógu. Tento exportný formát je vhodný, ak potrebujete absolútne verný vzhľad k&nbsp;originálnemu dokumentu aplikácie Bean.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export do RTF (s obrázkami)</b></p>
+<p class="p4">Dokument bude uložený vo formáte RTF s&nbsp;obrázkami zakódovanými do súboru. Takýto súbor bude možné otvoriť v&nbsp;aplikácii MS&nbsp;Word vrátane obrázkov. (Natívny formát RTF aplikácie Bean nepodporuje obrázky. Inak povedané, takto exportovaný dokument opätovne otvorený v&nbsp;aplikácii Bean nebude obsahovať obrázky.)</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Export do DOC (s obrázkami)</b></p>
+<p class="p4">Dokument bude uložený do súboru čitateľného aplikáciou MS&nbsp;Word s&nbsp;obrázkami zakódovanými do súboru. Takýto súbor bude možné otvoriť v&nbsp;aplikácii MS&nbsp;Word vrátane obrázkov. (Obvyklá podpora formátu .DOC aplikáciou Bean nezahŕňa ukladanie ani otváranie obrázkov. Inak povedané, takto exportovaný dokument opätovne otvorený v&nbsp;aplikácii Bean nebude obsahovať obrázky.)</p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean: 文件格式</title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="824.41">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 36.0px; font: 8.0px Lucida Grande; min-height: 10.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 36.0px; text-indent: -18.0px; font: 13.0px Lucida Grande; color: #cb0505; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 36.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p8 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -16.8px; font: 13.0px Lucida Grande}
+p.p9 {margin: 0.0px 0.0px 0.0px 46.8px; text-indent: -10.8px; font: 4.0px Lucida Grande; min-height: 5.0px}
+p.p10 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -18.0px; font: 4.0px Lucida Grande; color: #cb0505; min-height: 5.0px}
+p.p11 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Monaco}
+table.t1 {border-collapse: collapse}
+td.td1 {background-color: #c2dff8; border-style: solid; border-width: 2.0px 2.0px 2.0px 2.0px; border-color: #a6a6a2 #a6a6a2 #a6a6a2 #a6a6a2; padding: 0.0px 5.0px 0.0px 5.0px}
+</style>
+</head>
+<body>
+<a name="FORMATS"></a>
+<p class="p1"><i>文件格式</i></p>
+<p class="p2"><br></p>
+<p class="p4">一些建议：尽量使用 <b>RTF</b> 格式用于包含样式的文稿。Bean的文字系统基于 RTF，而且几乎所有的文字处理器都能兼容多信息文本格式的文稿。如果您想包括图像或其它附件可以使用 <b>RTFD</b> 格式 (不过 RTFD 只能在 Mac 上使用)。我<b>不</b>推荐生成 Word (.doc 格式) 作为默认的存储格式，因为作为 Bean 中转换的非原生格式，它不是很安全。</p>
+<p class="p2"><br></p>
+<p class="p4">如果您需要邮寄文件 (带图像或不带) 给 Windows 用户，您最佳的选择是使用文件 > 导出 > 为带图片的 DOC。这将转换所有文稿图像为 .jpg 格式，插入到导出的 RTF 文稿中，然后给文稿命名为 .doc 扩展名。这可以兼容 MS Word。换句话说，它是一个 RTF 格式的文件并包括了您的图像，只是文件显示为 .doc 格式。</p>
+<p class="p5"><br></p>
+<p class="p3"><b>RTFD 格式</b></p>
+<p class="p4">带图形的多信息文本格式允许您组合格式化文本和图片 (或其它附件)。此格式可以在任何运行 OS X (通过文本编辑) 的电脑上访问，但不能在 Windows 或 Unix 机器上原生打开。如果您想共享 RTFD 文稿给 Windows 用户，最好是使用文件 > 导出 > 为带图片的 DOC 来创建一个 Word 兼容的文件。</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>BEAN 格式</b></p>
+<p class="p4">Bean 格式和 RTFD 是相同的，除了扩展名。以 '.bean' 为扩展名的文件可由 Bean 自动打开。如果您想共享您的文件给其他 Apple 电脑用户可以更改扩展名为 '.rtfd'。</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>RTF 格式</b></p>
+<p class="p4">多信息文本格式允许格式化文本，但不能存储图形或附件 (如果图形是必要的话使用 RTFD 格式)。RTF 文件可由大多数文字处理器打开。RTF 是 Bean 的 (以及 Cocoa 的) 原生多信息文本格式。</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Word 格式 (.doc)</b></p>
+<p class="p4">Bean 使用 Apple 的转换服务来打开和存储 Microsoft Word 格式文件 (技术上是 'Word 97' 格式)。这种格式在 Bean 中，<b>文稿级格式 (页面大小, 边距) 和图形无法读取也不能存储。</b>Bean 将会在覆盖一个由 Word 创建的文件之前提醒您，以免使信息丢失。请记住即使 Bean 读取和存储 Word 格式的格式化文本良好，对该格式中其它元素 (例如: 表格) 兼容性并不好或不能读取 (例如: 脚注)。
+<p class="p5"><b></b><br></p>
+<p class="p4">高级提示：要强制 Bean 存储所有 .doc 格式的文件为带 '.doc' 扩展名的 RTF，退出 Bean，打开 Terminal.app 终端窗口，粘贴下面的一行命令然后按下回车 (更改 YES 为 NO 可以恢复设置)。请注意：快速查看对 .doc 扩展名的 RTF 文件无效！</p>
+<p class="p2"><br></p>
+<p class="p11">defaults write com.SevenYearsDreaming.Bean prefDocIsRTF -bool YES</p> 
+<p class="p5"><br></p>
+<p class="p3"><b>Word 2003 XML 格式 (.xml)</b></p>
+<p class="p4">Microsoft Word 2003 XML 格式 (WordML) 与 Word 格式很相似，除了文稿级格式<b>可以</b>读取和存储 (但图形还不能)。早于 Word 2003 早期版本的 Microsoft Word 用户可能无法打开此格式。</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Web 归档</b></p>
+<p class="p4">网页的一种归档格式 (一般是 HTML 文件) 存储了图形。Safari 可以存储网页为这种格式。</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>Web 格式 (.html)</b></p>
+<p class="p4">Bean 以 '源代码'方式读取和存储 HTML 格式。Bean 也可以导出其它格式为 HTML 格式 (文件 &gt; 导出为 HTML)。</p>
+<p class="p5"><b></b><br></p>
+<p class="p3"><b>文本格式 (.txt)</b></p>
+<p class="p4">Bean 可轻易的读取和存储大多数 Unicode 文本文件。对于传统编码，会询问您指定编码。Bean 会尝试以 UTF-8 (Unicode) 编码读取未知格式文件。<b>注意在编辑纯文本文件且未存储时对字体属性的更改 (字体族、颜色、粗细，等等。) 会应用到整篇文稿。</b>同时注意：页面、边距、段落格式不会存储到 TXT 文件，但可在关闭文稿前打印。如果您想更改文稿的编码，从传统编码改为现代编码，同时想保持纯文本格式，选择显示简介... > 转换编码... > Unicode (UTF-8)。</p>
+<p class="p2"><br></p>
+<p class="p1"><i>文件格式 (仅 Leopard)</i></p>
+<p class="p2"><br></p>
+<p class="p4">这两个文件格式仅在 OS X 10.5 Leopard 下的 Bean 中可用。在 OS X 10.4 Tiger 中它们不会显示在存储面板的文件格式列表中，打开这些文件时也会产生用户警告。</p>
+<p class="p5"><br></p>
+<p class="p3"><b>开放文稿格式 (.odt)</b></p>
+<p class="p4">Bean 使用 Apple 的文件转换服务来打开和存储开放文稿格式的文件。请注意因为文件格式转换器的限制，图像和页面版式格式化 (页面大小和边距) 在打开和存储时会丢失。如果覆盖非 Bean 生成的开放文稿格式文件时会显示警告，以免丢失信息。</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Word 2007 格式 (.docx)</b></p>
+<p class="p4">类似于<b>开放 XML</b> 的格式。Bean 使用 Apple 的文件转换服务来打开和存储 Word 2007 格式文件。请注意因为文件格式转换器的限制，用 Bean 打开原生 Word 2007 格式以及存储多信息文本文稿为 Word 2007 格式时都会丢失图像、高亮、表格、文本列表以及高级段落格式。抱歉，这是 Apple 的问题。如果覆盖非 Bean 生成的 Word 2007 格式文件时会显示警告，以免丢失信息。</p>
+<p class="p2"><br></p>
+<p class="p1"><i>导出格式</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>导出为 HTML</b></p>
+<p class="p4">存储的文稿可以导出为 HTML 格式 (网页)。图像将<b>不会</b>导出，但到图像的引用会存在于 HTML 源码中。前往 <a href="tipstricks.html">'提示与技巧'</a> 查看怎样使引用的图像工作。</p>
+<p class="p2"><br></p>
+<p class="p3"><b>导出为 PDF</b></p>
+<p class="p4">这个操作与打印对话框的 PDF > 存储为 PDF 功能相同。如果您想使文稿外观看起来和 Bean 中完全一致则使用此格式操作。</p>
+<p class="p2"><br></p>
+<p class="p3"><b>导出为 RTF (带图片)</b></p>
+<p class="p4">文稿会存储为包含图片的 RTF 文件。RTF 文件可在 MS Word 中打开并显示图像。(Bean 的原生 RTF 格式不支持图像。换句话说，如果您重新在 Bean 中打开这种格式，将不会包括图片。)</p>
+<p class="p2"><br></p>
+<p class="p3"><b>导出为 DOC (带图片)</b></p>
+<p class="p4">文稿将存储为 MS Word 可读的包含图片的文件。文件可在 MS Word 中打开并显示图像。(Bean 对 .DOC 格式的通用支持不包括支持存储或打开图像。换句话说，如果您重新在 Bean 中打开这种格式，将不会包括图片。)</p>
+</body>
+</html>

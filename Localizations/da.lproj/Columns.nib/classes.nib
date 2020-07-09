@@ -1,0 +1,35 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                applyOrCancelAction = id;
+                columnsAndGutterAction = id;
+                showColumnsSheet = id;
+                showSheet = id;
+            };
+            CLASS = ColumnsManager;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                applyButton = NSButton;
+                cancelButton = NSButton;
+                columnsLabel = NSTextField;
+                columnsSheet = NSWindow;
+                columnsStepper = NSStepper;
+                columnsValueLabel = NSTextField;
+                gutterLabel = NSTextField;
+                gutterStepper = NSStepper;
+                gutterValueLabel = NSTextField;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                changeColor = id;
+            };
+            CLASS = NSButton;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSControl;
+        }
+    );
+    IBVersion = 1;
+}

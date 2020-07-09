@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>applyOrCancelAction</key>
+				<string>id</string>
+				<key>columnsAndGutterAction</key>
+				<string>id</string>
+				<key>showColumnsSheet</key>
+				<string>id</string>
+				<key>showSheet</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>ColumnsManager</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>applyButton</key>
+				<string>NSButton</string>
+				<key>cancelButton</key>
+				<string>NSButton</string>
+				<key>columnsLabel</key>
+				<string>NSTextField</string>
+				<key>columnsSheet</key>
+				<string>NSWindow</string>
+				<key>columnsStepper</key>
+				<string>NSStepper</string>
+				<key>columnsValueLabel</key>
+				<string>NSTextField</string>
+				<key>gutterLabel</key>
+				<string>NSTextField</string>
+				<key>gutterStepper</key>
+				<string>NSStepper</string>
+				<key>gutterValueLabel</key>
+				<string>NSTextField</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>changeColor</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>NSButton</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSControl</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>applyLink</key>
+				<string>id</string>
+				<key>cancelLink</key>
+				<string>id</string>
+				<key>selectLinkType</key>
+				<string>id</string>
+				<key>showLinkSheet</key>
+				<string>id</string>
+				<key>showSheet</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>LinkManager</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>applyLink</key>
+				<string>NSButton</string>
+				<key>cancelLink</key>
+				<string>NSButton</string>
+				<key>linkInstructionsTextField</key>
+				<string>NSTextField</string>
+				<key>linkPrefixTextField</key>
+				<string>NSTextField</string>
+				<key>linkSelectMatrix</key>
+				<string>NSMatrix</string>
+				<key>linkSheet</key>
+				<string>NSWindow</string>
+				<key>linkTextField</key>
+				<string>NSTextField</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

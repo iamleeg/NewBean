@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean Help - Menu - File</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=490">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p5 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+span.s1 {color: #cb0505}
+span.s2 {font: 14.0px Monaco}
+</style>
+</head>
+<body>
+<p class="p1"><b>File Menu</b></p>
+<p class="p2"><span class="s1">New: </span>creates a new, untitled document.</p>
+<p class="p3">Special New &gt;<span class="Apple-converted-space"> </span></p>
+<p class="p5"><span class="s1">Plain Text:</span> creates a new, empty plain text document.</p>
+<p class="p5"><span class="s1">Rich Text from Pasteboard:</span> creates a new rich text document and inserts the contents of the pasteboard (previously copied text).</p>
+<p class="p5"><span class="s1">Plain Text from Pasteboard:</span> creates a new plain text document and inserts the contents of the pasteboard (previously copied text).</p>
+<p class="p5"><span class="s1">With Current Selection:</span> inserts currently selected text from the frontmost document in Bean into a new rich text document.</p>
+<p class="p2"><span class="s1">Open…: </span> shows a panel that allows the user to select and open a previously saved document.</p>
+<p class="p4"><b><i>Note: This is how to associate a file type with Bean so that it always opens in Bean when you double-click a file’s icon: In the Finder, select a file of the file type that you are interested in. Next, in the Finder's menu bar, select Find &gt; Get Info &gt; then Open with: Bean. Then, click the 'Change All...' button and OK the change.</i></b></p>
+<p class="p2"><span class="s1">Open Recent:</span> choose from the list to quickly reopen a document; does not work in full screen mode due to a bug (rdar://5748616).</p>
+<p class="p2"><span class="s1">Save As…:</span> Bean will warn you when saving a rich text document containing attachments (such as images) to another format that cannot save attachments (in which case they will be discarded).</p>
+<p class="p2"><span class="s1">Revert to Saved: </span>reloads the saved version of the document and discards the current version. The user is warned by an alert that unsaved changes will be lost.</p>
+<p class="p3">Export &gt;<span class="Apple-converted-space"> </span></p>
+<p class="p5"><span class="s1">to HTML with Styles:</span> the current document is exported to an HTML source code file with inline CSS styles, which is saved in a folder having the name of the original document. The containing folder opens in the Finder after export. You cannot export an unsaved document.</p>
+<p class="p5"><span class="s1">to HTML without Styles:</span> the current document is exported to an HTML source code file with no CSS styles (just pure HTML), which is saved in a folder having the name of the original document.</p>
+<p class="p6"><i>To make the image references in the HTML code work, follow these steps:</i></p>
+<p class="p6"><i>1. Open the exported HTML file in Bean (drop the revealed icon onto Bean's application icon).</i></p>
+<p class="p6"><i>2. Replace the image references in the HTML code (they are preceded by </i><span class="s2">img src=</span><i>) with the names of the image files you will place in the same folder as the HTML file (or like this: </i><span class="s2">graphics/logo.jpg</span><i> if there is a 'graphics' folder there to hold the image files).</i></p>
+<p class="p6"><i>3. Save it, then double-click the HTML file to open it in Safari and check what it looks like.</i></p>
+<p class="p5"><span class="s1">to PDF:</span> saves the document as a .pdf file in the same folder as the original. PDF provides the greatest fidelity to the original document when you are sending the document to others, but is generally not editable by others.</p>
+<p class="p5"><span class="s1">to RTF with pictures:</span> images in a document are inserted into the exported RTF format file. While Windows and Linux users cannot open .rtfd or .bean format files, they probably <b>can</b> open RTF format files.</p>
+<p class="p5"><span class="s1">to DOC with pictures:</span> same as ‘Export &gt; to RTF with pictures,’ but the filename extension is changed to .doc, which puts most windows users in their comfort zone. MS Word will open RTF files renamed with a .doc extension without complaint.</p>
+<p class="p2"><span class="s1">Send to Mail:</span> Opens a new mail in Mail.app with the current active document added as an attachment; .rtfd files are zipped automatically (since they are really folders, not discrete files). The filename of the attachment is displayed as text next to the attachment for added reassurance that you are mailing the correct file. Note: you cannot mail documents that have yet to be saved.</p>
+<p class="p2"><span class="s1">Backup:</span> creates a date-stamped and sequentially numbered backup copy of the saved document you are working on in the same folder as the original. Useful for version control, documentation, and archiving.</p>
+<p class="p2"><span class="s1">Make Template:</span> makes the open document a template by locking the document's file. Bean then offers to reopen the template as an untitled document. You can unlock the locked file by selecting the file in the Finder, then de-select Finder &gt; Get Info &gt; Locked.</p>
+<p class="p2"><span class="s1">Show in Finder:</span> opens a Finder window for the folder that contains the current (saved) document. Note that the Finder, when in column mode, will report a file's creation and modification date in the preview column. Note: it is better to close the document in Bean before using the Finder to move or rename the document.</p>
+<p class="p2"><span class="s1">Page Setup…:</span> provides control over the document's page size and page orientation.</p>
+<p class="p2"><span class="s1">Print…:</span> reveals the standard OS X print panel. From here you can select the printer, fine tune the printed output, print to PDF, open in Preview.app, and so on.</p>
+<p class="p2"><span class="s1">Print Selection…:</span> prints only the text that is selected. Works with multiple text selections, and adds dividers between them if the user has selected Bean &gt; Preferences… &gt; Advanced &gt; Document &gt; Print Selection… separates multiple selections.</p>
+</body>
+</html>

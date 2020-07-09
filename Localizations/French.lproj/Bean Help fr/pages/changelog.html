@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean-Changelog.rtf</title>
+<meta name="Author" content="J Hoover">
+<meta name="Company" content="www.bean-osx.com">
+<meta name="Copyright" content="2009">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=24710, fitsPagesWidth=1">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.43">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Lucida Grande; color: #832813}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Lucida Grande; min-height: 15.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Lucida Grande}
+p.p4 {margin: 0.0px 0.0px 0.0px 39.6px; text-indent: -39.6px; font: 12.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 39.6px; text-indent: -39.6px; font: 12.0px Lucida Grande; min-height: 15.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Lucida Grande; color: #832813; min-height: 15.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 43.2px; text-indent: -43.2px; font: 12.0px Lucida Grande}
+p.p8 {margin: 0.0px 0.0px 0.0px 39.6px; text-indent: -10.8px; font: 12.0px Lucida Grande}
+p.p9 {margin: 0.0px 0.0px 0.0px 39.6px; text-indent: -10.8px; font: 12.0px Lucida Grande; min-height: 15.0px}
+p.p10 {margin: 0.0px 0.0px 0.0px 28.8px; font: 11.0px Courier; color: #333333}
+p.p11 {margin: 0.0px 0.0px 0.0px 39.6px; text-indent: -14.4px; font: 12.0px Lucida Grande}
+p.p12 {margin: 0.0px 0.0px 0.0px 39.6px; font: 12.0px Lucida Grande}
+p.p13 {margin: 0.0px 0.0px 0.0px 39.6px; text-indent: -39.6px; font: 12.0px Lucida Grande; color: #a32118}
+p.p14 {margin: 0.0px 0.0px 0.0px 43.2px; text-indent: -43.2px; font: 12.0px Lucida Grande; min-height: 15.0px}
+p.p15 {margin: 0.0px 0.0px 0.0px 54.0px; text-indent: -54.0px; font: 12.0px Lucida Grande; min-height: 15.0px}
+p.p16 {margin: 0.0px 0.0px 0.0px 25.2px; font: 12.0px Lucida Grande}
+p.p17 {margin: 0.0px 0.0px 0.0px 39.6px; text-indent: -14.4px; font: 12.0px Lucida Grande; min-height: 15.0px}
+span.s1 {font: 10.0px Monaco}
+span.s2 {color: #000000}
+span.Apple-tab-span {white-space:pre}
+</style>
+</head>
+<body>
+<p class="p1"><b>Bean Change Log</b></p>
+<p class="p2"><br></p>
+
+<p class="p3"><b>Version 2.4.5 (14 December 2011)</b></p>
+<p class="p2"><br></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Bugfixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a problem that prevented full screen menu command from working under OS X 10.7 Lion.</p>
+
+<p class="p2"><br></p>
+<p class="p3"><b>Version 2.4.4 (12 July 2011)</b></p>
+<p class="p2"><br></p>
+<p class="p13"><span class="Apple-tab-span">	</span>Bean 2.4.4 is a bugfix release and is the last version of Bean intended to be compatible with OS X 10.4 Tiger (unless a bugfix release for the Bean 2.4.x series is required for compatibility with 10.7 Lion).</p>
+<br>
+<p class="p13"><span class="Apple-tab-span">	</span>There is a beta release of the next major version of Bean, Bean 3 (version numbered Bean 2.9.x), available at the <a href="http://www.bean-osx.com/index.html">bean-osx.com</a> website, if you don't mind running beta (unstable) software. Note that the new file formats in the Bean beta are not completely backwards compatible with version 2.4.4 of Bean, which ignores some information when reading files created by Bean 2.9.x+. Specifically, Bean 2.4.4 ignores free-form headers and footers, images saved in .rtf format and .doc format files, and document presentation information saved as extended file attributes (such as cursor location, whether alternate colors are being used, etc.). Also, auto-updating date tokens are not replaced.</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Bugfixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a problem where Find Next in the Find panel could misbehave due to some missing brackets in the TextFinder class code. This fix has been noted in the code as well.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Corrected tab order of controls in Find panel.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Removed various non-functional help buttons (they stopped working when I had to restructure the help system to work with localizations under 10.6).</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a problem with saving to the WebArchive format where saving with a white background, or no background, could produce a black background.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a problem with toolbar icon validation (Thanks, CF) and a few other small code problems noted in the code.</p>
+
+<p class="p3"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Files in the .bean format can now be searched with Spotlight for content and keywords.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Edit &gt; Paste &amp; Match Style now also responds to standard Apple keyboard shortcut.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Bean no longer automatically associates .rtf and .rtfd files with Bean.app using the circuitous mechanism provided by the Finder. This association could only be done using an Applescript, and Bean could crash if the app was quit quickly after an initial save (while the Applescript was loading into memory). There is a hidden preference setting which restores the old behavior: quit Bean and paste this command into a Terminal.app session (change YES to NO to un-enable the old file association behavior again):</p>
+<p class="p2"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefShouldAssociateFileWithBean -bool YES</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Notes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• If you are not seeing filename extensions in the Save panel under 10.5+, you may need to select Finder &gt; Preferences &gt; Advanced &gt; Show all filename extensions. This controls whether the Save panel gives you the option to reveal filename extensions.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Localizers: there are no significant changes to the user interface in Bean 2.4.4; it is a bugfix release. The Italian and French localizations were updated slightly (sorry about the delay, fellows).</p>
+
+<p class="p2"><br></p>
+<p class="p3"><b>Version 2.4.3 (26 February 2010)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Edit &gt; Paste &amp; Match Style has a new, friendlier (albeit non-standard) keyboard shortcut (Shift + Cmd + v) (user suggestion)
+<p class="p4"><span class="Apple-tab-span">	</span>	• Print... is now the last item in the File menu
+<p class="p4"><span class="Apple-tab-span">	</span>	• The Replace and Replace All commands in the Find/Replace panel now maintain the text selection after replacement occurs. (user suggestion) There is a hidden preference setting which restores the old behavior where no text remains selected after Replace/Replace All: quit Bean and paste this command into a Terminal.app session (change YES to NO to re-enable the new behavior):</p>
+<p class="p2"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefNoSelectionAfterReplace -bool YES</p>
+<p class="p2"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• The left hanging margin in text list items now equals the text offset, so that text wraps properly (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• The ‘Float’ toolbar icon now has an orange halo when active (the blue halo looked too much like the UI’s ‘focus ring’)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• File &gt; Export &gt; To HTML now exports to HTML 4.0, not XHTML (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• The Applescript code that makes Bean the default application for opening RTF and RTFD format files that are saved in Bean  under Snow Leopard is now compiled and is much faster (there was a noticeable pause while the script compiled for the first time under Bean 2.4.2)</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Bugfixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Addressed a bug that could cause a crash when the insertion point tries to draw to a just-hidden document window</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Code/Localization</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Bean 2.4.3 includes a revised Danish localization</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Note to localizers: there are no significant changes to the user interface in Bean 2.4.3; it is a bugfix release.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Another note to localizers: nib files are now compiled upon building the app, which means you cannot directly edit the .nib files found inside the released app bundle anymore (this is Apple’s doings). Instead, download the Bean source code from http://www.bean-osx.com/source/Bean-Source.zip and use the .nib files found inside the English.lproj folder for your translation.
+</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Version 2.4.2 (30 November 2009)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Changes (to accomodate OS X 10.6 Snow Leopard)</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Under Snow Leopard, Bean by default now does automatic text substitution (for example, substituting 'the' for 'teh' or changing (c) to ©). Text substitutions are controlled at System Preferences &gt; Language &amp; Text &gt; Text &gt; Symbol and Text Substitution. Substitution can be turned off during an editing session by unchecking Substitutions &gt; Text Replacement in the context menu of the document. There is a hidden preference setting which disables text substitutions for all documents: quit Bean and paste this command into a Terminal.app session (change NO to YES to re-enable it):</p>
+<p class="p2"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefTextReplacement -bool NO</p>
+<p class="p2"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Similarly, under Snow Leopard, typographic dash substitution (off by default) can be enabled by using this command:</p>
+<p class="p2"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefDashSubstitution -bool YES</p>
+<p class="p2"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Under Snow Leopard, when you double-click a document icon in the Finder, the filename extension determines what application opens the file. This means that an .rtf or .rtfd document created in Bean opens (by default) in Text Edit. Since this is probably not the expected behavior, I've changed the code so that .rtf and .rtfd files saved in Bean now open in Bean (by using the Finder's 'Open With…' override). Files in other formats saved by Bean will still open in the default application associated with that file (usually, Text Edit). To disable this behavior, quit Bean, and paste this command into a Terminal.app session (change NO to YES to re-enable it):</p>
+<p class="p2"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefAssociateDocumentWithBean -bool NO</p>
+<p class="p2"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span>Note that you can associate all document files of a particular type (that is, having the same filename extension) with a different default application by using the 'Change All...' button in the Finder's 'Get Info…' panel.</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Services</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Under OS X 10.6 Snow Leopard, you must enable the individual Services offered by Bean if you wish them to appear in the Services menu and the document's context menu (see System Preferences &gt; Keyboard &gt; Keyboard Shortcuts &gt; Services). To review, Bean offers the following services: New Bean Document Containing Selection, Paste Selection into Current Bean Document, HTML Snippit from Selection, HTML+CSS Snippit from Selection, Recover Text from Selected File.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• The 'Lorem Ipsum' service, although useful in concept, no longer works correctly under Snow Leopard and has been removed. This is apparently due to a Snow Leopard bug which prevents an app from vending a text-transformation service to its own documents, resulting in a freeze (rdr://7355325).</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Bugfixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Spotlight now indexes the contents of .bean format files.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a bug where the preference 'Suggest filename at first save' did not work under Snow Leopard.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a bug where resizing an image would temporarily blur it under Snow Leopard.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed some leaks revealed by Static Analysis.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a problem where the List Marker… panel could appear on the Find/Replace window instead of a document window.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Attempted to fix internationalized help files which wouldn't work under Snow Leopard…it seems like sometimes they work, sometimes they don't, even when the help caches are cleaned</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a permissions glitch that could cause the Italian localization not to work.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Fixed a problem with alternate colors that could cause erratic behavior in Bean and produce '-redComponent not defined' console error message.</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Code/Localization</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Because this is a bugfix release, no changes were made to the user interface in this version that require changes to the included localizations.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>No version number change (6 October 2009)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>Slightly revised Danish, Slovak translations.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>Renamed Italian localization folder for Snow Leopard compatibility.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Version 2.4.1 (3 October 2009)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Enhancements</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• the most current version of Bean should now always work with CopyPaste Pro. Note: the CopyPaste Pro command Open Selection in Editor will start the most current version of Bean present; Open Editor however starts whatever version of Bean is contained within the CopyPaste Pro bundle. Thanks to Peter Hoerster for the code.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• added up-to-date French localization (thanks to Daniel Elmiger) and a new Italian localization (thanks to Stafano Carlini)</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Notes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Users have reported that Bean runs well on Snow Leopard, except for Preferences > Advanced > Interface > Suggest filename at first save. I believe there is a new API for that in Snow Leopard, so that will be fixed whenever I can do the first Snow Leopard build. My Powerbook G4 (not Snow Leopard compatible) somehow knew its days were coming to an end; it died. Happily, I now have an Intel-based Apple and will be installing Snow Leopard soon. ;-)</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Version 2.4.0 (31 August 2009)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Enhancements</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• the color, shape and the blink behavior of the text cursor can be altered using the controls found under Bean Preferences &gt; General &gt; Text Cursor (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• added File &gt; Print Selection which will print only the selected text in a document. Multiple selections in a single document are merged, unless ‘Bean Preferences &gt; Advanced &gt; Document &gt; Print Selection… separates multiple selections’ is enabled.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Print Selection… is also available in the context menu (which appears when you right-click or control-click in the document area)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• the context menu for the document area and the Find/Replace fields now has an Insert menu that allows easy insertion of tabs, paragraph breaks, page breaks, line breaks, and non-breaking spaces</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Edit &gt; Insert &gt; Note (shortcut: Ctrl+Cmd+n) will insert a note in the document using the font, size, text color and highlight color set under Bean Preferences &gt; Advanced &gt; Notes Mode. Preferences for notes include automatically adding brackets and starting a new paragraph.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Font &gt; Notes Mode turns on *continuous* notes mode. Wherever the text cursor is placed, text typed there will start a new note. De-select Font &gt; Notes Mode to return to normal editing. This is meant to be used like a ‘teacher’s red pen.’ Choose a distinctive font (example: Marker Felt) and color (red, or black with yellow highlight) that will make your notes stand out from the rest of the text. That way, you can later use Style &gt; Select by &gt; Font Style / Color / Highlight Color to select all notes and remove them. Notes cannot be hidden.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• added File &gt; Show in Finder menu item. Hint: Cmd-click the title of a saved document in the title bar of its window to see its location.</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• File &gt; Special New &gt; With Current Selection can now use multiple text selections</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• .doc and .odt files now use the default paper size found under System Preferences &gt; Print &gt; Default Paper Size (since Apple’s file conversion filters do not read in the paper size for these formats and users expecting A4 were getting U.S. Letter) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• added a Header type: Title, Author page# (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• removed the Close button from the bottom of the Preferences window (because the window already has a close button in the upper left) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• page breaks now display as a diamond when View &gt; Show Invisibles is selected (user suggestion)</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Bug Fixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  the display bug where the text cursor would leave little dots behind it is, I hope, now fixed (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  fixed a problem where memory wasn’t released when sheets were dismissed</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  Edit &gt; Insert &gt; Signature Line works better now</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  fixed a problem where the scrollbar would sometimes jump erratically when editing the middle of a long document with Center Cursor Vertically enabled </p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  fixed a bug where File &gt; Special New &gt; With Current Selection could create an untitled document that was erroneously assigned to plain text type before saving (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  fixed a bug where the type of measurement units initially used in the Bean Preferences &gt; Style pane could be reported incorrectly as inches instead of centimeters (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  Edit &gt; Remove &gt; All Text Tables now works</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	•  fixed a bug where unsaved and unedited documents created with File &gt; Special New &gt; With Current Selection would close without a save prompt</p><p class="p3"><span class="Apple-tab-span">	</span><b>Code</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• UI tweaks, improved menu validation, cleaned up some code, documentation updated</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• removed GPL legal language from JHFindPanel.[mh] (all files directly related to the Find Panel and its regular expression functions are covered by BSD or similarly permissive license)</p>
+<p class="p2"><b></b><br></p>
+<p class="p3"><b>Version 2.3.1 (19 June 2009)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Bugfix</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• fixed UI glitch: Bean Preferences > Style > Line Spacing now assigns line spacing correctly (user reported)</p>
+<p class="p2"><b></b><br></p>
+<p class="p3"><b>Version 2.3.0 (31 May 2009)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>	Enhancements</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• added Date/Time toolbar icon, which inserts date/time (select the date/time format from the icon’s popup menu) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Option key + view scale slider will now change view scale in rounded 25% increments; use this for example to set the view scale at exactly 100%</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Shift + Enter is now the keyboard shortcut for inserting a ‘line break’ (a soft return) which causes a new line of text without creating a new paragraph (user suggestion)</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>	Changes/Bug Fixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Highlight toolbar icon now has ‘None’ option (that is, remove highlight) in icon’s popup menu (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• the method for applying a custom highlight color to selected text has changed: use Shift + Option + select a color from the color panel (instead of the previous Option + select a color from color panel). This makes a bug less likely where the highlight color becomes the same as the text color, making text illegible. (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• <u>Text List improvements/fixes</u></p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- Format &gt; List &gt; Numbered/Bulleted can now create lists without a text selection (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- font changes applied just after the text list marker are no longer rejected, and new list items created with a Return now inherit their font from the tail of the previous list item (and from the preceding tab thereafter). This avoids the Cocoa text system inconvenience where a cached font used for creating the list markers spills into new text list items (compare Text Edit). Note: under Tiger, the old behavior of restricting font changes after the marker remains as this works around a more severe bug where the font Lucida Grande appears in text list items when it shouldn’t. (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- Format &gt; List &gt; Indent/Unindent now works with multiple selected list items and in multiple selection ranges (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- re-enumeration of list markers is attempted when a list item is cut or deleted</p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- Format &gt; List &gt; Move Item Up/Down behavior is less buggy (Leopard only)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• <u>Find/Replace panel improvements/fixes</u></p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- the text of a found match can now be referred to in the Replace text field as \0 (that’s the digit zero, not the letter ‘oh’) when Match Patterns (Regex) is active; in other words, the text of the found match will be substituted for its symbol in the text to replace it.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>			For example, Find: bad Replace: not \0 at all Result: not bad at all </p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- Find All/Replace All (in Selection) now works on multiple text selections, not just the first text selection (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>		- fixed a bug where Replace would replace the next found match if the current text selection did not match the Find field text. Instead, Replace now highlights the next match without replacing it; click Replace again to actually replace the found match.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• fixed a problem where inserting large images into a paragraph with line spacing greater than 1 in layout view would cause subsequent text to ‘disappear.’ (Text Edit also has this problem.) Incidentally, note that you can use the Inspector’s Force Line Height / At Most control to limit the space above inline images to a reasonable amount (otherwise, double-spaced text, for example, will create a line spacing that is double the height of an inline image, which may be too much).  (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• Center Cursor Vertically is now disabled when Layout view is hidden in OS X 10.4 (Tiger); this is because there was a bug under Tiger that caused the scroller to misbehave that I could not fix  </p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• fixed a bug where Font &gt; Strikethrough would sometimes not work  (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• fixed a bug where the File &gt; Special New &gt; Plain Text / Plain Text from Pasteboard commands would not work in localized versions (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• fixed a bug where a document could be saved in full screen mode with alternate colors on, even though that document should open in windowed mode with alternate colors off (user reported)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• fixed a bug involving undoing a change of margins with layout mode off</p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>	Code</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• fixed code so the final dummy item in the Find panel’s patterns menu is no longer required</p>
+<p class="p4"><span class="Apple-tab-span">	</span>	• (UI) Page Up/Page Down buttons below scroller at last have their own subview</p>
+
+<p class="p2"><b></b><br></p>
+<p class="p3"><b>Version 2.2.0 (7 March 2009)</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span><b>Enhancements</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new Find/Replace panel, with these features:</p>
+<p class="p4"><span class="Apple-tab-span">	</span>&nbsp;&nbsp;- <b>pattern matching</b> (regular expressions) allows easy searches for text that contains tabs, returns, pagebreaks, images, word boundaries, etc. Also search for text using character and digit wildcards, beginning and ending of line symbols, alternate spellings, etc. Complex search patterns can be created by combining these symbols. Tutorials on the use of regular expressions can be found on the internet. </p>
+<p class="p4"><span class="Apple-tab-span">	</span>&nbsp;&nbsp;- Patterns… drop down menu in Find panel inserts pattern matching symbols</p>
+<p class="p4"><span class="Apple-tab-span">	</span>&nbsp;&nbsp;- Select All, Replace All (In Document/In Selection Only) functions are better exposed than before</p>
+<p class="p4"><span class="Apple-tab-span">	</span>&nbsp;&nbsp;- Invisible characters (tab, return, space, non-breaking space) are visible when editing search fields</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• File &gt; Export &gt; to HTML without Styles will export a file to pure HTML, with no embedded CSS styles (for when you have a separate style sheet)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Services &gt; Bean &gt; HTML Snippit with/without Styles from Selection converts selected text from a word processor or web browser etc. to an HTML snippit. ‘With styles’ includes styles as inline CSS, while ‘without styles’ omits all CSS, leaving pure HTML. Note: new Service menu items appear after logging out and logging back in again.</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug that could cause window display problems: minimum document window size is now set programmatically (nib setting kept disappearing)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed many localization issues. Special thanks to Patrick Scheips for his help here.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• revised localization instructions (contrary to the first version, MainMenu.nib should be localized)</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Code</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• TextFinder.[hm] class (along with the Find Panel interface files) is BSD license, in keeping with more permissive licenses of previous modifications of TextFinder by other programmers and of RegExKitLite and ICU, which Bean’s Find panel uses for regular expressions</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Version 2.1.0 (26 January 2009)</b></p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Changes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>added 'help' buttons in Preferences tabs; removed redundant tooltips</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Version 2.0.5b (9 January 2009)</b></p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Bug Fix</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>fixed a problem introduced in 2.0.4 that prevented the visible text range from being restored when entering full screen mode (oops)</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Version 2.0.4b (6 January 2009)</b></p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Changes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>• View &gt; Show Invisibles now outlines text table cells that have a border width of zero; this is useful to reveal such ‘hidden’ text tables in content pasted from webpages (user suggestion)</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>fixed a problem where using the Option key to insert special characters (ex: Opt+8 = bullet) could change the text background color to match the foreground color<span class="Apple-converted-space">  </span>(reported by user)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where a document window would not fade back into view when full screen was exited (Tiger only)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where the Columns sheet would not dismiss when Apply button was clicked (Tiger only)</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>New Localization System</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Translators should no longer need to edit nib files directly for each new version. All strings are now loaded into labels, buttons, etc. at runtime from the localizable.strings file. See details <a href="http://www.bean-osx.com/localization.html">here</a>.</p>
+<p class="p2"><b></b><br></p>
+<p class="p3"><b>Version 2.0.3b (23 December 2008)</b></p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Bug Fix</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>fixed a problem that caused Bean to crash when dead keys were used to type accented characters<span class="Apple-converted-space">  </span>(reported by users)</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Version 2.0.2b (22 December 2008)</b></p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Bug Fix</b></p>
+<p class="p3"><span class="Apple-tab-span">	</span>• fixed a noticeable slowdown in the layout manager when the page layout view is hidden</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where View &gt; Fit Page Width / Fit Page were not set correctly when reopening saved documents</p>
+<p class="p6"><b></b><br></p>
+<p class="p3"><b>Version 2.0.1b (20 December 2008)</b></p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Bug Fix</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• changed permissions for file default.plist (which prevented Bean from being run from multiple user accounts) (reported by user)</p>
+<p class="p5"><span class="Apple-converted-space"> </span></p>
+<p class="p3"><b>Version 2.0b (17 December 2008)</b></p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new feature: Format &gt; Columns... allows you to format the text of your entire document in 1 to 5 columns, with an adjustable gutter between columns. Note that the columns setting is Bean-only; the columns will not appear in other applications that read rich text formats. The default gutter width is changed at Preferences &gt; Advanced &gt; Document &gt; Default gutter.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new feature: Format &gt; Header/Footer... &gt; Lock Header/Footer Style will ‘freeze’ the document’s header/footer settings and cause them to be saved with the document (typically, a change in the header/footer preferences effects all open documents in Bean)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• text position is now restored after the layout view is toggled or when the window is resized or fullscreened<span class="Apple-converted-space">  </span>(formerly, the blinking text cursor would scroll to the middle, which may not have been the section of text the user was looking at before the change)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added an option to choose the new document’s template file (Preferences &gt; Documents &gt; New document template). Only a <b>locked</b> file may serve as the new document template. To lock a file, use File &gt; Make Template in Bean, or File &gt; Get Info &gt; Locked in the Finder.<span class="Apple-converted-space">  </span>(user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added option to allow change of document background color (which formerly wasn’t allowed) at Preferences &gt; Advanced &gt; Document &gt; Allow change of document background color (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added option to paste a separater line before pasting the pasteboard text for Services &gt; Bean &gt; Paste Selection into Current Bean Document; this visually separates multiple pasted sections of text. (Advanced hint: the divider is a string of characters that can be altered; the string is found in defaults.plist under the key prefPasteSelectionDividerString.)<span class="Apple-converted-space">  </span>(user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the page break character now displays as a graphic line when layout view is off</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Preferences &gt; General &gt; Center Cursor Vertically now works in continuous text view mode as well as layout view mode</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new toolbar item for applying bold, italic and underline styles (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new toolbar item for highlight color (click and hold for a popup menu of different colors) (thanks to Keith Blount for KBPopUpToolbarItem class) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• highlight with any color: press the Option key while picking a color from the color panel to highlight selected text with that background color</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new menu item File &gt; Special New &gt; Plain Text creates an empty plain text document (which defaults to a .txt filename extension at save)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new menu item File &gt; Special New &gt; Rich Text from Pasteboard creates a new document and inserts the rich text contents of the pasteboard</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new menu item File &gt; Special New &gt; Plain Text from Pasteboard creates a new plain text (.txt) document and inserts the plain text contents of the pasteboard</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new menu item File &gt; Special New &gt; With Current Selection copies selected text from the frontmost Bean document, then pastes it into a new rich text document</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new menu item File &gt; Make Template will lock the document’s file; the document will reopen in Bean as an untitled copy of the original and can optionally be used as the new document template</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Bean now attempts to read plain text files first as Unicode, then with the file system hint, then as ISOLatin1; finally, if these fail, a sheet will appear prompting the user to select an encoding (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• tabstop alignment can be changed for a text selection by double-clicking (or option-clicking) on a tabstop in the ruler</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• changing the page layout (page size, orientation) is now undoable</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the color for revealed invisible characters can now be specified at Preferences &gt; View &gt; Invisible Characters &gt; Color (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• a wider (easier to see) blinking text cursor can be activated at Preferences &gt; General &gt; Wide cursor (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added option to show vertical ruler at Preferences &gt; Advanced &gt; Interface &gt; Show vertical ruler; this is allowed for OS X 10.5+ only because it causes an error under 10.4 (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added option to suggest a filename when first saving a file based on the first 40 characters or so of the text at Preferences &gt; Advanced &gt; Interface &gt; Suggest filename at first save; this is allowed for OS X 10.5+ only because the view hierarchy for of the save panel is different for 10.4 (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added option at Preferences &gt; Advanced &gt; Document &gt; Respect Antialiasing Threshold... to respect the antialiasing threshold set at System Preferences &gt; Appearance &gt; Turn off font smoothing for font sizes .... and smaller. Important note: activating this option <b>turns off</b> fine kerning (intelligent characters spacing) and so is not recommended! (user suggestion)</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Changes<span class="Apple-converted-space"> </span></b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• full screen can now be exited using the Escape key; the status bar Exit button has been removed (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added shortcuts to Edit &gt; Insert &gt; date stamps (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Cocoa autosave (Bean Preferences &gt; Documents &gt; Autosave documents...) which autosaves <b>all</b> documents opened after autosave is activated at the interval you specify</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the old per-document timed backup function, previously called ‘autosave,’ is now found here: View &gt; Get Info... &gt; Backup every [...] minutes; it works so differently from autosave (for example, the backup files are persistant and never overwrite the original) that it remains in Bean<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Cmd+ (along with the usual Cmd=) now increases the font size of the selected text (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• change encoding for plain text files is now undoable (and the prompt to optionally back up the file beforehand has been removed)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Preferences &gt; General &gt; Use “Smart Quotes” now has an option to choose Leopard’s native Smart Quotes implementation (which may work better for some languages and purposes)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the page number that headers and footers start printing on can now be specified at Preferences &gt; Printing &gt; Begin on page... (page numbering in the header or footer starts on that page) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added an option to specify default use of U.S. or metric measurements at Preferences &gt; Advanced &gt; Interface &gt; Measurement Units (formerly this was automatically set, based on System Preferences &gt; International &gt; Formats &gt; Measurement Units) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added option to turn off restoration of text cursor position when opening documents (which can result in faster load times) at Preferences &gt; Advanced &gt; Interface &gt; Restore cursor location… (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the visible page number range and total number of pages is now reported in the status bar when both the layout view and the live word count are active. You can disable this or enable the old method (which indicated the page number above each page in layout view) under Preferences &gt; Advanced &gt; Interface. (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• status bar now matches Leopard UI (Leopard only) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• ruler widgets now will match the color theme at System Preferences &gt; Appearance &gt; Appearance &gt; Blue / Graphite (thanks to Keith Blount)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• images are now automatically scaled in layout mode to prevent their overspilling a page or column (however, large line spacing will still cause an image to be ‘bumped’ off the page)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the ‘find indicator’ (saffron-colored lozenge) indicates the location of the text cursor when the view is changed (Leopard only)</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where a document window could be closed without prompting to save changes due to a bad change count (and Save toolbar icon now enables/unenables more correctly) (reported by user)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug where opening a saved document would fail when several untitled documents were already open</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem that could cause duplicated overlaid text in multiple containers due to a bug in Leopard’s <span class="s1">glyphRangeForBoundingRect:inTextContainer: </span>(thanks to Martin Wierschin)</p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span>• </span>fixed a bug where non-active documents would scroll when the active document text cursor was at index zero (reported by user)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• MS Word’s ‘Automatic’ font color now alternates in alternate colors mode (its ‘black’ is slightly lighter than pure black!)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• when attempting to save a file that has been saved by another app since being opened by Bean, Bean will no longer present two warning sheets on Leopard (its own and the new native Leopard one)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem that would cause Bean to crash when resolution independence was used in quartz debug (involving the ruler widgets not having a name when created with xml language)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• tabbing through text fields in the Inspector no longer commits changes and creates needless undo actions</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Smart Quotes now work inside parenthesis and brackets (user suggestion)</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Code</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>Refactored all classes to better compartmentalize and objectify Bean’s components (...still a ways to go on this task!)</p>
+<p class="p2"><b></b><br></p>
+<p class="p7"><b>Version 1.3.3 (20 June 2008)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Fixed a severe bug that would crash Bean when editing text lists in Alternate Colors mode (the bug originated in the new Alternate Colors code added in 1.3.1); this same bug would crash Bean when various dead keys were used for adding accents in Alternate Colors mode</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Added LSHandlerRank=alternate to Word 97 info.plist section (it had been omitted by mistake); this should distance Bean’s association to the .doc format a bit more (giving priority to MS Word) <span class="Apple-converted-space"> </span></p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 1.3.2 (11 June 2008)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p7"><span class="Apple-tab-span">	</span>• Kerning is now much improved! I filed a bug about kerning problems with the text system, and Apple promptly replied that I should try calling [layoutManager setUsesScreenFonts:NO]. This solved the kerning problems and now Bean produces much better text layout. Wish I’d known about that a year ago...but that you Apple for the prompt reply!<span class="Apple-converted-space"> </span></p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 1.3.1 (9 June 2008)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p7"><span class="Apple-tab-span">	</span>• View &gt; Alternate Colors mode now substitutes the alternate text color for black text only; fonts with other colors display as they are (in previous versions, all text was colored using the alternate color).[1] (user suggestion)</p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>added symbol for non-breaking space when View &gt; Show Invisibles is active (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added option Header: Title; Footer: Page # of ## (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Inspector’s First Line and Left indention controls now change in unison when you hold down the Option key; this does not work yet when dragging the ruler widgets (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Optimized layout view code; scrolling is snappy even for very long documents</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>• Superscript and Subscript now ‘shrink’ the selected text (like many other word processors do) to prevent irregular line spacing.[2] Font &gt; Super/sub &gt; Raise / Lower still adjusts the baseline without changing the size of selected text. (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Header text now aligns to left and right margins (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• refined how the zoom slider’s label reports the zoom amount; you can now set the slider to exactly 100% (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added an overview to the File Formats page of Bean Help suggesting that users use RTF format as their everyday format (because RTF is Bean’s native format, and is therefore safer than .doc, which is always imported and exported through conversion filters).[3] File &gt; Export &gt; to DOC (with pictures) is ideal if you need to share a file with Windows users; it now works even when there are no images.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• removed attributed labels under Font menu (for instance, the Italic menu item is no longer italicized) because the extra visual clutter was not helpful (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Bug Fixes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>• fixed a problem where documents would open in MS Word in outline view when they were saved in Bean with View &gt; Fit Page Width / Fit Page turned on (user feedback)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where empty plain text files would not open correctly. You can now save an empty plain text file as a template (Get Info... &gt; Locked File/Template); this template will open in Bean as an Untitled UTF-8 plain text file. (user feedback)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where URLs in links (to the internet or to a local file) were not working when they contained accented characters (user feedback)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a menu item validation problem for Style &gt; Select by &gt; Font Style</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• information in the Header now updates more quickly after saving the document with a new filename or changing the document’s properties</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where the vertical scroller knob position was not updated after showing Layout view (user feedback)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where tabs couldn’t be positioned beyond 14 cm using Format &gt; Tab Stop... (user feedback)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where some Inspector controls did not change the textView’s typingAttributes</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where Preferences could override a saved document’s setting when determining whether to use alternate display colors</p>
+<p class="p5"><br></p>
+<p class="p8">[1] There is a hidden preference setting that restores the previous behavior of Alternate Colors (where all text is colored using the alternate text color, not just black text). First, quit Bean, then in a Terminal.app window, paste the following line and press Return (change YES to NO to reverse the setting):</p>
+<p class="p9"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefHideFontColorsWithAltColors -bool YES</p>
+<p class="p6"><b></b><br></p>
+<p class="p8">[2] There is a hidden preference setting that restores the previous behavior of Superscript and Subscript (where the baseline is changed but not the size of the selected text). First, quit Bean, then in a Terminal.app window, paste the following line and press Return (change NO to YES to reverse the setting):</p>
+<p class="p9"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefShrinkSuperAndSubscript -bool NO</p>
+<p class="p6"><b></b><br></p>
+<p class="p8">[3]<span class="Apple-converted-space">  </span>There is a hidden preference setting that forces Bean to save .doc files as RTF with a .doc filename extension. This hybrid format is still Word compatible and is safer in Bean (by safer, I mean there is less chance of a large file becoming corrupted upon save). There is a downside: Quicklook will no longer work on these files! To activate this hidden preference setting, first quit Bean, then in a Terminal.app window, paste the following line and press Return (change YES to NO to reverse the setting):</p>
+<p class="p9"><br></p>
+<p class="p10">defaults write com.SevenYearsDreaming.Bean prefDocIsRTF -bool YES</p>
+<p class="p6"><b></b><br></p>
+<p class="p3"><b>Version 1.2.0 (29 April 2008)</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Enhancements</b></p>
+<p class="p11"><span class="Apple-tab-span">	</span>• images now indicate when they are selected with a selection-colored box (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added a small ‘EXIT’ button in the status bar as a hard-to-miss way to exit full screen mode</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Find &gt; Define Word now accepts multiple word selections, like ‘local time,’ or ‘turn on the charm.’</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Style &gt; Select by &gt; Font Style/Ruler</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Style &gt; Select by &gt; Font Family/Ruler (like above, but selects italics, bold, etc. variations)</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p11"><span class="Apple-tab-span">	</span>• Changed the factory default rich text font to Times New Roman instead of Times. Text lays out up to three times faster using Times New Roman, despite the fact that the two fonts are nearly identical!</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new keyboard shortcut for Format &gt; Justify: Cmd-\ (the old one stopped working after the move to the 10.5 SDK).</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Style &gt; Select by... menu now contains all select-by-style actions</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Bug Fixes</b></p>
+<p class="p11"><span class="Apple-tab-span">	</span>• restored show/hide Font Panel to Cmd-T (toggle function disappeared after the move to the 10.5 SDK)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where Inspector wouldn’t display correct initial settings for any document opened with the cursor at the start of the document</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• file links containing spaces now open immediately</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed minor ruler widgets drawing problem</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 1.1.0 (17 April 2008)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b>• added OpenDocument and Word 2007 file format support (in OS X 10.5 Leopard only)</p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>shrink the Inspector: click the disclosure triangle to hide all Spacing controls</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Edit &gt; Insert &gt; Signature Line menu action (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added new header option: Subject (from Get Properties...)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new toolbar items: Full Screen, Get Properties..., Show Invisibles (I’m to blame for the icons for these - JH)</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p11"><span class="Apple-tab-span">	</span>• Inspector controls now work even when a document is empty</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• updated the Help file (the File Formats page describes the new formats)</p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p11"><span class="Apple-tab-span">	</span>• the context menu you see when double-clicking a page’s margin in layout view is now localizable</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• removed some stray NSLog debug messages!</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• various fixes to help the Inspector follow changes better</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Code</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Bean’s Xcode project now uses the 10.5 SDK (for .odt and .docx support), but still targets OS X 10.4</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Localization</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• I’ve tried everything I could find, short of coding an app from scratch, to create an incremental localization that combines the past translation work done on Bean with the new English version, so that only new controls and strings have to be translated. Apparently, there are just too many changes since the last version, and ibtool is too persnickety about slight changes in position of controls, etc. to be useful. If one of the many translators who volunteer to translate Bean has a solution to this problem, please let me know.</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 1.0.1 (26 March 2008)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b>• fonts in Inspector’s popup menu were not sorted a-z on Tiger (but were on Leopard!), now fixed</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• disabled font controls in Inspector when there is no text</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 1.0.0 (25 March 2008)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b>• added Help file for all menu commands</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• link sheet now removes any previous link from text when link URL is left empty</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new option: Preferences &gt; View &gt; Show invisible characters&gt; Omit spaces</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new icon for Cut in toolbar</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Please Wait... sheet which appears when Bean is paginating long documents</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Preference to paginate in the background while typing (General &gt; Use background pagination). This is recommended <b>only</b> for fast (i.e., Intel) processors!</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• headers and footers now appear in Layout view when enabled</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• if you click on the page margin in Layout view, a context menu pops up with various useful options (such as quick access to the header/footer controls)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added value of 1.2 to line spacing options, commonly considered the most readable setting for most fonts<span class="Apple-converted-space">  </span>(user suggestion)</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Changes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>exiting full screen will now restore Layout view if necessary</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Bug Fixes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>• fixed a (recent) major bug where opening a file type not supported by Bean would appear to produce an open, empty document</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• rewrote the Format &gt; List &gt; Move Up / Move Down code to be more reliable</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed some problems with the bindings for full screen preference controls</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where Check for Updates... would fail silently on Leopard if no network was found</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug where zooming in or out using shortcut keys just after opening a document would fail</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 0.9.12 (14 March 2008) Preview of Bean 1.0</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Full Screen mode (View &gt; Full Screen), and Preferences for Full Screen mode; this works better under Leopard than Tiger; under Tiger the title bar refuses to hide (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Preferences for new window size, zoom amount, and whether window should be centered (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Font and Font Size controls in the Inspector (check ‘Preview Fonts in Menu’ to enable live preview) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added improved control over Headers and Footers (MLA, APA, etc.) in Preferences (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added menu commands and shortcut keys to quickly move list items north or south in list (Format &gt; List &gt; Move Up/Down)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added keyboard shortcut for show/hide toolbar (Ctrl + Shift + T)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Preference to un-enable Cocoa’s ‘smart cut and paste’ (which adds or removes spaces for double-clicked text selections)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added new menu item: Font &gt; Strikethrough (shortcut: Shift + Cmd + U) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added new Service menu item: Paste Selection into Current Bean Document (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added new Service menu item: Insert ‘Lorem Ipsum’ (which is mock-latin text used as filler for trial text layouts or templates)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Bean can now save ‘empty’ documents (for templates and so on) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new menu items to Edit &gt; Remove &gt; Text Tables / List Markers / Attachments from Selection / All</p>
+<p class="p12">when webpage text is copied and pasted into Bean, text tables in particular (which are used just for text layout) can screw up the output in layout mode and in PDFs (thanks to a bug in Apple’s code, which I’ve filed a bug report on [5650712]); you can remove tables, problem list attributes, or even all attachments at once using these new menu items</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Style &gt; Remove All Styles menu item (user suggestion)</p>
+<p class="p12">-this is equivalent to the Make Plain Text followed by Make Rich Text menu item sequence in Text Edit, which people say they miss in Bean; use it for example to strip web text of all font and paragraph styles, and all tables and attachments</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Style &gt; Match &gt; to Default Style which will match the selected text (or the whole document if no text is selected) to the default style as defined in the Preferences</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Style &gt; Match &gt; to Most Common Style which will match the selected text to the most common font and paragraph styles found in that selection; if no text is selected, all styles in the document will be ‘flattened’ to the most common style<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Style &gt; Match &gt; to Style at Text Cursor which will propagate the style found at the blinking text cursor throughout the selected text, or throughout the document if no text is selected</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added toolbar item for ‘Cut’ (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added menu item Format &gt; Paragraph &gt; Allow Hyphenation (for selected text)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added menu item Format &gt; Paragraph &gt; Right to Left Direction (for paragraphs of Arabic, Hebrew, etc.) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• drag and drop of attachments from open Bean documents works better (JPGs instead of clippings, etc.) (user suggestion)<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p11"><span class="Apple-tab-span">	</span>• better ‘show invisibles’ code thanks to Keith Blount</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Bean now opens clicked-on file URLs in Leopard (like Text Edit does) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• reopened documents remember to show alternate colors if saved in that state (except due to full screen preferences) (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Bug Fixes</b></p>
+<p class="p11"><span class="Apple-tab-span">	</span>• fixed problem with text cursor fading at edge of margin</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a display refresh problem following a change to File &gt; Page Setup</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 0.9.11 (6 January 2008)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b>• new and improved method for screening out Leopard’s unnecessary screen updates - should eliminate the last traces of slowness due to this reason<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• backed away from paginating in the background as version 0.9.10 did; we now paginate while opening the document (slower to open, but more responsive once opened)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new 512 x 512 icon, courtesy Laurent Baumann -- thank you again, Laurent! (you can see the improvement in detail using coverflow under Leopard) <span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• some tweaks in the document window’s UI and minor changes in the help files</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• changing a document property (View &gt; Get Properties...) now marks a document as needing to be saved</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Quick Look now works with .bean files (10.5 Leopard); added benefit: Text Edit on 10.5 Leopard now understands .bean files, since their UTI superclass is com.apple.rtfd</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• moved <b>UTF-8</b> to third position in encoding list for convenience; this is the modern format for conversion from legacy encodings</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed bug where the color panel could set an alternate color in Preferences while changing the color of a document’s selected text at the same time</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• rewrote much of the View &gt; Alternate Colors code to fix some problems</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• removed some dead code</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 0.9.10 (18 December 2007)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b>• fixed bugs causing severe slowdowns (only a problem on OS X 10.5 Leopard):</p>
+<p class="p12">- PageView class under Leopard is getting many more drawRect messages than it ever did under Tiger; it is now optimized to ignore most of them, and objects used in drawRect are cached; also, we draw the insertion point cursor to eliminate some extra drawRect messages</p>
+<p class="p12">- addTemporaryAttributes (=Alternate Text Colors) is now part of NSTextStorage’s processEditing method (the only place where it seems to work without a slowdown)</p>
+<p class="p12">- pagination now occurs in the background when documents are loading (instead of forcing completed layout, as we did formerly, since Leopard is <b>very</b> slow at paginating); also, Bean now ignores redraw messages sent while a document is paginating</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed Leopard-only bug where opening a document and typing at index 0 would give you default type (Helvetica 12) instead of type matching subsequent text</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed Leopard-only bug where the blinking insertion point could disappear (due to a low lineFragmentPadding value); widened the insertion point cursor for visibility</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed Leopard-only bug where resizing an image using the slider would cause a weird effect (due to the selectedRange being continually reset)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed bug that could cause Get Info... to give incorrect plain text encoding after saving a document with different encodings in one session</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed bug where selected word count in status bar would not be reset when Live Word Count was off</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fine-tuned some user interface elements in JHDocument.nib; consequently, localizations will not work for tooltips in the Multilingual Edition of Bean 0.9.10</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• worked again to fix the problem where the Page Up and Page Down buttons sometimes disappear</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Enhancements</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>• replaced black ruler markers with aqua ones</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Services menu item ‘Recover Text from Selected File’ which attempts to salvage text from corrupt Word 97 files and from old legacy formats (such as WriteNow files)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the ‘tab’ key now indents individual list items when a list item is being edited, instead of inserting a tab</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added keyboard shortcuts for creating numbered and bulleted lists</p>
+<p class="p3"><b><span class="Apple-tab-span">	</span>Notes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>after having tested the text system under Tiger and Leopard, I can offer the following observations: while the API for Leopard did not change much, the underlying code changed a lot, evidenced by the fact that the behavior of the text system has greatly changed Leopard is less forgiving than Tiger in terms of app performance, much of this due to increased redraws for all views, text views included (a fast CPU ‘corrects’ this problem) Some examples of this: Leopard NSText displays each character typed rather than coalescing changes for display of rapidly typed text (which means trouble for fast typists running Leopard on an older CPU as they may have to wait for Leopard to catch up!); lineScroll now takes three redraws, rather than one, which appears smoother on faster machines, but is painful on older ones This means Leopard will run NSText-based apps better on newer (=Intel) CPUs, but in many ways not as well as Tiger on older CPUs (such as my G4 Powerbook!)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• since Bean’s user interface changed hardly at all, no revision of localizations for 0.9.10 should be necessary <span class="Apple-converted-space"> </span></p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 0.9.9 (14 October 2007)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b>• fixed bug that prevented plain text format documents from being Default Save Format</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• document background color control in Font Panel is now hidden (Bean doesn’t use it)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the Link... sheet remembers the last type of link chosen</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed annoying List... bug that would change the font to Lucida Grande (thanks, Philip Dow, for the code fix)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed bug where, for example, a .5 margin would yield .57 on the ruler (due to non-zero default textContainer:lineFragmentPadding setting)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug where input into any document would cause a beep when a read only document was open</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• got rid of system beep upon attempted input to read only documents...didn’t like it</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added validation for menu items, toolbar, and Inspector when focused on a read only document</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• List &gt; Numbered and List &gt; Bulleted now removes first line indent attribute for selected text, which NSTextList’s initWithMarkerFormat:options: also does</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 0.9.8 (17 September 2007)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p7"><span class="Apple-tab-span">	</span>• fixed Check for Updates -- this did not work correctly until 0.9.7.1</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• localization string fixes (0.9.7.2, 0.9.7.3, 0.9.7.5)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed crash involving textStorageWillProcessEditing out-of-bounds error (version 0.9.7.4)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug where Bean would crash if you overtyped a single, selected smart quote (0.9.7.6)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed ‘nil value’ bug involving editing picture as initial character in a document (0.9.7.7)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem with Get Info... numbers being formatted incorrectly (0.9.7.8)</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 0.9.7 (31 August 2007)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p7"><span class="Apple-tab-span">	</span>• word and character counts for selected text now appear in the status bar (in blue instead of black); normal count resumes when no text is selected (user suggestion)<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• resizing an image now does not affect resolution (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Edit &gt; Insert &gt; Non-breaking space action added (like spacebar space, but prevents line breaks)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• you can now separately control whether the standard Cocoa header (title) and footer (page numbers) prints in Preferences</p>
+<p class="p13"><span class="s2"><span class="Apple-tab-span">	</span>• fixed code so that Bean can now be fully localized (nibs, .strings files, html help). </span><b>Note: unless you really want to potentially duplicate someone else's work, don't create a localization of Bean unless you coordinate it with me first.</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>• you can now change the language style of Smart Quotes on the fly</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added special code for French (France) and Canadian French Smart Quotes which inserts a non-breaking space before appropriate punctuation (yes, I know about partial cadratins, but the current solution seems more practical for Bean)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• 'Fonts' icon in toolbar now toggles show/hide for Font panel (note: you will have to remove the old font icon and drag in the new one for this to work). (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Line Spacing 'Default' button in inspector now gets its value from user's Preference setting for line spacing</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added keyboard shortcuts for Line Spacing and Highlight menu actions (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Bug Fixes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>• fixed a bug where documents would sometimes open in layout view when saved in continuous text view and vice versa</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a long-standing bug involving retain of delegate of save panel which would cause a crash when you tried to close a document window, then were prompted to save the document and responded (thanks Isztar for pointing out that bug!)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed bug where alternate editing colors would not cover entire scrollView when zooming out during continuous (non-layout) view mode</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug with Center Cursor code that would cause view to jump when zoom amount was high</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug that prevented the opening of UTF-16 text files with arbitrary extensions (like .strings files!)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug with Autosave controls that could cause a UI loop glitch</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed UI glitch with resizing document properties sheet</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• improved auto-resizing code for when images are inserted that are too tall to fit on a page<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• double autorelease of allAvailableEncodings fixed</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed Check for Updates (0.9.7.1)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• localization string fixes (0.9.7.2, 0.9.7.3)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed crash involving textStorageWillProcessEditing out-of-bounds error (version 0.9.7.4)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• localization string fixes (0.9.7.5)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug where Bean would crash if you overtyped a single, selected smart quote (0.9.7.6)</p>
+<p class="p6"><b></b><br></p>
+<p class="p3"><b>Version 0.9.6 (30 July 2007)</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>You can now specify the Default Save Format in the General pane of Preferences (frequent user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Edit &gt; Insert &gt; Picture menu item (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Edit &gt; Change &gt; Picture Size (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• You can double-click a picture to show the resizing control</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Bean &gt; Check for Updates to check for availability of new versions</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Export to PDF (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Export to RTF and DOC formats with pictures intact (thanks to Keith Blount)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Bean now attaches the HFS creator code and OSType code (if applicable) to document files, reading and retaining this information for opened document files and adding it for newly saved document files. This will assist, for example, in opening RTF files without the ‘.rtf’ extension. It will also bind Bean-created documents a bit closer to Bean in Launch Services.</p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Changes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>Great new app icon courtesy icon designer <a href="http://lbaumann.com/">Laurent Baumann</a></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• the mouse’s text cursor (the ‘I-beam’ cursor) is now visible against dark backgrounds (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• ‘Get Info...’ now specifies the file format, since (with the addition of OSType to Bean documents) some files can get by without filename extensions, making the file format less obvious</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added a ‘Help’ button to the Save file panel and the Get Info... sheet for help with understanding file formats</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Images dropped or pasted at the head of a paragraph will no longer nuke the paragraph style (as happens in Text Edit, etc.)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added toolbar items for Show/Hide Ruler and Insert Picture</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added shortcut keys for Super/Subscript/None and Copy/Paste Ruler+Font</p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>image references in exported HTML are now ready-to-go; just add the appropriately-named picture files to the directory</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• ‘show ruler accessories’ preference now affects new documents only (since the other preferences work this way)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug that hid the ruler when switching to layout view</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed bug in many number input fields for languages such as Finnish that use a comma as a decimal point</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug that caused the Inspector to become confused when switching between documents when one used metric measurements and one used U.S. measurements</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• a few alloc’s got releases they needed</p>
+<p class="p6"><b></b><br></p>
+<p class="p7"><b>Version 0.9.5a (20 June 2007)</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Enhancements</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>added Defaults tab in Preferences to adjust margins, first line indent, and line spacing for New Documents (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Preference to turn off page shadow in layout mode, to improve display speed on older machines (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Preference to show OS X ruler widgets (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Preference to Show invisible characters (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Preference to ‘Use fit width view’ mode or not (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added Format &gt; Use Smart Quotes menu item, so Smart Quotes can be easily turned on or off (user suggestion)<span class="Apple-converted-space"> </span></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Changes</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>Autosave is now per-document and not global. To access this feature, select View &gt; Get Info... (user suggestion)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• removed ‘Autosave Untitled document’ feature</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added confirmation dialog to ‘Revert to Saved’</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Bean now doesn’t allow Smart Quotes for the ‘Text (you provide extension)’ format, since these files are probably code or scripts</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Autosave now saves only when changes exist since the last Autosave (instead of whenever unsaved changes exist). This avoids unnecessary Autosaves, such as Autosaving the same existing unsaved changes repeatedly, and captures saved changes as well, unlike the previous implementation.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• locking a file from Get Info... now causes an explicatory message to appear (urging the user to reopen the file as a template, if that was the intention)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• typing into a ‘Read Only’ document now causes a beep (instead of silently failing to insert text)</p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Bug Fixes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• rewrote shouldChangeTextInRange: method to fix a number of bugs, including:</p>
+<p class="p12">-<span class="Apple-tab-span">	</span>Smart Quotes now groups with other text for Undo/Redo</p>
+<p class="p12">-<span class="Apple-tab-span">	</span>Redo now works in .txt and .html files</p>
+<p class="p12">-<span class="Apple-tab-span">	</span>Paste now pastes with correct text attributes in .txt and .html files</p>
+<p class="p12">-<span class="Apple-tab-span">	</span>text attributes do not return to Cocoa default following Paste into empty lines (plain text) or into documents after all text is deleted</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• alternate display colors now apply correctly for Edit &gt; Insert &gt; Date / Time menu items</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• ‘Center when at end’ now responds to Return key</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where ‘Center when at end’ could erroneously affect multiple documents</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where Cocoa would leave a temporary file if it tried and failed to ‘safe save’ to a locked RTFD bundle--added an extra check for locked files/folders</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Trying to open non-supported non-RTFD package files (like .pages format files) will now display an error dialog</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Inspector’s Line Spacing slider now has a bottom limit of 0.3; otherwise, it would seemingly unpredictably throw an exception for very low values that would crash Bean (below this setting is unusable anyway)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Link menu item is now not active for non-rich text format files</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed some incorrect display attributes which could appear when rich text formats are saved as plain text formats</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Inspector’s Font styles popup now effects all text for non-rich text formats</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug where text attributes would return to Cocoa defaults if layout view/continuous text view were alternated when there was no text</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug involving parsing long keywords (Bean stores some information such as cursorLocation in the keywords field)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added error checking for Format &gt; Margins... input fields</p>
+<p class="p14"><b></b><br></p>
+<p class="p7"><b>Version 0.9.4a (27 May 2007)</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>new feature: text highlighting</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new icons, thanks to the hard work of Laurent Baumann</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• new Services menu item: New Document Containing Selection<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where ‘Fit Page Width/Fit Page’ mode would be forgotten when switching back to layout view form continuous text view</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed some inefficient code that caused Bean to slow down when editing large .txt or .html files</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• files without a filename extension or in a file format unknown to Bean are now always opened as plain text files (except Word 97 files without the .doc extension)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Word 97 files missing the .doc extension are now opened as .doc format files, thanks to UTI ‘sniffing’</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• had to change some keyboard shortcuts dealing with View &gt; Fit Page/Page Width and View &gt; Zoom In/Out (because of a conflict that was causing a bug)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where text pasted into a .txt or .html file wouldn’t inherit the paragraph attributes of the text around it</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• ‘Save’ toolbar icons now works correctly</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• moved sourcecode from disk image to URL on download page <span class="Apple-converted-space"> </span></p>
+<p class="p14"><b></b><br></p>
+<p class="p7"><b>Version 0.9.3b (20 May 2007)</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>adding UTIs, a way of identifying file formats, caused Bean to ‘take over’ the .DOC format, something I did not intend. UTIs have been removed until I can find better documentation on how to implement them less aggressively.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug where Page Up and Page Down buttons sometimes wouldn’t draw to screen</p>
+<p class="p15"><b></b><br></p>
+<p class="p4"><b>Version 0.9.3a (16 May 2007)</b></p>
+<p class="p16"><b>Enhancements</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added “Text (you provide extension)” file type. Bean will now open and save text files with arbitrary filename extensions (that is, extensions that are not ‘.txt’).</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added keyboard shortcut to Float Window menu item (ctrl + cmd + F). (Note: cmd = ‘Apple’ key)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added keyboard shortcut to ‘Location of Last Edit’ (ctrl + cmd + L)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added more language options for Smart Quotes (such as inward-pointing brackets for German)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• select File &gt; Send to Mail to open a new message in Mail with your document as an attachment</p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>Changes</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• switched to ‘Unified’ toolbar look</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• revised some alert messages text to be less alarmist and more informative (particularly, when opening and saving plain text documents)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• changed Bean’s Unique Creator Code (which is used internally by OS X) to bEAN, because BEAN is not permitted and Bean was already taken. The ‘.bean’ filename extension should still work fine.</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• improved Accessibility for most controls in Bean when using Voice Over</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added menu item under Format for preset Line spacings (for convenience, and to improve Accessibility)</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Bean now uses latest verison of KBWordCountingTextStorage. Thanks Keith!</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added UTI codes to some filetypes</p>
+<p class="p4"><b><span class="Apple-tab-span">	</span>Bug fixes:</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem with Bean’s use of centimeters vs. inches in the margin and tabstop sheets; Bean now looks at System Preferences &gt; International &gt; Formats &gt; Measurement Units when a document is loaded to determine whether to use cm’s or inches</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Inspector controls are not enabled until at least one character is typed; this fixes a problem where controls could be changed but no change was being applied to text because there was no text!</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• Inspector now displays correct information when Inspecting text files</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a display bug: vertical scroller is now placed correctly when horizontal scroller is present</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a bug: Edit &gt; Convert &gt; to Smart Quotes now works even if Smart Quotes is un-enabled in Preferences</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where the Smart Quotes popup button could be un-enabled in Preferences, but it should remain enabled since Edit &gt; Convert &gt; Smart Quotes uses this even when Smart Quotes is un-enabled</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed bug where convert to Smart Quotes would not undo when file was .txt</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• added menu validation for Edit &gt; Convert &gt; items to indicate all text vs. selected text in menu item</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where saving a rich document to plain text wouldn’t discard attributes or images if document was ‘Read Only’<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed a problem where Bean would hang at launch if ‘Arial’ font was not found</p>
+<p class="p17"><br></p>
+<p class="p7"><b>Version 0.9.2g (3 May 2007)</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>fixed problem where uneven margins would cause printer output to be shifted too much</p>
+<p class="p4"><span class="Apple-tab-span">	</span>• fixed problem where firstTextView was not always initialFirstResponder (you typed and app did nothing)</p>
+<p class="p17"><br></p>
+<p class="p7"><b>Version 0.9.2f (1 May 2007)</b></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b>•<b> </b>release of beta</p>
+</body>
+</html>

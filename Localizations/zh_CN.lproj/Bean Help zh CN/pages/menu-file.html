@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Bean 帮助 - 菜单 - 文件</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=490">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 17.0px Lucida Grande; color: #cb0505}
+p.p2 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p3 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 13.0px Lucida Grande; color: #cb0505}
+p.p4 {margin: 0.0px 0.0px 6.8px 36.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+p.p5 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 13.0px Lucida Grande}
+p.p6 {margin: 0.0px 0.0px 6.8px 54.0px; text-indent: 0.2px; font: 14.0px Times New Roman}
+span.s1 {color: #cb0505}
+span.s2 {font: 14.0px Monaco}
+</style>
+</head>
+<body>
+<p class="p1"><b>文件菜单</b></p>
+<p class="p2"><span class="s1">新建：</span>创建一个新的未命名多信息文本文稿。</p>
+<p class="p3">新建特殊 &gt;<span class="Apple-converted-space"> </span></p>
+<p class="p5"><span class="s1">纯文本：</span>创建新的空白纯文本文稿。</p>
+<p class="p5"><span class="s1">来自夹纸板的多信息文本：</span>创建新的多信息文本文稿并插入夹纸板的内容 (之前拷贝的文本)。</p>
+<p class="p5"><span class="s1">来自夹纸板的纯文本：</span>创建新的纯文本文稿并插入夹纸板的内容 (之前拷贝的文本)。</p>
+<p class="p5"><span class="s1">使用当前所选部分：</span>插入最前端文稿所选的部分到新建多信息文本文稿。</p>
+<p class="p3">打开…:</p>
+<p class="p4"><i>注意：怎样关联文件类型到 Bean 使得点按文稿图标就可用 Bean 打开：在 Finder 中，选择您感兴趣的文件类型。然后在右键菜单选择显示简介 > 打开方式：Bean。然后点按 '更改全部...' 按钮就可以了。</i></p>
+<p class="p2"><span class="s1">打开最近使用的：</span>注意：在全屏幕模式下不能工作 (是个 bug, rdar://5748616)，所以在全屏幕下这一项禁用。</p>
+<p class="p2"><span class="s1">存储为…：</span>Bean 在您将带附件 (如图像) 的多信息文稿存储为不支持附件的格式时会提醒您 (这种情况下附件会被抛弃)。</p>
+<p class="p2"><span class="s1">恢复到已存储文件：</span>重新载入文稿已存储的版本并抛弃当前版本。程序会提醒您未存储的更改将会丢失。</p>
+<p class="p3">导出 &gt;<span class="Apple-converted-space"> </span></p>
+<p class="p5"><span class="s1">为带样式的 HTML：</span>当前文稿导出为 HTML 源代码文件 (带内联 CSS 样式)，将存储到原文件同一文件夹。包含的文件夹导出后在 Finder 中打开。您不能导出未存储的文稿。</p>
+<p class="p5"><span class="s1">为不带样式的 HTML：</span>当前文稿导出为 HTML 源代码文件 (不带 CSS 样式，是纯 HTML)，将存储到原文件同一文件夹。</p>
+<p class="p6"><i>要使导出的 .html 文件中引用的图片可用，按下列步骤：</i></p>
+<p class="p6"><i>1. 在 Bean 中打开导出的 HTML 文件 (拖动显示的图标到 Bean 图标上)。</i></p>
+<p class="p6"><i>2. 在 HTML 模式替换图像的引用 (一般写在这里: <b>img src=</b>) 为 HTML 文件相同目录的图像文件名 (或像这样: "graphics/logo.jpg" 如果有一个 'graphics' 目录来放置图像文件)。</i></p>
+<p class="p6"><i>3. 存储,，然后连按 HTML 文件在 Safari 中打开检查效果。</i></p>
+<p class="p5"><span class="s1">为 PDF：</span>存储文稿为 .pdf 文件到原文件同一文件夹。当您发送文稿给他人时 PDF 提供了对原文稿最大程度的保真，但一般不能被其他人编辑。</p>
+<p class="p5"><span class="s1">为带图片的 RTF：</span>图像将插入到导出的 RTF 文件中。虽然 Windows 和 Linux 用户不能打开 .rtfd 或 .bean 格式，但<b>可以打开</b> RTF 格式的文件。</p>
+<p class="p5"><span class="s1">为带图片的 DOC：</span>与 ‘导出 &gt; 为带图片的 RTF’ 相同，但扩展名变为 .doc，方便多数 windows 用户。MS Word 打开 RTF 文件时会不带提醒的重命名为 .doc 扩展名。</p>
+<p class="p2"><span class="s1">发送到 Mail：</span> 在 Mail 程序中将文稿中所选部分作为附件添加；.rtfd 文件会自动压缩 (因为它实际是一个文件夹而非磁盘文件)。附件的文件名会显示为附件旁边的文本以便您确认发送了正确的邮件。注意：您不能邮件发送未存储的文稿。</p>
+<p class="p2"><span class="s1">备份：</span>在原文件同一文件夹创建日期戳记和按序号排序的备份副本。用于版本控制，文档，以及归档。</p>
+<p class="p2"><span class="s1">制作模板:</span> 将打开的文稿通过锁定文件制作为模板。Bean 之后可以重新打开模板为未命名的文稿。您可以在 Finder 中选择文件，取消选择 Finder &gt; 显示简介 &gt; 锁定。</p>
+<p class="p2"><span class="s1">在 Finder 中显示：</span>打开 Finder 窗口，显示当前文稿所在的文件夹。注意 Finder 在分栏模式时会在预览分栏报告文件的创建和修改日期。注意：最好关闭文稿再在 Finder 中移动或重命名文稿。</p>
+<p class="p2"><span class="s1">页面设置…：</span>提供文稿页面大小和方向的控制。</p>
+<p class="p2"><span class="s1">打印…：</span>显示标准 OS X 打印面板。您可以选择打印机，调整打印输出，打印为 PDF，在预览程序中打开，等等。</p>
+<p class="p2"><span class="s1">打印所选部分…：</span>仅打印所选的文本。对多个文本选择也有效，并可添加分隔符，如果激活了 'Bean &gt; 偏好设置… &gt; 高级 &gt; 文稿 &gt; 打印所选部分… 分隔多个所选部分选项。</p>
+</body>
+</html>

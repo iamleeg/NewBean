@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>解决问题</title>
+<meta name="Author" content="">
+<meta name="Company" content="">
+<meta name="Copyright" content="">
+<meta name="Subject" content="">
+<meta name="Description" content="">
+<meta name="Keywords" content="cursorLocation=3265, fitsPagesWidth=1">
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.27">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 18.0px; font: 34.0px Baskerville; color: #666666}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Hoefler Text; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f}
+p.p4 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; min-height: 16.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 18.0px; font: 7.0px Monaco; min-height: 10.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Monaco}
+p.p8 {margin: 0.0px 0.0px 0.0px 18.0px; font: 13.0px Lucida Grande; color: #b8160f; min-height: 16.0px}
+</style>
+</head>
+<body>
+<p class="p1"><i>解决问题...</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>当我在偏好设置中做出更改时，我打开的文稿没有变化。</b></p>
+<p class="p4">偏好设置一般只影响新的文稿。要更改打开的文稿可以通过菜单。</p>
+<p class="p5"><br></p>
+<p class="p3"><b>Bean 启动时就崩溃。</b></p>
+<p class="p4">尝试将下列文件拖到废纸篓 (该文件包含 Bean 的偏好设置) 并重启 Bean：</p>
+<p class="p6"><br></p>
+<p class="p7">/Users/&lt;您的用户名&gt;/Library/Preferences/com.SevenYearsDreaming.Bean.plist</p>
+<p class="p6"><br></p>
+<p class="p4">启动时重复崩溃可能导致 Bean 尝试打开自动存储的有问题文稿。尝试从下列文件夹移去所有自动存储的文稿：</p>
+<p class="p6"><br></p>
+<p class="p7">Users/<您的用户名>/Library/Autosave Information/</p>
+<p class="p5"><br></p>
+<p class="p3"><b>列表项目符号没看见。</b></p>
+<p class="p4">抹掉初始项目符号不足以取消列表；你需要移除下面的列表属性。你可以应用格式 &gt; 列表 &gt; 标记... &gt; 无到所选文本，或应用编辑 &gt; 移去 &gt; 所选列表标记到所选。</p>
+<p class="p5"><br></p>
+<p class="p3"><b>版面模式下文稿的部分消失了。</b></p>
+<p class="p4">可能分页被从网页拷贝粘贴的不可见文本表格挤掉了 (已知的 bug)。尝试选择编辑 &gt; 移去 &gt; 所有文本表格。</p>
+<p class="p5"><br></p>
+<p class="p4">同样，段落的行间距包含大图像的话会强制使得图像超出版面模式的范围，使得剩余的文本 ‘消失’。尝试按两下回车键夹住大图像 (也就是用两个分段符)。这将强制最小的行间距，图像这时应该会重新出现。<span class="Apple-converted-space"> </span></p>
+<p class="p5"><br></p>
+<p class="p3"><b>‘Install-Bean’ 的图标不消失。</b></p>
+<p class="p4">首先一些背景知识：安装 Mac 软件的常见方式是使用磁盘映像。这个磁盘映像是 ‘虚拟的’ 磁盘包括在扩展名为 <b>.dmg</b> 的文件中。连按 .dmg 可以打开一个文件夹包含虚拟盘中的内容 (通常是一个程序或安装器，有时候还有文档)。一般你可以就地运行程序进行测试，如果要常用的话，将程序拖到你的应用程序文件夹以便生成一个副本。</p>
+<p class="p5"><br></p>
+<p class="p4">现在是一些建议：首先，如果你想保留 Bean 的副本以便每天使用，确保你拷贝了 Bean 到应用程序文件夹中。<b>不是</b> Bean 安装的磁盘映像，而是其中的 Bean.app 文件。下一步将名为 Bean-Install 的磁盘映像图标拖到废纸篓；这将 ‘推出’ 磁盘映像 (就像你推出 USB 闪存盘或 DVD 一样)。然后你可以删除名为 Bean-Install.dmg 的文件 (这个文件一般在你的桌面或下载文件夹中)。记住，因为 Bean 免费，你可以将映像文件的副本放到别的地方。</p>
+<p class="p8"><b></b><br></p>
+<p class="p3"><b>一篇文稿文件不能被 Bean 打开。</b></p>
+<p class="p4">Bean 通常会根据扩展名  (.doc, .rtf, .txt 等) 检测文稿的格式。如果文件扩展名丢失，尝试添加一个。</p>
+<p class="p5"><br></p>
+<p class="p3"><b>一篇 .doc 文稿损坏了。</b></p>
+<p class="p4">我推荐使用多信息文本格式 (.rtf) 作为默认存储格式，特别是长的文稿，因为它是 Bean 的内建格式。Word .doc 格式文件始终是导入导出，这个额外的过程常会发生问题。如果你发现文件变成了损坏的文稿，或是孤立的格式，尝试使用菜单服务 &gt; Bean &gt; 从所选文件恢复文本。<span class="Apple-converted-space">     </span></p>
+<p class="p5"><br></p>
+<p class="p3"><b>你怎么做脚注，分节，自动目录？</b></p>
+<p class="p4">你可以用别的文字处理程序，一个不错的免费程序是 <a href="http://homepage.mac.com/lightway/iText/iTextExpress/TryiTxtExp.html"><span class="s2"><b>iText Express</b></span></a>。或者用 <a href="http://porting.openoffice.org/mac/download/aqua.html"><b>OpenOffice Aqua</b></a> (也是免费)。</p>
+<p class="p5"><br></p>
+<p class="p3"><b>我能不能用 Bean 写我的毕业论文？</b></p>
+<p class="p4">一般来说你最好是使用全功能的文字处理器或是 <a href="http://en.wikipedia.org/wiki/TeX">TeX</a>。这是专门用来写论文的。</p>
+</body>
+</html>
