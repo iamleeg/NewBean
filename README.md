@@ -4,4 +4,4 @@ Bean is a word processor, written in Cocoa. There is a newer version than this [
 
 ## Licence: GPL2
 
-[See licence](./ENglish.lproj/Bean Help/pages/GNU-GPL.html).
+[See licence](./English.lproj/Bean Help/pages/GNU-GPL.html).
