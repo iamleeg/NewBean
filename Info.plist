@@ -233,6 +233,8 @@
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>Bean</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Bean 2.4.5, © 2007-2011 James Hoover</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>Bean Help</string>
 	<key>CFBundleHelpBookName</key>
@@ -240,7 +242,7 @@
 	<key>CFBundleIconFile</key>
 	<string>icn-beanapp</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.SevenYearsDreaming.Bean</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -249,8 +251,6 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2.4.5</string>
-	<key>CFBundleGetInfoString</key>
-	<string>Bean 2.4.5, © 2007-2011 James Hoover</string>
 	<key>CFBundleSignature</key>
 	<string>bEAN</string>
 	<key>CFBundleVersion</key>
