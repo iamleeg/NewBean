@@ -24,6 +24,7 @@
 #import "JHDocument_DocAttributes.h" //for setDocAttribtues 
 #import "JHDocument_Text.h" //for alternateFontActive
 #import "GetInfoManager.h" //for autosave controls
+#import "GLOperatingSystemVersion.h"
 
 #import <Carbon/Carbon.h> //for Applescript descriptor stuff in associateFileWithBean
 
@@ -326,7 +327,7 @@ NSString *universalTypeForFile(NSString *filename)
 	else if([typeName isEqualToString:OpenDoc])
 	{
 		// if Tiger, not compatible
-		if ([self currentSystemVersion] < 0x1050)
+		if ([GLOperatingSystemVersion isBeforeLeopard])
 		{
 			//	an alert sheet will show in windowControllerDidLoadNib
 			//	this way we don't fight frameworks and can dismiss the failed-to-open document easily
@@ -343,7 +344,7 @@ NSString *universalTypeForFile(NSString *filename)
 	else if([typeName isEqualToString:DocXDoc])
 	{
 		// if Tiger, not compatible
-		if ([self currentSystemVersion] < 0x1050)
+		if ([GLOperatingSystemVersion isBeforeLeopard])
 		{
 			//	an alert sheet will show in windowControllerDidLoadNib
 			//	this way we don't fight frameworks and can dismiss the failed-to-open document easily
@@ -603,7 +604,7 @@ NSString *universalTypeForFile(NSString *filename)
 		//	!flag means doc is not closing, so we pass nil as contextInfo since no callback on canCloseWithDelegeate is needed
 		if (!isClosing) { contextInfo = nil; }
 		
-		if (![self isLossy] && [self isEditedExternally] && [self currentSystemVersion] >= 0x1050)
+		if (![self isLossy] && [self isEditedExternally] && [GLOperatingSystemVersion isAtLeastLeopard])
 		{
 			//dont' put up alert if doc had been externally edited and OS is 10.5+, since AppKit does its own alert 7 Oct 08 JH
 		}
@@ -821,7 +822,7 @@ NSString *universalTypeForFile(NSString *filename)
 		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 		if ([defaults boolForKey:@"prefShouldAssociateFileWithBean"])
 		{
-			if ([self currentSystemVersion] >= 0x1060 && [[NSUserDefaults standardUserDefaults] boolForKey:@"prefAssociateDocumentWithBean"]
+			if ([GLOperatingSystemVersion isAtLeastSnowLeopard] && [[NSUserDefaults standardUserDefaults] boolForKey:@"prefAssociateDocumentWithBean"]
 						&& ([[self fileType] isEqualToString:RTFDDoc] || [[self fileType] isEqualToString:RTFDoc])) {
 				//tell Finder to associate rtf or rtfd file with Bean (in 10.6, this doesn't happen because creator codes are ignored by Finder)
 				[self associateFileWithBean:self];
@@ -955,7 +956,7 @@ NSString *universalTypeForFile(NSString *filename)
 	// new in Bean 1.1.0
 	else if ([typeName isEqualToString:OpenDoc])
 	{
-		if ([self currentSystemVersion] < 0x1050)
+		if ([GLOperatingSystemVersion isBeforeLeopard])
 		{
 			//	don't do anything; nil will be returned and willPresentError will present the appropriate error msg
 			[self setFailedDocType:1];
@@ -968,7 +969,7 @@ NSString *universalTypeForFile(NSString *filename)
 	// new in Bean 1.1.0
 	else if ([typeName isEqualToString:DocXDoc])
 	{
-		if ([self currentSystemVersion] < 0x1050)
+		if ([GLOperatingSystemVersion isBeforeLeopard])
 		{
 			//	don't do anything; nil will be returned and willPresentError will present the appropriate error msg
 			[self setFailedDocType:2];
@@ -1440,7 +1441,7 @@ NSString *universalTypeForFile(NSString *filename)
 	//	if this fails, savePanel:isValidFilename will show alert upon attempted save; if that fails, fileWrapper > willPresentError will show alert
 	
 	//	if Tiger...
-	if ([self currentSystemVersion] < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{
 		//	get subviews of accessory view
 		NSArray *theSubviews = [theView subviews];
@@ -1485,7 +1486,7 @@ NSString *universalTypeForFile(NSString *filename)
 	//disabled by menu verification on Tiger; use hack on Leopard; use native API on Snow Leopard
 	if ([defaults boolForKey:@"prefSuggestFilename"])
 	{
-		if ([self currentSystemVersion] < 0x1060)
+		if ([GLOperatingSystemVersion isBeforeSnowLeopard])
 		{
 			//get subviews of save panel's contentView
 			NSArray *subviews = [[sp contentView] subviews];
@@ -1525,7 +1526,7 @@ NSString *universalTypeForFile(NSString *filename)
 				}
 			}
 		}
-		else if ([self currentSystemVersion] >= 0x1060)
+		else if ([GLOperatingSystemVersion isAtLeastSnowLeopard])
 		{
 			if ([sp respondsToSelector:@selector(setNameFieldStringValue:)])
 			{
@@ -1602,7 +1603,7 @@ NSString *universalTypeForFile(NSString *filename)
 	
 	//	ODT and DOCX are not compatible with Tiger - warn user
 	//	prepareSavePanel should have removed incompatible fileTypes by this point, but this is fall through code, just in case...
-	if ([self currentSystemVersion] < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{
 		if ([theExtension isEqualToString:@"ODT"] || [theExtension isEqualToString:@"DOCX"])
 		{

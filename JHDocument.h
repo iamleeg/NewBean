@@ -177,7 +177,6 @@
 	BOOL cursorWasVisible;
 	BOOL isEditingList;
 	BOOL _alternateFontActive;
-	SInt32 currentSystemVersion;
 	NSSize contentSizeBeforeFullScreen;
 	NSRect oldFrameRect;
 	NSRange visibleTextRange; // for getter in _View
@@ -342,9 +341,6 @@
 
 -(void)setResizingImage:(BOOL)flag;
 -(BOOL)resizingImage;
-
--(void)setCurrentSystemVersion:(SInt32)systemVersion;
--(SInt32)currentSystemVersion;
 
 -(void)setPointsPerUnitAccessor:(float)points;
 -(float)pointsPerUnitAccessor;

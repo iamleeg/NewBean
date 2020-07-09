@@ -24,6 +24,7 @@
  
 #import "JHDocument_TextLists.h"
 #import "RegExKitLite.h" //for regexp
+#import "GLOperatingSystemVersion.h"
 
 @interface NSTextView(Private)
 //get rid of compiler error (for NSTexteView private API)
@@ -57,7 +58,7 @@
 	
 	SInt32 systemVersion;
 	//=Tiger?
-	if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && (systemVersion < 0x1050))
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{
 		//Tiger behavior: tab on selection does not promote list item, but rather inserts tab
 		//	remember paragraph range

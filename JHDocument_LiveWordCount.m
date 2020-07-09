@@ -21,6 +21,7 @@
 #import "JHDocument_PageLayout.h" //pageNumberForContainerAtIndex
 #import "PageView.h" //isKindOfClass:[PageView class]
 //#import "TextFinder.h" //for numberOfMatchesForRegex (count, then remove newlines from character total)
+#import "GLOperatingSystemVersion.h"
 
 @implementation JHDocument ( JHDocument_LiveWordCount )
 
@@ -115,9 +116,8 @@
 	//set string
 	[liveWordCountField setStringValue:liveWordCountString];
 	
-	SInt32 systemVersion;
 	BOOL isTiger = NO;
-	if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && systemVersion < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{
 		isTiger = YES;
 	}

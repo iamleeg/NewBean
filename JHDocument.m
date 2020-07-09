@@ -33,6 +33,7 @@
 */
 
 #import "JHDocument.h"
+#import "GLOperatingSystemVersion.h"
 
 /*
 //	for genstrings...connects strings below to localized versions of the names of the file types!
@@ -87,22 +88,17 @@ NSLocalizedString(@"OpenDocument (.odt)", @"name of the file format: OpenDocumen
 		
 		//	LSMinimumSystemVersion in info.plist should take care of OS X version compatibility check, but 10.3 ignores this key (known bug)
 		//	however, not sure below check works either; version compatibility check from Smultron by Peter Borg
-		SInt32 systemVersion;
-		if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr)
-		{
-			[self setCurrentSystemVersion:systemVersion];
-			if (systemVersion < 0x1040)
-			{
-				[NSApp activateIgnoringOtherApps:YES];
-				NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-				//added '10.4 or greater' to localized string 27 JUNE 08 JH
-				[alert setMessageText:NSLocalizedString(@"You need Mac OS X 10.4 \\U2018Tiger\\U2019 to run Bean", @"alert title: You need Mac OS X 10.4 Tiger to run Bean.")];
-				[alert setInformativeText:@""];
-				[alert addButtonWithTitle:NSLocalizedString(@"OK", @"OK")];
-				[alert runModal];
-				[NSApp terminate:nil];
-			}
-		}
+        if ([GLOperatingSystemVersion isBeforeTiger])
+        {
+            [NSApp activateIgnoringOtherApps:YES];
+            NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+            //added '10.4 or greater' to localized string 27 JUNE 08 JH
+            [alert setMessageText:NSLocalizedString(@"You need Mac OS X 10.4 \\U2018Tiger\\U2019 to run Bean", @"alert title: You need Mac OS X 10.4 Tiger to run Bean.")];
+            [alert setInformativeText:@""];
+            [alert addButtonWithTitle:NSLocalizedString(@"OK", @"OK")];
+            [alert runModal];
+            [NSApp terminate:nil];
+        }
 		
 		//	create layoutManager and textStorage (backing text system)
 		textStorage = [[KBWordCountingTextStorage alloc] init];
@@ -604,9 +600,6 @@ NSLocalizedString(@"OpenDocument (.odt)", @"name of the file format: OpenDocumen
 
 - (BOOL)showPageNumbers { return showPageNumbers; }
 - (void)setShowPageNumbers:(BOOL)flag { showPageNumbers = flag; }
-
--(SInt32)currentSystemVersion { return currentSystemVersion; }
--(void)setCurrentSystemVersion:(SInt32)systemVersion { currentSystemVersion=systemVersion; }
 
 // accessor tells attachmentCell to keep drawing selection outline, even tho selection was dismissed (to avoid visual boingy effect)
 -(BOOL)resizingImage { return resizingImage; }

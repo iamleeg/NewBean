@@ -25,6 +25,7 @@
 #import "JHDocument_Print.h" //printInfoUpdates
 #import "JHDocument_View.h" //toggleLayoutView, updateZoomSlider
 #import "JHDocument_AltColors.h" //switchTextColors
+#import "GLOperatingSystemVersion.h"
 
 @implementation JHDocument ( JHDocument_DocAttributes )
 
@@ -373,7 +374,7 @@
 		// BUGFIX: .doc and .odt types *always* open is US letter (Cocoa file filter doesn't read paper size)
 		//	so use default paper size setting from system print user prefs 14 AUG 09 JH
 		id docType = [docAttributes objectForKey:NSDocumentTypeDocumentAttribute];
-		if ([self currentSystemVersion] >= 0x1050 && (docType==NSDocFormatTextDocumentType || docType==NSOpenDocumentTextDocumentType))
+		if ([GLOperatingSystemVersion isAtLeastLeopard] && (docType==NSDocFormatTextDocumentType || docType==NSOpenDocumentTextDocumentType))
 		{
 			//get user pref paper size
 			NSSize aSize = [[[[NSPrintInfo sharedPrintInfo] dictionary] objectForKey:NSPrintPaperSize] sizeValue];
@@ -381,7 +382,7 @@
 			if (!NSEqualSizes(aSize, NSZeroSize))
 				paperSize = aSize;
 		}
-		else if ([self currentSystemVersion] < 0x1050 && docType==NSDocFormatTextDocumentType)
+		else if ([GLOperatingSystemVersion isBeforeLeopard] && docType==NSDocFormatTextDocumentType)
 		{
 			//get user pref paper size
 			NSSize aSize = [[[[NSPrintInfo sharedPrintInfo] dictionary] objectForKey:NSPrintPaperSize] sizeValue];
@@ -427,7 +428,7 @@
 				val==NSWebArchiveTextDocumentType ||
 				val==NSPlainTextDocumentType)
 			[self applyDefaultDocumentAttributes];
-		else if ([self currentSystemVersion] >= 0x1050 && val == NSOpenDocumentTextDocumentType)
+		else if ([GLOperatingSystemVersion isAtLeastLeopard] && val == NSOpenDocumentTextDocumentType)
 			[self applyDefaultDocumentAttributes];
 	}
 	

@@ -22,6 +22,7 @@
 #import "JHDocument_FullScreen.h" //fullScreen, toggleFullScreen
 #import "JHDocument_Print.h" //applyUpdatedPrintInfo
 #import "JHDocument_PageLayout.h" //doForegroundLayout
+#import "GLOperatingSystemVersion.h"
 
 //	various helper and action methods
 @implementation JHDocument ( JHDocument_Misc )
@@ -138,7 +139,7 @@
 	{
 		[[NSWorkspace sharedWorkspace] launchApplication:@"Dictionary"];	
 			//	under Tiger, we have to kick Dictionary.app then feed it an empty URL to make it responsive; this was fixed in Leopard 7 DEC 07 JH
-		if ([self currentSystemVersion] < 0x1050)
+		if ([GLOperatingSystemVersion isBeforeLeopard])
 		{
 			[[NSWorkspace sharedWorkspace] launchApplication:@"Dictionary"];	
 			[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"dict:/// "]];

@@ -56,6 +56,7 @@
 #import <Cocoa/Cocoa.h>
 #import "TextFinder.h"
 #import "RegexKitLite.h" //adds ICU library for Regular Expressions
+#import "GLOperatingSystemVersion.h"
 
 @implementation TextFinder
 
@@ -271,8 +272,8 @@ static id sharedFindObject = nil;
 				[text setSelectedRange:range];
 				[text scrollRangeToVisible:range];
 				//show find indicator (safron lozenge) Leopard only with safety check
-				SInt32 systemVersion;
-				if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && !(systemVersion < 0x1050));
+                BOOL beforeLeopard = [GLOperatingSystemVersion isBeforeLeopard];
+				if (beforeLeopard);
 				{
 					//show find indicator (safron lozenge) Leopard only
 					if ([text respondsToSelector:@selector(showFindIndicatorForRange:)] && range.length < 100)
@@ -424,8 +425,7 @@ static id sharedFindObject = nil;
 			[text setSelectedRange:foundRange];
 			[text scrollRangeToVisible:foundRange];
 			//show find indicator (safron lozenge) Leopard only
-			SInt32 systemVersion;
-			if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && !(systemVersion < 0x1050));
+			if ([GLOperatingSystemVersion isBeforeLeopard]);
 			{
 				//show find indicator (safron lozenge) Leopard only
 				if ([text respondsToSelector:@selector(showFindIndicatorForRange:)] && foundRange.length < 100)

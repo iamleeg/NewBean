@@ -24,6 +24,7 @@
 #import "JHDocument_View.h" //updateZoomSlider
 #import "JHDocument_Misc.h" //undo method
 #import "NSTextViewExtension.h"
+#import "GLOperatingSystemVersion.h"
 
 
 //	show header/footer sheet, set header/footer action and prepare undo
@@ -122,9 +123,8 @@
 -(IBAction)applyOrCancelAction:(id)sender
 {
 	//BUGFIX 5 JAN 09 JH on tiger, dismissing the sheet at the end of the method did not work for some reason; but responds better the Leopard compatible way, so use alternate method behavior for Leopard +
-	SInt32 systemVersion;
 	BOOL isTiger = NO;
-	if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && systemVersion < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 		isTiger = YES;
 	//dismiss sheet
 	if (isTiger)

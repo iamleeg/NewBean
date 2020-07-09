@@ -25,6 +25,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #import "JHDocument_View.h" //toggleLayoutView
 #import "JHDocument_PageLayout.h" //doForegroundLayoutToCharacterAtIndex
 #import "NSTextViewExtension.h" //setBeanCursorShape
+#import "GLOperatingSystemVersion.h"
 
 //prevent header and footer from printing in printView
 @interface JHPrintView : NSTextView
@@ -93,10 +94,8 @@ static JHDocumentController *sharedInstance = nil;
 		}
 	}
 	//	get version of OS X
-	SInt32 systemVersion;
-	Gestalt(gestaltSystemVersion, &systemVersion);
 
-	if (systemVersion < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{
 		//if Leopard's Smart Quotes option is selected but OS is Tiger, switch to Bean's Smart Quotes
 		if ([[defaults valueForKey:@"prefSmartQuotesSuppliedByTag"]intValue]==1)

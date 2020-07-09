@@ -22,6 +22,7 @@
 
 #import "InspectorController.h"
 #import "JHDocument.h"
+#import "GLOperatingSystemVersion.h"
 
 static InspectorController *sharedInspectorController = nil;
 
@@ -656,8 +657,7 @@ int fontSort(id font1, id font2, void *context)
 	[fontNameMenu removeAllItems];
 	NSArray *theFontFamilies;
 	//	only Leopard returns a sorted list of fonts, so if Tiger then we sort them
-	SInt32 systemVersion;
-	if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && systemVersion < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{			
 		NSArray *theUnsortedFontFamilies = [[NSFontManager sharedFontManager] availableFontFamilies];
 		//	sort the array

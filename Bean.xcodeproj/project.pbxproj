@@ -14,6 +14,7 @@
 		8D15AC310486D014006FF6A4 /* JHDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* JHDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		9835272B24B78A3A001CB9FA /* GLOperatingSystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9835272A24B78A3A001CB9FA /* GLOperatingSystemVersion.m */; };
 		E90457F50EA458FD0071A58F /* KBPopUpToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E90457F40EA458FD0071A58F /* KBPopUpToolbarItem.m */; };
 		E90458D80EA5A4030071A58F /* TBHighlightBlueItemImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E90458D30EA5A4030071A58F /* TBHighlightBlueItemImage.tiff */; };
 		E90458D90EA5A4030071A58F /* TBHighlightGreenItemImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E90458D40EA5A4030071A58F /* TBHighlightGreenItemImage.tiff */; };
@@ -184,6 +185,8 @@
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Bean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9835272824B783B7001CB9FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9835272924B78A3A001CB9FA /* GLOperatingSystemVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLOperatingSystemVersion.h; sourceTree = "<group>"; };
+		9835272A24B78A3A001CB9FA /* GLOperatingSystemVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLOperatingSystemVersion.m; sourceTree = "<group>"; };
 		E90457F30EA458FD0071A58F /* KBPopUpToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBPopUpToolbarItem.h; sourceTree = "<group>"; };
 		E90457F40EA458FD0071A58F /* KBPopUpToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPopUpToolbarItem.m; sourceTree = "<group>"; };
 		E90458D30EA5A4030071A58F /* TBHighlightBlueItemImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBHighlightBlueItemImage.tiff; sourceTree = "<group>"; };
@@ -565,6 +568,8 @@
 				E9C406CA0EAE540200E2845A /* TemplateNameValueTransformer.m */,
 				E95869770F4B14AD00945BFE /* TextFinder.h */,
 				E95869780F4B14AD00945BFE /* TextFinder.m */,
+				9835272924B78A3A001CB9FA /* GLOperatingSystemVersion.h */,
+				9835272A24B78A3A001CB9FA /* GLOperatingSystemVersion.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -916,6 +921,7 @@
 				E985DA9B0E64765100BABB2F /* JHDocument_Backup.m in Sources */,
 				E90457F50EA458FD0071A58F /* KBPopUpToolbarItem.m in Sources */,
 				E9C406CB0EAE540200E2845A /* TemplateNameValueTransformer.m in Sources */,
+				9835272B24B78A3A001CB9FA /* GLOperatingSystemVersion.m in Sources */,
 				E9085A640EC9DD3D00587110 /* KBRulerView.m in Sources */,
 				E9AB46EE0ECE17C10052C35B /* HeaderFooterManager.m in Sources */,
 				E9F872200ED3E05E003A8B5B /* ColumnsManager.m in Sources */,

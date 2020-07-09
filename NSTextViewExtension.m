@@ -28,6 +28,7 @@
 #import "JHWindow.h" //for [JHWindow class] comparison
 #import "JHFindPanel.h" //for class ID
 #import "JHDocument_AltColors.h" //for altCursorColor
+#import "GLOperatingSystemVersion.h"
 
 //#import <Carbon/Carbon.h> //for GetCurrentKeyModifiers()
 
@@ -292,9 +293,8 @@ int _beanCursorShape; //global -- see prefs > General > Text Cursor > Shape matr
 -(void)indicateCursorIndex
 {
 	//BUGFIX 5 JAN 09 JH respondsToSelector returning YES for 10.5 only method in a category on Tiger...why?
-	SInt32 systemVersion;
 	//=Tiger
-	if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && !(systemVersion < 0x1050));
+	if ([GLOperatingSystemVersion isBeforeLeopard]);
 	{
 		NSRange range = [self selectedRange];
 		if (range.length < 1) range.length = 1;

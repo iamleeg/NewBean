@@ -29,6 +29,7 @@
 #import "JHDocument_DocAttributes.h" //docAttributes creation, setting, getting, defaults
 #import "JHDocument_Toolbar.h" //update segmentedStyleControl
 #import "NSTextViewExtension.h"; //setBeanCursorShape
+#import "GLOperatingSystemVersion.h"
 
 //to silence compiler warnings (10.6 methods, but we use 10.5 SDK)
 @interface NSTextView (SnowLeopard)
@@ -298,7 +299,7 @@
 	}
 	//need 10.6
 	//how to silence compiler warnings for 10.6 methods (we build on 10.5 SDK)
-	if ([self currentSystemVersion] >= 0x1060) {
+	if ([GLOperatingSystemVersion isAtLeastSnowLeopard]) {
 		if ([textView respondsToSelector:@selector(setAutomaticTextReplacementEnabled:)]) {
 			[textView setAutomaticTextReplacementEnabled:[defaults boolForKey:@"prefTextReplacement"]];
 		}
@@ -668,7 +669,7 @@
 	NSString *titleString = [NSString stringWithFormat:NSLocalizedString(@"The document \\U201C%@\\U201D could not be opened by Bean.", @"alert title: The document (document name inserted at runtime) could not be opened by Bean."), [self displayName]];
 	// alert if file is ODT or DOCX format (not TIGER compatible)
 	NSString *infoString;
-	if ( ([[self fileType] isEqualToString:OpenDoc] || [[self fileType] isEqualToString:DocXDoc]) && [self currentSystemVersion] < 0x1050)
+	if ( ([[self fileType] isEqualToString:OpenDoc] || [[self fileType] isEqualToString:DocXDoc]) && [GLOperatingSystemVersion isBeforeLeopard])
 	{
 		infoString = [NSString stringWithFormat:NSLocalizedString(@"alert text: Bean requires OS X 10.5 \\U2018Leopard\\U2019 or above to support the file format %@.", @"alert text: Bean requires OS X 10.5 'Leopard' or above to support the file format (name of file format inserted at runtime)."), [self fileType]];
 	}

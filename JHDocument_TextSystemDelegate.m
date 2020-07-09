@@ -27,6 +27,7 @@
 #import "JHDocument_View.h" //constrainScrollWithForceFlag
 #import "JHDocument_Text.h" //alternate font methods
 #import "RegexKitLite.h" //shouldRefreshListEnumeration
+#import "GLOperatingSystemVersion.h"
 
 // 'first level' quotation marks for Smart Quotes
 #define DOUBLE_QUOTE 0x0022
@@ -365,7 +366,7 @@ BOOL shouldUseCachedAttributes; // see below method
 	//	for example, make a text list with dashes as markers, return, indent, dedent, Lucida Grande is the new font for the text list item
 	//	original note: this is a fix for a bug in NSTextList #5065130 that causes font to be reset to Lucida Grande after bullets, dashes, etc.
 	//	code is by Philip Dow (www.cocoabuilder.com 15 March 2007)
-	if ([self currentSystemVersion] < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{
 		NSParagraphStyle *paragraphStyle = [newTypingAttributes objectForKey:NSParagraphStyleAttributeName];
 		if ( paragraphStyle != nil )

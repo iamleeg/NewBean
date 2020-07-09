@@ -26,6 +26,7 @@
 #import "JHDocumentController.h" // for [sharedDocumentController documents], changeInsertionPointColor
 #import "PrefWindowController_Toolbar.h" //toolbar
 #import "TemplateNameValueTransformer.h" //transform filepath to filename for template name text field
+#import "GLOperatingSystemVersion.h"
 
 #define RICH_TEXT_IS_TARGET YES
 #define PLAIN_TEXT_IS_TARGET NO
@@ -134,10 +135,6 @@ static id sharedInstance = nil;
 		[self applyChangesAction:nil];
 	}
 	
-	//	get version of OS X for use later
-	SInt32 systemVersion;
-	Gestalt(gestaltSystemVersion, &systemVersion);
-	
 	//	get names of possible file formats and load them into popup button in general pane
 	NSArray *docTypes = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleDocumentTypes"];
 	NSMutableDictionary *docType = nil;
@@ -160,7 +157,7 @@ static id sharedInstance = nil;
 		if ([[docType valueForKey: @"CFBundleTypeRole"] isEqualToString:@"Editor"] && formatName)
 		{
 			// OpenDoc and DocXDox are not Tiger compatible, so don't add to list
-			if (systemVersion < 0x1050 && ([formatName isEqualToString:DocXDoc] || [formatName isEqualToString:OpenDoc]))
+			if ([GLOperatingSystemVersion isBeforeLeopard] && ([formatName isEqualToString:DocXDoc] || [formatName isEqualToString:OpenDoc]))
 			{ 
 				// nothing
 			}		
@@ -193,7 +190,7 @@ static id sharedInstance = nil;
 	[prefMainTabView selectTabViewItemWithIdentifier:@"0"];
 	
 	//un-enable controls that don't function in Tiger
-	if (systemVersion < 0x1050)
+	if ([GLOperatingSystemVersion isBeforeLeopard])
 	{
 		//these NSUserDefaults are checked when JHDocumentController loads and set NO if OS is Tiger
 		
