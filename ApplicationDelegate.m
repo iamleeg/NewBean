@@ -55,9 +55,8 @@
 	// If both are found, swizzle them
 	if ((orig_method != nil) && (alt_method != nil))
 	{
-		SInt32 systemVersion;
 		//=Tiger?
-		if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && (systemVersion < 0x1050))
+#if !__OBJC2__
 		{
 			//NSLog(@"TIGER SWIZZLE");
 			//Tiger only code -- method_types and method_imp are deprecated on Leopard
@@ -71,7 +70,7 @@
 			orig_method->method_imp = alt_method->method_imp;
 			alt_method->method_imp = temp2;
 		}
-		else
+#else
 		{
 			//NSLog(@"LEOPARD SWIZZLE");
 			//these obj-c 2.0 runtime msg's work on Leopard only -- see CocoaDev: Swizzle
@@ -80,6 +79,7 @@
 			else
 				method_exchangeImplementations(orig_method, alt_method);
 		}
+#endif
 	} else NSLog(@"Could not swizzle nonexistent methods!");
 }
 
