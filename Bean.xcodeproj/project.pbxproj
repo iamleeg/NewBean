@@ -1160,7 +1160,7 @@
 		354B6D78109AA33100BF6361 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1188,7 +1188,7 @@
 		C05733C908A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = (
