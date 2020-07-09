@@ -55,6 +55,23 @@
 	// If both are found, swizzle them
 	if ((orig_method != nil) && (alt_method != nil))
 	{
+		SInt32 systemVersion;
+		//=Tiger?
+		if (Gestalt(gestaltSystemVersion, &systemVersion) == noErr && (systemVersion < 0x1050))
+		{
+			//NSLog(@"TIGER SWIZZLE");
+			//Tiger only code -- method_types and method_imp are deprecated on Leopard
+			char *temp1;
+			IMP temp2;
+			temp1 = orig_method->method_types;
+			orig_method->method_types = alt_method->method_types;
+			alt_method->method_types = temp1;
+			
+			temp2 = orig_method->method_imp;
+			orig_method->method_imp = alt_method->method_imp;
+			alt_method->method_imp = temp2;
+		}
+		else
 		{
 			//NSLog(@"LEOPARD SWIZZLE");
 			//these obj-c 2.0 runtime msg's work on Leopard only -- see CocoaDev: Swizzle
