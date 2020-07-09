@@ -341,7 +341,9 @@
 	}
 	// white is default, before other changes
 	[self setTheBackgroundColor:[NSColor whiteColor]];
-	
+    // set the background color explicitly to avoid looking naff in dark mode
+    [textView setBackgroundColor:[self theBackgroundColor]];
+
 	//get insertion point color from prefs
 	NSColor *cursorColor = [NSUnarchiver unarchiveObjectWithData:[defaults objectForKey:@"prefCursorColor"]];
 	if (!cursorColor) cursorColor = [NSColor blackColor];
