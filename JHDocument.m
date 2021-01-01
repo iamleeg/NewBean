@@ -277,9 +277,9 @@ NSLocalizedString(@"OpenDocument (.odt)", @"name of the file format: OpenDocumen
 -(id)theScrollView { return theScrollView; }
 
 //tells GetInfoManager whether to enable certain controls
--(BOOL)usesKeywords;
+-(BOOL)usesKeywords
 {
-	if ([self fileName] 
+	if ([self fileURL]
 		&& ![[self fileType] isEqualToString:TXTDoc]
 		&& ![[self fileType] isEqualToString:HTMLDoc]
 		&& ![[self fileType] isEqualToString:WebArchiveDoc]

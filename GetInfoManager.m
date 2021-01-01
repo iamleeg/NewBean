@@ -260,7 +260,7 @@
 	
 	//	enable backupAutomaticallyButton if: 
 	//	1) document not yet saved AND 2) fileType is not TXT, HTML, or WebArchive, which don't use (ie, save) keywords
-	if ([doc fileName] && [doc usesKeywords])
+	if ([doc usesKeywords])
 	{
 	
 		//autosaveInterval is number of minutes between autosaves
