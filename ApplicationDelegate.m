@@ -117,6 +117,24 @@
 	//allow proper validation (state of substitution > menu items isn't reported unless object's imp is called)
 	[NSTextView swizzleMethod:@selector(validateMenuItem:) withMethod:@selector(validateMenuItemSwizzle:)];
 	
+    [self createMyiCloudDocumentFolder];
+}
+
+- (void)createMyiCloudDocumentFolder {
+    /* if this is the first time the user launched Bean since we added iCloud support, they
+     * don't have a Bean folder in their ubiquity container. We add it here.
+     */
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSURL *iCloudDocumentsFolder = [[fm URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"];
+    if (iCloudDocumentsFolder != nil) {
+        if (![fm fileExistsAtPath:[iCloudDocumentsFolder path]]) {
+            NSError *error = nil;
+            BOOL madeDir = [fm createDirectoryAtURL:iCloudDocumentsFolder withIntermediateDirectories:YES attributes:nil error:&error];
+            if (!madeDir) {
+                [NSApp presentError:error];
+            }
+        }
+    }
 }
 
 /*
