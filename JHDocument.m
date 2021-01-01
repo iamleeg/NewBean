@@ -53,6 +53,10 @@ NSLocalizedString(@"OpenDocument (.odt)", @"name of the file format: OpenDocumen
 //	key for invalid file format (fileType)
 #define kCFStringEncodingInvalidId (0xffffffffU)
 
+@interface JHDocument () <NSTextStorageDelegate, NSLayoutManagerDelegate>
+
+@end
+
 //lots of accessors here, shared among JHDocument class's many categories
 @implementation JHDocument
 

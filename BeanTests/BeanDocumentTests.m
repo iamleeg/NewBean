@@ -30,4 +30,9 @@
     XCTAssertTrue([JHDocument autosavesInPlace]);
 }
 
+- (void)testForConformanceToProtocolsUsed {
+    JHDocument *doc = [JHDocument new];
+    XCTAssertTrue([doc conformsToProtocol:@protocol(NSTextStorageDelegate)]);
+    XCTAssertTrue([doc conformsToProtocol:@protocol(NSLayoutManagerDelegate)]);
+}
 @end
