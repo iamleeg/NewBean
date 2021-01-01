@@ -296,7 +296,7 @@ NSLocalizedString(@"OpenDocument (.odt)", @"name of the file format: OpenDocumen
 {
 
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	int units = [defaults integerForKey:@"prefUnits"];
+	NSInteger units = [defaults integerForKey:@"prefUnits"];
 	switch (units)
 	{
 		// metric
@@ -336,7 +336,7 @@ NSLocalizedString(@"OpenDocument (.odt)", @"name of the file format: OpenDocumen
 //	determine if flagged as stationary pad in the Finder
 -(BOOL)isStationaryPad:(NSString *)path
 {
-	static kIsStationary = 0x0800;
+	static uint16 kIsStationary = 0x0800;
 	CFURLRef url;
 	FSRef fsRef;
 	FSCatalogInfo catInfo;
