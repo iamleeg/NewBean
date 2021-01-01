@@ -219,6 +219,7 @@
 		98DF38C3259F9BB30008AE48 /* BeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DF38C5259F9BB30008AE48 /* BeanDocumentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeanDocumentTests.m; sourceTree = "<group>"; };
 		98DF38C7259F9BB30008AE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DF38D7259FA0AA0008AE48 /* Bean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bean.entitlements; sourceTree = "<group>"; };
 		E90457F30EA458FD0071A58F /* KBPopUpToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBPopUpToolbarItem.h; sourceTree = "<group>"; };
 		E90457F40EA458FD0071A58F /* KBPopUpToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPopUpToolbarItem.m; sourceTree = "<group>"; };
 		E90458D30EA5A4030071A58F /* TBHighlightBlueItemImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBHighlightBlueItemImage.tiff; sourceTree = "<group>"; };
@@ -465,6 +466,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Bean */ = {
 			isa = PBXGroup;
 			children = (
+				98DF38D7259FA0AA0008AE48 /* Bean.entitlements */,
 				9835272824B783B7001CB9FA /* README.md */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
@@ -1249,8 +1251,11 @@
 		354B6D78109AA33100BF6361 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = Bean.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.5.0;
+				DEVELOPMENT_TEAM = Q325DV22MX;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G4;
 				INFOPLIST_FILE = Info.plist;
@@ -1260,6 +1265,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamleeg.Bean;
 				PRODUCT_NAME = Bean;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -1344,8 +1350,11 @@
 		C05733C908A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = Bean.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.5.0;
+				DEVELOPMENT_TEAM = Q325DV22MX;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G4;
 				INFOPLIST_FILE = Info.plist;
@@ -1355,6 +1364,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamleeg.Bean;
 				PRODUCT_NAME = Bean;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
