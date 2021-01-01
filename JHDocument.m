@@ -57,6 +57,15 @@ NSLocalizedString(@"OpenDocument (.odt)", @"name of the file format: OpenDocumen
 @implementation JHDocument
 
 #pragma mark -
+#pragma mark Autosave
+
+// n.b. only changes behaviour on 10.7+
++ (BOOL)autosavesInPlace
+{
+    return YES;
+}
+
+#pragma mark -
 #pragma mark ---- Init, Dealloc, Load Nib ----
 
 // ******************* Init ********************
