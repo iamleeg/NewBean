@@ -30,6 +30,25 @@
 //20111025-1 bad hardcoded path above, use below instead
 #import <objc/runtime.h>
 
+@interface NSObject(SwizzledMethodSignatures)
+- (void)setBackgroundColorSwizzle:aColor;
+- (void)changeColorSwizzle:sender;
+- (void)insertTextSwizzle:sender;
+- (BOOL)trackMouseSwizzle:event adding:(BOOL)isAdding;
+- (NSTypesetterControlCharacterAction)actionForControlCharacterAtIndexSwizzle:(NSInteger)index;
+- (void)drawBackgroundForBlockSwizzle:block
+                            withFrame:(NSRect)rect
+                               inView:aView
+                       characterRange:(NSRange)range
+                        layoutManager:layoutManager;
+- (NSRect)lineFragmentRectForProposedRectSwizzle:(NSRect)rect
+                                  sweepDirection:(NSLineSweepDirection)dir
+                               movementDirection:(NSLineMovementDirection)movementDir
+                                   remainingRect:(NSRect)remaining;
+- (void)orderFrontListPanelSwizzle:sender;
+- (BOOL)validateMenuItemSwizzle:menuItem;
+@end
+
 // silence compiler warning
 @interface NSObject(Swizzle)
 
