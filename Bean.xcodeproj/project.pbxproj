@@ -614,7 +614,7 @@
 				359FF3C71123A96900E0CC8E /* associate_app.scpt */,
 				E9BB941A0ACFAC6400949713 /* defaults.plist */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
-				E9CC3BF80B6C6B9D00D6AF6E /* English.lproj */,
+				E9CC3BF80B6C6B9D00D6AF6E /* en.lproj */,
 				E9E979760C07F1BB00F67FDE /* Graphics */,
 			);
 			name = Resources;
@@ -638,7 +638,7 @@
 			path = BeanTests;
 			sourceTree = "<group>";
 		};
-		E9CC3BF80B6C6B9D00D6AF6E /* English.lproj */ = {
+		E9CC3BF80B6C6B9D00D6AF6E /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
 				35B7E1FB10AD3B4A00DD6F21 /* Bean Help */,
@@ -663,7 +663,7 @@
 				E95869520F4B145400945BFE /* RegEx.plist */,
 				E9BC64630C075754009427C9 /* ServicesMenu.strings */,
 			);
-			path = English.lproj;
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		E9E979760C07F1BB00F67FDE /* Graphics */ = {
