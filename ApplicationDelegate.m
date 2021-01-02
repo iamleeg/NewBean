@@ -181,7 +181,7 @@
 	if (action == @selector(revealFileInFinder:))
 	{
 		id doc = [[NSDocumentController sharedDocumentController] currentDocument];
-		if (!doc || ![doc fileName])
+		if (!doc || ![doc fileURL])
 			return NO;
 	}
 	return YES;
@@ -200,7 +200,7 @@
 
 - (IBAction)displayHelp:(id)sender
 {
-	int t = [sender tag];
+	NSInteger t = [sender tag];
 	NSString *topic = nil;
 
 	switch (t)
@@ -317,8 +317,11 @@
 	id doc = [[NSDocumentController sharedDocumentController] currentDocument];
 	if (doc)
 	{
-		NSString *thePath = [doc fileName];
-		if (thePath) { [[NSWorkspace sharedWorkspace] selectFile:thePath inFileViewerRootedAtPath:nil]; }
+		NSURL *docLocation = [doc fileURL];
+		if (docLocation) {
+            [[NSWorkspace sharedWorkspace] selectFile:[docLocation path]
+                             inFileViewerRootedAtPath:[[docLocation path] stringByDeletingLastPathComponent]];
+        }
 	}
 }
 
